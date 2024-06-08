@@ -4,31 +4,43 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
-	// Main slider
-	let mainSlider = document.querySelector('.main_slider .swiper')
+	// My projects slider
+	const myProjectsSliders = [],
+		myProjects = document.querySelectorAll('.my_projects .swiper')
 
-	if (mainSlider) {
-		new Swiper('.main_slider .swiper', {
-			loop: true,
-			speed: 750,
+	myProjects.forEach((el, i) => {
+		el.classList.add('my_projects_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			spaceBetween: 0,
 			slidesPerView: 1,
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true,
-				bulletActiveClass: 'active'
-			},
+			lazy: true,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			lazy: true
-		})
-	}
+			breakpoints: {
+				0: {
+					spaceBetween: 20
+				},
+				480: {
+					spaceBetween: 20
+				},
+				768: {
+					spaceBetween: 30
+				},
+				1280: {
+					spaceBetween: 100
+				}
+			}
+		}
+
+		myProjectsSliders.push(new Swiper('.my_projects_s' + i, options))
+	})
 
 
 	// Projects slider
