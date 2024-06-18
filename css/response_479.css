@@ -3,68 +3,3177 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size_title_small: 30px;
+        --font_size_title: 40px;
+        --font_size_title_big: 40px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+
+    /*------------------
+        First section
+    ------------------*/
+    .first_section .title
+    {
+        font-size: var(--font_size_title_small);
+        line-height: calc(100% + 7px);
+    }
+
+
+    .first_section .items
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .first_section .items > * + *
+    {
+        margin-left: 26px;
+    }
+
+
+    .first_section .items > *:after
+    {
+        left: 20px;
+
+        width: calc(100% - 4px);
+    }
+
+
+
+    /*--------------------
+        Portfolio head
+    --------------------*/
+    .portfolio_head .page_title
+    {
+        padding-bottom: 30px;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .tabs
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .portfolio .tabs .btn
+    {
+        width: 100%;
+
+        background: #322b27;
+    }
+
+    .portfolio .tabs .btn:after
+    {
+        display: none;
+    }
+
+
+    .portfolio .tabs .btn + .btn
+    {
+        margin-top: 20px;
+    }
+
+
+    .portfolio .item .name
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*---------------
+        Lets meet
+    ---------------*/
+    .lets_meet
+    {
+        padding: 50px 0;
+    }
+
+
+    .lets_meet .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+    .lets_meet .title br
+    {
+        display: none;
+    }
+
+
+    .lets_meet .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .lets_meet .row > *:nth-child(1),
+    .lets_meet .row > *:nth-child(2),
+    .lets_meet .row > *:nth-child(3)
+    {
+        width: 100%;
+    }
+
+
+
+    .lets_meet .free
+    {
+        padding: 25px 25px 180px;
+    }
+
+
+    .lets_meet .free .title
+    {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+
+    .lets_meet .free img
+    {
+        right: -13px;
+
+        width: 250px;
+    }
+
+
+
+    .lets_meet.small_part_of_nuances
+    {
+        padding: 50px 0;
+    }
+
+
+    .lets_meet.small_part_of_nuances .pre_title
+    {
+        font-size: 13px;
+        line-height: 26px;
+
+        margin-bottom: 7px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .title
+    {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .message
+    {
+        line-height: 17px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .desc
+    {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action
+    {
+        font-size: 14px;
+        line-height: 23px;
+
+        margin-top: 30px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action div
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action .btn
+    {
+        height: 50px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action .btn .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .title
+    {
+        font-size: 25px;
+        line-height: calc(100% + 5px);
+    }
+
+
+
+    /*------------------
+        Project head
+    ------------------*/
+    .project_head .project_name
+    {
+        font-size: 30px;
+    }
+
+
+    .project_head .features > *
+    {
+        font-size: 14px;
+    }
+
+
+    .project_head .features > * + *
+    {
+        margin-left: 30px;
+    }
+
+
+
+    /*---------------
+        Few words
+    ---------------*/
+    .few_words
+    {
+        padding-top: 40px;
+    }
+
+
+
+    .few_words .image
+    {
+        width: 205px;
+    }
+
+
+    .few_words .image .signature
+    {
+        top: 80px;
+
+        width: 105px;
+    }
+
+
+
+    /*------------------
+        Project plan
+    ------------------*/
+    .project_plan
+    {
+        padding: 40px 0 50px;
+    }
+
+
+    .project_plan .block_title
+    {
+        font-size: 35px;
+        line-height: calc(100% + 5px);
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head .page_title
+    {
+        font-size: var(--font_size_title_small);
+        line-height: calc(100% + 7px);
+    }
+
+
+    .service_head .items
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .service_head .items > * + *
+    {
+        margin-left: 26px;
+    }
+
+
+    .service_head .items > *:after
+    {
+        left: 20px;
+
+        width: calc(100% - 4px);
+    }
+
+
+    .service_head .image
+    {
+        margin-top: 40px;
+    }
+
+
+    .service_head .image2 .img
+    {
+        width: 165%;
+        margin-left: -65%;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid,
+    .advantages .grid2
+    {
+        display: block;
+    }
+
+
+    .advantages .grid .item,
+    .advantages .grid2 .item
+    {
+        min-height: 0;
+    }
+
+
+    .advantages .grid .item:before,
+    .advantages .grid .item:nth-child(5):before
+    {
+        line-height: normal;
+
+        top: 24px !important;
+        left: 35px !important;
+
+        width: auto;
+        height: auto;
+
+        background: none !important;
+    }
+
+
+    .advantages .grid .item:nth-child(1),
+    .advantages .grid .item:nth-child(2),
+    .advantages .grid .item:nth-child(3),
+    .advantages .grid .item:nth-child(4),
+    .advantages .grid .item:nth-child(5)
+    {
+        padding: 68px 35px 24px;
+    }
+
+
+    .advantages .grid .item:nth-child(4)
+    {
+        background: #231e1b;
+    }
+
+
+    .advantages .grid .item:nth-child(1) .name,
+    .advantages .grid .item:nth-child(2) .name,
+    .advantages .grid .item:nth-child(3) .name,
+    .advantages .grid .item:nth-child(4) .name,
+    .advantages .grid .item:nth-child(5) .name
+    {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+
+    .advantages .grid .item:nth-child(5) img
+    {
+        right: -112px;
+    }
+
+
+    .advantages .grid .item:nth-child(5):after
+    {
+        right: 0;
+    }
+
+
+
+    .advantages .grid2 .item:nth-child(1),
+    .advantages .grid2 .item:nth-child(2),
+    .advantages .grid2 .item:nth-child(3),
+    .advantages .grid2 .item:nth-child(4),
+    .advantages .grid2 .item:nth-child(5),
+    .advantages .grid2 .item:nth-child(6)
+    {
+        padding: 72px 35px 24px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(1):before,
+    .advantages .grid2 .item:nth-child(2):before,
+    .advantages .grid2 .item:nth-child(3):before,
+    .advantages .grid2 .item:nth-child(4):before,
+    .advantages .grid2 .item:nth-child(5):before,
+    .advantages .grid2 .item:nth-child(6):before
+    {
+        line-height: normal;
+
+        top: 24px !important;
+        left: 35px !important;
+
+        width: auto;
+        height: auto;
+
+        background: none;
+    }
+
+
+    .advantages .grid2 .item:nth-child(2) .pre_name,
+    .advantages .grid2 .item:nth-child(3) .exp,
+    .advantages .grid2 .item .desc
+    {
+        font-size: 13px;
+    }
+
+
+    .advantages .grid2 .item .name br
+    {
+        display: none;
+    }
+
+
+    .advantages .grid2 .item:nth-child(6) .name mark
+    {
+        margin-top: 0;
+    }
+
+
+
+    .advantages .grid2 .data
+    {
+        padding: 50px 35px;
+
+        border: none;
+    }
+
+
+    .advantages .grid2 .data .block_title
+    {
+        font-size: 24px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .advantages .grid2 .data .message
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .advantages .grid2 .data .message + .message
+    {
+        padding: 15px 0;
+    }
+
+
+    .advantages .grid2 .data .message + .message:before
+    {
+        left: -35px;
+
+        width: calc(100% + 70px);
+        max-width: calc(100% + 70px);
+    }
+
+
+    .advantages .grid2 .data .message + .message:after
+    {
+        display: none;
+    }
+
+
+    .advantages .grid2 .data .message img
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .advantages .grid2 .data .message img + *
+    {
+        width: calc(100% - 38px);
+        max-width: calc(100% - 38px);
+        margin-left: 13px;
+    }
+
+
+    .advantages .grid2 .data .author .name
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .advantages .grid2 .data .author .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .advantages .grid2 .data .author .exp
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        padding: 6px 19px 7px;
+    }
+
+
+
+    /*---------------------
+        Read text below
+    ---------------------*/
+    .read_text_below
+    {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+
+
+    /*--------------------
+        Sample example
+    --------------------*/
+    .sample_example
+    {
+        padding-top: 50px;
+    }
+
+
+    .sample_example .message img
+    {
+        top: auto;
+        bottom: -10px;
+    }
+
+
+    .sample_example .mean_to_you .features > *
+    {
+        padding: 13px;
+    }
+
+
+
+    /*---------------------
+        Another example
+    ---------------------*/
+    .another_example
+    {
+        padding-top: 50px;
+    }
+
+
+    .another_example .items > *,
+    .another_example .items > *:nth-child(2)
+    {
+        padding: 10px 15px;
+    }
+
+
+
+    /*-------------------
+        A lot nuances
+    -------------------*/
+    .a_lot_nuances .img
+    {
+        width: calc(100% + 130px);
+    }
+
+
+
+    /*------------------
+        Before start
+    ------------------*/
+    .before_start
+    {
+        padding-top: 50px;
+    }
+
+
+    .before_start .title
+    {
+        font-size: 30px;
+    }
+
+
+    .before_start .specialists > *
+    {
+        width: calc(100% + 20px);
+    }
+
+
+    .before_start .img
+    {
+        width: 100%;
+    }
+
+
+    .before_start .total
+    {
+        padding: 20px 20px 0;
+    }
+
+
+    .before_start .total .title
+    {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+
+
+    /*------------------
+        We undertake
+    ------------------*/
+    .we_undertake
+    {
+        padding: 50px 0 15px;
+    }
+
+
+
+    /*---------------------
+        Waiting for you
+    ---------------------*/
+    .waiting_for_you
+    {
+        padding-top: 50px;
+    }
+
+
+    .waiting_for_you .block_title
+    {
+        font-size: 30px;
+        line-height: 37px;
+    }
 
 
 
     /*--------------
-        Fancybox
+        Projects
     --------------*/
-    .fancybox__slide
+    .projects
     {
-        padding: 16px;
+        padding: 50px 0;
+    }
+
+
+    .projects .block_title br
+    {
+        display: none;
+    }
+
+
+    .projects .swiper-slide
+    {
+        width: 250px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 50px 0 80px;
+    }
+
+
+    .reviews .swiper-slide
+    {
+        width: 250px;
+    }
+
+
+
+    /*---------------------
+        Real apartments
+    ---------------------*/
+    .real_apartments,
+    .real_apartments.pad2
+    {
+        padding: 50px 0;
+    }
+
+
+
+    /*------------------
+        Main Problem
+    ------------------*/
+    .main_problem
+    {
+        padding: 50px 0;
+    }
+
+
+    .main_problem .answer
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 12px;
+    }
+
+
+
+    /*-------------------
+        First problem
+    -------------------*/
+    .first_problem .data
+    {
+        padding: 50px 35px;
+    }
+
+
+    .first_problem .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .first_problem .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .first_problem .image img
+    {
+        width: 221px;
+    }
+
+
+    .first_problem .text
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+
+    /*--------------------
+        Second problem
+    --------------------*/
+    .second_problem .data
+    {
+        padding: 50px 35px 340px;
+    }
+
+
+    .second_problem .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .second_problem .title mark
+    {
+        line-height: 26px;
+    }
+
+
+    .second_problem .desc
+    {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    .second_problem .message
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+    .second_problem .messages
+    {
+        padding: 50px 35px;
+    }
+
+
+    .second_problem .messages .section
+    {
+        width: 290px;
+    }
+
+
+    .second_problem .messages .item
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+    .second_problem .image
+    {
+        bottom: 382px;
+
+        width: 267px;
+    }
+
+
+
+    /*-------------------
+        Third problem
+    -------------------*/
+    .third_problem
+    {
+        padding: 50px 0;
+    }
+
+
+    .third_problem .image img
+    {
+        width: 290px;
+    }
+
+
+    .third_problem .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .third_problem .message
+    {
+        font-size: 15px;
+
+        margin-top: 20px;
+    }
+
+
+    .third_problem .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+
+    /*----------------
+        What to do
+    ----------------*/
+    .what_to_do .title.small
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+
+    .what_to_do .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 239px;
+        max-width: 100%;
+    }
+
+
+    .what_to_do .message
+    {
+        font-size: 13px;
+        line-height: 20px;
+
+        background: rgba(17, 17, 17, .7);
+    }
+
+
+
+    /*----------------------
+        Steps - Step one
+    ----------------------*/
+    .steps .step_one
+    {
+        padding: 50px 0;
+    }
+
+
+    .steps .step_one .pre_title
+    {
+        line-height: 22px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .steps .step_one .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .steps .step_one .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .steps .step_one .message
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+    .steps .step_one .items > * + *
+    {
+        margin-top: 9px;
+    }
+
+
+    .steps .step_one .items > * > *
+    {
+        font-size: 10px;
+        line-height: 100%;
+
+        padding: 5px;
+    }
+
+
+    .steps .step_one .items > * > *:before
+    {
+        right: -6px;
+        bottom: 2px;
+
+        width: 14px;
+        height: 15px;
+    }
+
+
+    .steps .step_one .img
+    {
+        right: -35px;
+
+        width: 280px;
+        height: 357px;
+    }
+
+
+
+    /*----------------------
+        Steps - Step two
+    ----------------------*/
+    .steps .step_two
+    {
+        padding: 50px 0;
+    }
+
+
+    .steps .step_two .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .steps .step_two .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .steps .step_two .items > *
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .steps .step_two .img
+    {
+        width: 240px;
+    }
+
+
+    .steps .step_two .blur
+    {
+        bottom: 0;
+
+        transform: scale(.6);
+    }
+
+
+
+    /*------------------------
+        Steps - Step three
+    ------------------------*/
+    .steps .step_three
+    {
+        padding: 50px 0;
+    }
+
+
+    .steps .step_three .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .steps .step_three .message
+    {
+        line-height: 17px;
+    }
+
+
+    .steps .step_three .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .steps .step_three .img
+    {
+        width: 228px;
+        margin: 40px auto -228px;
+    }
+
+
+    .steps .step_three .blur
+    {
+        bottom: -160px;
+
+        transform: scale(.5);
+    }
+
+
+
+    /*-----------------------
+        Steps - Step four
+    -----------------------*/
+    .steps .step_four
+    {
+        padding-top: 50px;
+    }
+
+
+    .steps .step_four .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .steps .step_four .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .steps .step_four .message
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+    .steps .step_four .image
+    {
+        width: 240px;
+        margin-top: 40px;
+    }
+
+
+    .steps .step_four .image .blur
+    {
+        bottom: -100px;
+
+        opacity: .3;
+    }
+
+
+    .steps .step_four .image .vr
+    {
+        font-size: 40px;
+
+        top: 36px;
+        right: -36px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    /*-----------------------
+        Steps - Step five
+    -----------------------*/
+    .steps .step_five
+    {
+        padding: 50px 0;
+    }
+
+
+    .steps .step_five .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .steps .step_five .sub_title
+    {
+        line-height: 20px;
+    }
+
+
+    .steps .step_five .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .steps .step_five .message
+    {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+
+    .steps .step_five .img
+    {
+        width: 290px;
+        margin-top: 40px;
+    }
+
+
+    .steps .step_five .blur
+    {
+        bottom: 0;
+
+        transform: scale(.5);
+    }
+
+
+
+    /*----------------------
+        Steps - Step six
+    ----------------------*/
+    .steps .step_six
+    {
+        padding: 50px 0;
+    }
+
+
+    .steps .step_six .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .steps .step_six .label
+    {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_six .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .steps .step_six .message
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+    .steps .step_six .blur
+    {
+        transform: scale(.5);
+    }
+
+
+    .steps .step_six .img
+    {
+        height: 348px;
+        margin-bottom: -136px;
+    }
+
+
+
+    /*---------------
+        What else
+    ---------------*/
+    .what_else
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    .what_else .block_title
+    {
+        font-size: 28px;
+        line-height: calc(100% + 5px);
+
+        text-align: left;
+    }
+
+
+    .what_else .item .name
+    {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+
+    .what_else .item .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
+
+
+
+    /*---------------------
+        Can draw design
+    ---------------------*/
+    .can_draw_design
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .can_draw_design .block_title
+    {
+        font-size: 28px;
+    }
+
+
+    .can_draw_design .block_title small
+    {
+        font-size: 12px;
+        line-height: 100%;
+
+        height: 28px;
+        padding: 8px 12px;
+    }
+
+
+    .can_draw_design .block_title small:before
+    {
+        height: 28px;
+
+        border-top-width: 14px;
+        border-bottom-width: 14px;
+    }
+
+
+    .can_draw_design .desc
+    {
+        width: 100%;
+    }
+
+
+    .can_draw_design ol
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .can_draw_design ol li
+    {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+
+    .can_draw_design .message
+    {
+        font-size: 14px;
+    }
+
+
+    .can_draw_design .image img:nth-child(1)
+    {
+        left: 48px;
+    }
+
+
+
+    /*-------------------
+        How implement
+    -------------------*/
+    .how_implement .block_title
+    {
+        line-height: calc(100% + 8px);
+
+        margin-top: 50px;
+    }
+
+
+    .how_implement .block_title img
+    {
+        height: 32px;
+        margin-left: 4px;
+    }
+
+
+    .how_implement .data
+    {
+        padding: 36px 35px 148px;
+    }
+
+
+    .how_implement .difficulties .avatar
+    {
+        width: 42px;
+        min-width: 42px;
+        height: 42px;
+        margin-right: 18px;
+    }
+
+
+    .how_implement .difficulties .avatar + div
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        width: calc(100% - 60px);
+        max-width: calc(100% - 60px);
+        padding: 10px 13px;
+    }
+
+
+    .how_implement .difficulties .avatar + div > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*------------------
+        Can you lose
+    ------------------*/
+    .can_you_lose
+    {
+        padding: 155px 0 0;
+    }
+
+
+    .can_you_lose .img
+    {
+        width: 140%;
+        margin: 0 -20% -30px;
+    }
+
+
+    .can_you_lose .message
+    {
+        line-height: 20px;
+
+        padding: 10px 16px;
+    }
+
+
+    .can_you_lose .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .can_you_lose .label
+    {
+        bottom: -45%;
+    }
+
+
+
+    /*-----------------------------
+        Materials not avialable
+    -----------------------------*/
+    .materials_not_avialable
+    {
+        padding-top: 50px;
+    }
+
+
+    .materials_not_avialable .title
+    {
+        font-size: 23px;
+        line-height: calc(100% + 9px);
+    }
+
+
+    .materials_not_avialable .title mark
+    {
+        font-size: 19px;
+    }
+
+
+    .materials_not_avialable .data > .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .materials_not_avialable .data > .desc br
+    {
+        display: none;
+    }
+
+
+    .materials_not_avialable .what_do
+    {
+        margin-top: 20px;
+    }
+
+
+    .materials_not_avialable .what_do .label
+    {
+        font-size: 15px;
+        line-height: 18px;
+
+        padding: 6px 12px;
+    }
+
+
+    .materials_not_avialable .what_do .row
+    {
+        margin-bottom: -15px;
+    }
+
+
+    .materials_not_avialable .what_do .row > *
+    {
+        margin-bottom: 15px;
+    }
+
+
+    .materials_not_avialable .what_do .item
+    {
+        padding: 15px 62px 20px 15px;
+    }
+
+
+    .materials_not_avialable .what_do .item .name
+    {
+        line-height: 25px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .materials_not_avialable .bottom
+    {
+        line-height: 22px;
+
+        padding: 20px;
+    }
+
+
+    .materials_not_avialable .bottom small
+    {
+        font-size: 13px;
+        line-height: 25px;
+
+        margin-top: 6px;
+    }
+
+
+
+    /*-------------------------
+        Starting renovation
+    -------------------------*/
+    .starting_renovation
+    {
+        padding: 86px 0 0;
+    }
+
+
+    .starting_renovation .pre_title
+    {
+        width: 208px;
+        max-width: 100%;
+    }
+
+
+    .starting_renovation .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .starting_renovation .messages
+    {
+        margin-top: 30px;
+    }
+
+
+    .starting_renovation .messages > * > *
+    {
+        font-size: 12px;
+        line-height: 17px;
+
+        padding: 10px;
+    }
+
+
+    .starting_renovation .messages > * + *
+    {
+        margin-top: 15px;
+    }
+
+
+    .starting_renovation .img
+    {
+        top: 485px;
+        right: 12px;
+
+        width: 124px;
+    }
+
+
+    .starting_renovation .and_more .pre_title
+    {
+        line-height: 29px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .starting_renovation .and_more .title
+    {
+        font-size: 21px;
+        line-height: 100%;
+    }
+
+
+    .starting_renovation .and_more .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
+
+
+    .starting_renovation .and_more .message
+    {
+        font-size: 12px;
+
+        width: 182px;
+        margin-top: 20px;
+    }
+
+
+    .starting_renovation .and_more .message .time
+    {
+        font-size: 7px;
+
+        right: 10px;
+        bottom: 3px;
+    }
+
+
+
+    /*---------------------------
+        Looking for solutions
+    ---------------------------*/
+    .looking_for_solutions
+    {
+        padding: 50px 0 45px;
+    }
+
+
+    .looking_for_solutions .block_title
+    {
+        font-size: 24px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .looking_for_solutions .message
+    {
+        line-height: 20px;
+    }
+
+
+    .looking_for_solutions .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .looking_for_solutions .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .looking_for_solutions .img
+    {
+        width: 221px;
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------------
+        Furniture makers
+    ----------------------*/
+    .furniture_makers .data .title
+    {
+        font-size: 35px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .furniture_makers .data .desc
+    {
+        font-size: 18px;
+        line-height: 29px;
+
+        margin-top: 20px;
+    }
+
+
+    .furniture_makers .item
+    {
+        padding: 20px;
+    }
+
+
+    .furniture_makers .item .name
+    {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+    .furniture_makers .item1
+    {
+        min-height: 210px;
+    }
+
+    .furniture_makers .item1 .desc
+    {
+        line-height: 19px;
+
+        width: 120px;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .furniture_makers .item1 img
+    {
+        z-index: 5;
+        right: -8px;
+        left: auto;
+
+        width: 132px;
+        margin: 0;
+    }
+
+
+    .furniture_makers .item2 .name
+    {
+        padding: 8px 11px;
+    }
+
+    .furniture_makers .item2 img
+    {
+        z-index: 5;
+        bottom: -60px;
+
+        width: 172px;
+        height: 187px;
+    }
+
+
+    .furniture_makers .item3 .name
+    {
+        line-height: 23px;
+    }
+
+
+    .furniture_makers .item4
+    {
+        min-height: 171px;
+    }
+
+    .furniture_makers .item4 .desc
+    {
+        margin-top: 10px;
+    }
+
+
+    .furniture_makers .item5 .desc
+    {
+        width: 120px;
+        margin-top: 15px;
+    }
+
+    .furniture_makers .item5 img
+    {
+        width: 139px;
+    }
+
+
+    .furniture_makers .item6 .name
+    {
+        padding-right: 48px;
+    }
+
+    .furniture_makers .item6 .desc
+    {
+        width: 140px;
+    }
+
+    .furniture_makers .item6 img
+    {
+        z-index: 5;
+        top: 34px;
+
+        width: 106px;
+    }
+
+
+
+    /*-----------
+        Jambs
+    -----------*/
+    .jambs
+    {
+        padding-top: 80px;
+    }
+
+
+    .jambs .pre_title
+    {
+        line-height: 29px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .jambs .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .jambs .title
+    {
+        font-size: 20px;
+        line-height: 32px;
+
+        margin-top: 15px;
+    }
+
+
+    .jambs .message .label
+    {
+        bottom: -17px;
+        left: 15px;
+
+        width: calc(100% - 30px);
+        padding: 6px 12px;
+
+        text-align: center;
+    }
+
+
+    .jambs .message
+    {
+        font-size: 13px;
+        line-height: 20px;
+
+        margin-top: 25px;
+    }
+
+
+    .jambs .bg
+    {
+        margin-top: -30px;
+    }
+
+
+
+    /*--------------------
+        What to do big
+    --------------------*/
+    .what_to_do_big
+    {
+        padding: 50px 0;
+    }
+
+
+    .what_to_do_big .block_title
+    {
+        font-size: 45px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .what_to_do_big .items > * + *
+    {
+        margin-top: 18px;
+    }
+
+
+    .what_to_do_big .items .item
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .what_to_do_big .items .item:before
+    {
+        display: none;
+    }
+
+
+    .what_to_do_big .items .exp
+    {
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+
+
+    /*--------------------
+        Again problems
+    --------------------*/
+    .again_problems .title
+    {
+        font-size: 23px;
+        line-height: 33px;
+    }
+
+
+    .again_problems .message
+    {
+        font-size: 14px;
+        line-height: 19px;
+
+        margin-top: 20px;
+    }
+
+
+    .again_problems .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+
+    .again_problems .img
+    {
+        width: 271px;
+        margin-top: 30px;
+        margin-bottom: -12px;
+    }
+
+
+
+    /*------------
+        Stole
+    ------------*/
+    .stole
+    {
+        padding-bottom: 50px;
+    }
+
+
+    .stole .data
+    {
+        margin-bottom: 30px;
+        padding: 45px 35px;
+    }
+
+
+    .stole .data:after
+    {
+        width: 30px;
+        height: 12px;
+
+        border-top-width: 12px;
+        border-right-width: 15px;
+        border-left-width: 15px;
+    }
+
+
+    .stole .data .pre_title
+    {
+        line-height: 15px;
+    }
+
+
+    .stole .data .title
+    {
+        margin: 8px 0;
+    }
+
+
+    .stole .info .desc
+    {
+        font-size: 13px;
+        line-height: 26px;
+
+        margin-top: 10px;
+    }
+
+
+
+    /*---------------
+        Your flat
+    ---------------*/
+    .your_flat
+    {
+        padding-bottom: 50px;
+    }
+
+
+    .your_flat .img
+    {
+        width: 260px;
+    }
+
+
+    .your_flat .title:before
+    {
+        width: 30px;
+        height: 12px;
+
+        border-right-width: 15px;
+        border-bottom-width: 12px;
+        border-left-width: 15px;
+    }
+
+
+    .your_flat .title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        padding: 15px;
+    }
+
+
+    .your_flat .price
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        padding: 4px 8px;
+    }
+
+
+    .your_flat .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .your_flat .message
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        padding: 12px 15px;
+    }
+
+
+
+    /*-------------------------
+        All real situations
+    -------------------------*/
+    .all_real_situations .img
+    {
+        width: calc(100% - 70px);
+    }
+
+
+    .all_real_situations .data .pre_title
+    {
+        font-size: 13px;
+        line-height: 29px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .all_real_situations .data .desc
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .all_real_situations .data .title
+    {
+        font-size: 21px;
+        line-height: 31px;
+    }
+
+
+    .all_real_situations .reasons
+    {
+        margin-top: 15px;
+    }
+
+
+    .all_real_situations .reasons .label
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .all_real_situations .item .name
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .all_real_situations .item .desc
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        margin-top: 10px;
+    }
+
+
+
+    /*------------------
+        About author
+    ------------------*/
+    .about_author
+    {
+        padding: 50px 0;
+    }
+
+
+    .about_author .bg
+    {
+        top: 57px;
+
+        width: 100px;
+    }
+
+
+    .about_author .img
+    {
+        width: 100px;
+        height: 159px;
+    }
+
+
+    .about_author .title
+    {
+        font-size: 25px;
+        line-height: 33px;
+
+        padding-left: 124px;
+    }
+
+
+    .about_author .sub_title
+    {
+        font-size: 14px;
+        line-height: 100%;
+
+        margin-top: 24px;
+        padding-left: 124px;
+    }
+
+
+    .about_author .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 32px;
+    }
+
+
+    .about_author ol li
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        min-height: 55px;
+        padding: 8px 20px 8px 60px;
+    }
+
+
+    .about_author ol li:before
+    {
+        font-size: 13px;
+
+        width: 40px;
     }
 
 
 
     /*-----------------
-        Mob. header
+        My projects
     -----------------*/
+    .my_projects
+    {
+        padding: 50px 0;
+    }
+
+
+    .my_projects .data
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .my_projects .pre_title
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .my_projects .desc,
+    .my_projects .exp
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
+    /*--------------------
+        What look like
+    --------------------*/
+    .what_look_like
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .what_look_like .pre_title
+    {
+        line-height: 100%;
+
+        margin-bottom: 15px;
+    }
+
+
+    .what_look_like .title mark
+    {
+        font-size: 15px;
+        line-height: 27px;
+
+        display: block;
+
+        width: 210px;
+        max-width: 100%;
+        margin-top: 16px;
+        margin-left: 0;
+        padding: 4px 12px;
+    }
+
+
+    .what_look_like .title mark:before
+    {
+        top: auto;
+        right: auto;
+        bottom: 100%;
+        left: 14px;
+
+        width: 26px;
+        height: 6px;
+
+        border: none;
+        border-right: 13px solid transparent;
+        border-bottom: 6px solid #ed9468;
+        border-left: 13px solid transparent;
+    }
+
+
+    .what_look_like .message .avatar
+    {
+        width: 42px;
+        min-width: 42px;
+        height: 42px;
+        margin-right: 18px;
+    }
+
+
+    .what_look_like .message .avatar + div
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        width: calc(100% - 60px);
+        max-width: calc(100% - 60px);
+        padding: 10px;
+    }
+
+
+    .what_look_like .message .avatar + div br
+    {
+        display: none;
+    }
+
+
+    .what_look_like .message .avatar + div > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+    .what_look_like .message .date
+    {
+        display: none;
+    }
+
+
+    .what_look_like .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 24px;
+    }
 
 
 
-    /*---------------
-        Page head
-    ---------------*/
+    /*-------------------------
+        Our work looks like
+    -------------------------*/
+    .our_work_looks_like .data
+    {
+        padding: 15px;
+    }
+
+
+    .our_work_looks_like .data:before
+    {
+        width: 42px;
+        height: 14px;
+
+        border-right-width: 21px;
+        border-bottom-width: 14px;
+        border-left-width: 21px;
+    }
+
+
+    .our_work_looks_like .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .our_work_looks_like .desc
+    {
+        font-size: 13px;
+        line-height: 20px;
+
+        margin-top: 10px;
+    }
 
 
 
     /*----------------
-        Block head
+        First step
     ----------------*/
+    .first_step
+    {
+        padding: 50px 0;
+    }
 
 
+    .first_step .block_title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 7px);
+    }
 
-    /*------------------
-        Form elements
-    ------------------*/
+
+    .first_step .block_desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
 
 
+    .first_step .message
+    {
+        margin-top: 20px;
+        padding: 15px;
+    }
 
-    /*----------------
-        Typography
-    ----------------*/
+
+    .first_step .message .title
+    {
+        line-height: 22px;
+    }
+
+
+    .first_step .message .desc
+    {
+        font-size: 12px;
+        line-height: 17px;
+
+        margin-top: 10px;
+    }
+
+
+    .first_step .items > * > *
+    {
+        font-size: 10px;
+        line-height: 11px;
+
+        padding: 5px;
+    }
+
+
+    .first_step .items > * > *:before
+    {
+        top: 0;
+
+        transform: scale(-1, 1) scale(.7);
+    }
+
+
+    .first_step .img
+    {
+        right: -52px;
+
+        width: 300px;
+    }
 
 
 
     /*-----------------
-        Main slider
+        Second step
     -----------------*/
+    .second_step
+    {
+        padding: 50px 0;
+    }
+
+
+    .second_step .title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .second_step .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .second_step .img
+    {
+        width: 260px;
+    }
+
+
+    .second_step .blur
+    {
+        bottom: 48px;
+    }
+
+
+
+    /*---------------------
+        We work as team
+    ---------------------*/
+    .we_work_as_team
+    {
+        padding: 50px 0;
+    }
+
+
+    .we_work_as_team .block_title
+    {
+        font-size: 25px;
+        line-height: 100%;
+    }
+
+
+    .we_work_as_team .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .we_work_as_team .col .title
+    {
+        font-size: 18px;
+        line-height: 23px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .we_work_as_team .col .desc
+    {
+        font-size: 13px;
+    }
+
+
+    .we_work_as_team .col ol li
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+    .we_work_as_team .col .exp
+    {
+        line-height: 100%;
+    }
+
+
+    .we_work_as_team .blur
+    {
+        bottom: 20px;
+
+        transform: scale(.5);
+    }
+
+
+
+    /*--------------------
+        Several stages
+    --------------------*/
+    .several_stages .title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 5px);
+    }
+
+
+    .several_stages .title br
+    {
+        display: none;
+    }
+
+
+    .several_stages .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .several_stages .message
+    {
+        font-size: 13px;
+        line-height: 18px;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .several_stages .message + .desc
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .several_stages .image
+    {
+        width: 280px;
+        margin-top: 30px;
+    }
+
+
+    .several_stages .image .blur
+    {
+        bottom: -100px;
+
+        opacity: .3;
+    }
+
+
+    .several_stages .image .vr
+    {
+        font-size: 40px;
+
+        top: 36px;
+        right: -36px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    /*--------------------
+        Show materials
+    --------------------*/
+    .show_materials
+    {
+        padding: 50px 0;
+    }
+
+
+    .show_materials .block_title
+    {
+        font-size: 23px;
+        line-height: calc(100% + 9px);
+    }
+
+
+    .show_materials .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .show_materials .why_necessary
+    {
+        padding: 12px 20px;
+    }
+
+
+    .show_materials .why_necessary .title
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .show_materials .image
+    {
+        width: 290px;
+        margin-top: 30px;
+    }
+
+
+
+    /*----------------
+        Third step
+    ----------------*/
+    .third_step
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .third_step .data
+    {
+        padding: 0;
+    }
+
+
+    .third_step .block_title
+    {
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+
+    .third_step .message
+    {
+        font-size: 13px;
+        line-height: 16px;
+
+        width: 220px;
+        padding: 8px 20px;
+    }
+
+
+    .third_step .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 24px;
+    }
+
+
+    .third_step .number
+    {
+        bottom: 60px;
+
+        width: 88px;
+        margin-left: -168px;
+    }
+
+
+    .third_step .img
+    {
+        width: 290px;
+    }
+
+
+    .third_step .blur
+    {
+        bottom: 30px;
+
+        transform: scale(.55);
+    }
+
+
+
+    /*---------------------
+        Third step next
+    ---------------------*/
+    .third_step_next
+    {
+        padding-top: 50px;
+    }
+
+
+    .third_step_next .pre_title
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .third_step_next .items
+    {
+        margin-top: 24px;
+    }
+
+
+    .third_step_next .items .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .third_step_next .items .name
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .third_step_next .items .desc
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+    .third_step_next .img
+    {
+        width: 280px;
+    }
+
+
+    .third_step_next .bottom .item
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .third_step_next .bottom .item .mark
+    {
+        font-size: 13px;
+        line-height: 23px;
+
+        margin-top: 16px;
+        padding: 4px 7px;
+    }
+
+
+
+    /*-----------------
+        Fourth step
+    -----------------*/
+    .fourth_step
+    {
+        padding: 50px 0;
+    }
+
+
+    .fourth_step .block_title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .fourth_step .block_title mark
+    {
+        font-size: 10px;
+        line-height: 12px;
+
+        width: auto;
+        width: 168px;
+        margin-top: 0;
+        margin-left: 5px;
+        padding: 5px 6px;
+    }
+
+
+    .fourth_step .block_title mark:before
+    {
+        width: 10px;
+        height: 34px;
+
+        border-top-width: 17px;
+        border-right-width: 10px;
+        border-bottom-width: 17px;
+    }
+
+
+    .fourth_step .block_title mark br
+    {
+        display: none;
+    }
+
+
+    .fourth_step .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .fourth_step .items > * > *
+    {
+        font-size: 12px;
+        line-height: 13px;
+
+        padding: 6px 8px;
+    }
+
+
+    .fourth_step .number
+    {
+        bottom: 100px;
+
+        width: 100px;
+        margin-left: -148px;
+    }
+
+
+    .fourth_step .img
+    {
+        left: 28px;
+
+        width: 200px;
+    }
+
+
+
+    /*-------------------
+        Another point
+    -------------------*/
+    .another_point
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .another_point .message
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        padding: 8px 20px;
+    }
+
+
+    .another_point .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .another_point .exp
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 15px;
+    }
+
+
+    .another_point .img
+    {
+        width: 200px;
+    }
+
+
+
+    /*----------------
+        Fifth step
+    ----------------*/
+    .fifth_step
+    {
+        padding: 50px 0;
+    }
+
+
+    .fifth_step .block_title
+    {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+
+    .fifth_step .sub_title
+    {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+
+    .fifth_step .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .fifth_step .items
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 20px;
+    }
+
+
+    .fifth_step .items > *:not(.sep)
+    {
+        padding-top: 28px;
+    }
+
+
+    .fifth_step .items .sep
+    {
+        margin: 16px 0;
+    }
+
+
+    .fifth_step .img
+    {
+        width: 90%;
+        margin: -10px auto -60px;
+    }
+
+
+
+    /*------------------------
+        What do you choose
+    ------------------------*/
+    .what_do_you_choose
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .what_do_you_choose .pre_title
+    {
+        font-size: 13px;
+        line-height: 28px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .what_do_you_choose .block_title
+    {
+        line-height: 42px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .what_do_you_choose .one .data,
+    .what_do_you_choose .two .data
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .what_do_you_choose .one .data .sep,
+    .what_do_you_choose .two .data .sep
+    {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+
+    .what_do_you_choose .or
+    {
+        font-size: 16px;
+        line-height: 30px;
+
+        margin-top: 20px;
+    }
+
+
+    .what_do_you_choose .two
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------------------
+        Already have design
+    -------------------------*/
+    .already_have_design
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .already_have_design .block_title
+    {
+        font-size: 27px;
+        line-height: 34px;
+    }
+
+
+    .already_have_design .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+
+        width: 100%;
+    }
+
+
+    .already_have_design .link
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin-top: 30px;
+    }
+
+
+    .already_have_design .link > div
+    {
+        width: 100px;
+        max-width: 100%;
+    }
+
+
+    .already_have_design .link > div br
+    {
+        display: none;
+    }
+
+
+    .already_have_design .link .btn
+    {
+        font-size: 11px;
+        line-height: 15px;
+
+        height: 50px;
+        margin-left: auto;
+        padding-left: 12px;
+    }
+
+
+    .already_have_design .link .btn .icon
+    {
+        width: 50px;
+        height: 50px;
+        margin-left: 12px;
+    }
+
+
+
+    /*-------------------------
+        Only design project
+    -------------------------*/
+    .only_design_project .data
+    {
+        padding: 50px 35px;
+    }
+
+
+    .only_design_project .title
+    {
+        font-size: 27px;
+        line-height: 34px;
+    }
+
+
+    .only_design_project .desc
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .only_design_project .link
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        margin-top: 30px;
+    }
+
+
+    .only_design_project .link > div
+    {
+        width: 100px;
+        max-width: 100%;
+    }
+
+
+    .only_design_project .link > div br
+    {
+        display: none;
+    }
+
+
+    .only_design_project .link .arrow
+    {
+        display: none;
+    }
+
+
+    .only_design_project .link .btn
+    {
+        font-size: 11px;
+        line-height: 15px;
+
+        min-width: 174px;
+        height: 50px;
+        margin-left: auto;
+    }
+
+
+    .only_design_project .link .btn .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .only_design_project .img
+    {
+        width: 290px;
+        margin-top: -30px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
-
-
-
-    /*-----------
-        PopUp
-    -----------*/
+    footer .creator + .creator
+    {
+        margin-left: 20px;
+    }
 }

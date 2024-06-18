@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			slidesPerView: 1,
 			lazy: true,
 			navigation: {
 				nextEl: '.swiper-button-next',
@@ -25,15 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 			breakpoints: {
 				0: {
-					spaceBetween: 20
-				},
-				480: {
+					slidesPerView: 'auto',
 					spaceBetween: 20
 				},
 				768: {
-					spaceBetween: 30
+					slidesPerView: 'auto',
+					spaceBetween: 24
 				},
-				1280: {
+				1024: {
+					slidesPerView: 1,
 					spaceBetween: 100
 				}
 			}
@@ -216,16 +215,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('.mob_header .mob_menu_btn').addClass('active')
 		$('body').addClass('menu_open')
-		$('header').addClass('show')
+		$('.mob_menu').addClass('show')
 		$('.overlay').fadeIn(300)
 	})
 
-	$('header > .close, .overlay').click((e) => {
+	$('.mob_menu .close_btn, .overlay').click((e) => {
 		e.preventDefault()
 
 		$('.mob_header .mob_menu_btn').removeClass('active')
 		$('body').removeClass('menu_open')
-		$('header').removeClass('show')
+		$('.mob_menu').removeClass('show')
 		$('.overlay').fadeOut(300)
 	})
 
@@ -337,7 +336,7 @@ window.addEventListener('resize', function () {
 		if (!fakeResize2) {
 			fakeResize2 = true
 
-			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+			if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 		} else {
 			fakeResize = false
 			fakeResize2 = true

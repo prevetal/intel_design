@@ -4,15 +4,52 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 24px;
+        --font_size_title_small: 40px;
+        --font_size_title: 60px;
+        --font_size_title_big: 68px;
+    }
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 50px;
+    }
+
+
+    .pagination .mob_hide
+    {
+        display: none;
+    }
+
+
+    .pagination .prev,
+    .pagination .next
+    {
+        width: 135px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title.big
+    {
+        line-height: 100%;
     }
 
 
@@ -22,52 +59,7 @@
     ------------*/
     header
     {
-        position: fixed;
-        z-index: 101;
-        top: 0;
-        left: 0;
-
-        width: 310px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-        transform: translateX(-100%);
-
-        background: #fff;
-    }
-
-    header.show
-    {
-        transform: translateX(0);
-    }
-
-
-    header .scroll
-    {
-        display: flex;
-        overflow: auto;
-        align-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        padding: 20px 0;
-
-        overscroll-behavior-y: contain;
-    }
-
-    header .scroll > *
-    {
-        width: 100%;
+        display: none;
     }
 
 
@@ -82,49 +74,3519 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
+    /*------------------
+        First section
+    ------------------*/
+    .first_section
+    {
+        min-height: 0;
+        padding-bottom: 0;
+    }
+
+
+    .first_section:before
+    {
+        display: none;
+    }
+
+
+    .first_section .data
+    {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+
+    .first_section .title
+    {
+        width: 100%;
+    }
+
+
+    .first_section .items
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 50px;
+    }
+
+
+    .first_section .items > *
+    {
+        min-width: 100px;
+    }
+
+
+    .first_section .items > *:last-child:after
+    {
+        width: 350px;
+    }
+
+
+    .first_section .economy
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-left: -35px;
+        padding: 20px 35px;
+    }
+
+
+
+    .first_section .image
+    {
+        position: relative;
+        right: 0;
+
+        margin-top: 0;
+    }
+
+
+    .first_section .image .img
+    {
+        width: 125%;
+        height: auto;
+        margin-left: -25%;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info:before
+    {
+        display: none;
+    }
+
+
+    .contacts_info .data
+    {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        border: none;
+    }
+
+
+    .contacts_info .info .item
+    {
+        width: auto;
+    }
+
+    .contacts_info .info .item + .item
+    {
+        margin-top: 0;
+        margin-left: 40px;
+    }
+
+
+    .contacts_info .map
+    {
+        position: relative;
+
+        width: 100%;
+        height: 433px;
+    }
+
+
+
+    /*--------------------
+        Portfolio head
+    --------------------*/
+    .portfolio_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .portfolio_head:before
+    {
+        display: none;
+    }
+
+
+    .portfolio_head .data
+    {
+        width: 100%;
+        min-height: 0;
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        border: none;
+    }
+
+
+    .portfolio_head .page_title
+    {
+        width: calc(100% + 35px);
+        max-width: calc(100% + 35px);
+        margin-left: -35px;
+        padding-bottom: 40px;
+        padding-left: 35px;
+    }
+
+
+    .portfolio_head .desc
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        width: 320px;
+        margin-left: -35px;
+        padding: 20px 35px;
+    }
+
+
+    .portfolio_head .desc small
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .portfolio_head .img
+    {
+        position: relative;
+        right: 0;
+
+        width: 185%;
+        height: auto;
+        margin-left: -85%;
+    }
 
 
 
     /*---------------
-        Page head
+        Portfolio
     ---------------*/
+    .portfolio .tabs .btn
+    {
+        font-size: 17px;
+        line-height: 100%;
+
+        padding: 20px;
+    }
+
+
+    .portfolio .row
+    {
+        margin-bottom: -35px;
+        margin-left: -35px;
+    }
+
+
+    .portfolio .row > *
+    {
+        width: calc(50% - 35px);
+        margin-bottom: 35px;
+        margin-left: 35px;
+    }
+
+
+    .portfolio .item .info
+    {
+        padding: 0 10px;
+    }
+
+
+    .portfolio .item .info > div:first-child
+    {
+        width: calc(100% - 70px);
+    }
+
+
+    .portfolio .item .link
+    {
+        align-self: flex-start;
+
+        width: 50px;
+    }
+
+
+    .portfolio .item .link span
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Lets meet
+    ---------------*/
+    .lets_meet
+    {
+        padding: 60px 0;
+    }
+
+
+    .lets_meet .title
+    {
+        width: 100%;
+    }
+
+
+    .lets_meet .row > *:nth-child(1),
+    .lets_meet .row > *:nth-child(2)
+    {
+        width: 200px;
+    }
+
+    .lets_meet .row > *:nth-child(3)
+    {
+        width: calc(100% - 460px);
+    }
+
+
+    .lets_meet.have_design .row > *:nth-child(1)
+    {
+        width: calc(100% - 340px);
+    }
+
+    .lets_meet.have_design .row > *:nth-child(2)
+    {
+        width: 300px;
+    }
+
+    .lets_meet.have_design .row > *:nth-child(3),
+    .lets_meet.have_design .row > *:nth-child(4)
+    {
+        width: 100%;
+    }
+
+
+    .lets_meet .free
+    {
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+        width: calc(100% - 70px);
+        margin: 50px auto -140px;
+        padding: 30px 40px;
+
+        transform: none;
+    }
+
+
+    .lets_meet .free .title
+    {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+
+    .lets_meet .free .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 340px;
+    }
+
+
+
+    .lets_meet.small_part_of_nuances .row > *:nth-child(1),
+    .lets_meet.small_part_of_nuances .row > *:nth-child(2),
+    .lets_meet.small_part_of_nuances .row > *:nth-child(3)
+    {
+        width: 226px;
+    }
 
 
 
     /*----------------
-        Block head
+        Order form
     ----------------*/
+    .order_form
+    {
+        padding: 60px 0;
+    }
+
+
+    .order_form.top_p
+    {
+        padding-top: 140px;
+    }
+
+
+    .order_form .data
+    {
+        width: 350px;
+        margin-left: 0;
+    }
+
+
+    .order_form .title
+    {
+        font-size: 35px;
+    }
+
+
+    .order_form .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 260px;
+    }
+
+
+    .order_form .data .arrow
+    {
+        right: -130px;
+
+        transform: scale(.6);
+    }
+
+
+    .order_form .form
+    {
+        margin-right: 0;
+    }
 
 
 
     /*------------------
-        Form elements
+        Project head
     ------------------*/
+    .project_head
+    {
+        margin-bottom: 0;
+        padding-top: 50px;
+
+        border: none;
+    }
+
+
+    .project_head .project_name
+    {
+        font-size: 44px;
+
+        width: 100%;
+    }
+
+
+    .project_head .features > *
+    {
+        font-size: 15px;
+    }
+
+
+    .project_head .features .icon
+    {
+        width: 35px;
+        height: 35px;
+        margin-right: 12px;
+    }
+
+
+    .project_head .features .icon svg
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+
+
+    /*---------------
+        Few words
+    ---------------*/
+    .few_words
+    {
+        padding-top: 60px;
+    }
+
+
+    .few_words .data
+    {
+        width: 350px;
+    }
+
+
+    .few_words .title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 6px);
+
+        padding: 20px 20px 20px 25px;
+    }
+
+
+    .few_words .sub_title
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .few_words .desc
+    {
+        padding: 30px 0 60px 25px;
+    }
+
+
+    .few_words .desc .mark
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 100%;
+    }
+
+
+
+    .few_words .image
+    {
+        left: 35px;
+    }
+
+
+    .few_words .image:before
+    {
+        bottom: -20px;
+
+        transform: scale(.7);
+    }
+
+
+    .few_words .image .photo
+    {
+        width: 300px;
+    }
+
+
+    .few_words .image .signature
+    {
+        top: 110px;
+        left: 0;
+
+        width: 150px;
+    }
+
+
+
+    /*------------------
+        Project plan
+    ------------------*/
+    .project_plan
+    {
+        padding: 60px 0;
+    }
+
+
+    .project_plan .data
+    {
+        order: 2;
+
+        width: 240px;
+        margin: 40px auto 0;
+        padding-left: 0;
+    }
+
+
+    .project_plan .block_title
+    {
+        font-size: 44px;
+        line-height: calc(100% + 6px);
+
+        display: none;
+    }
+
+
+    .project_plan .mob_block_title
+    {
+        display: block;
+    }
+
+
+    .project_plan .rooms > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+    .project_plan .image
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------------
+        Project gallery
+    ---------------------*/
+    .project_gallery
+    {
+        padding-bottom: 60px;
+    }
+
+
+    .project_gallery .block_title
+    {
+        font-size: 28px;
+    }
+
+
+    .project_gallery .row
+    {
+        margin-bottom: -25px;
+        margin-left: -25px;
+    }
+
+
+    .project_gallery .row > *
+    {
+        width: calc(50% - 25px);
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+
+
+    .project_gallery .row.small > *
+    {
+        width: calc(33.333% - 25px);
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        min-height: 0;
+        padding-bottom: 0;
+    }
+
+
+    .service_head .data
+    {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+
+    .service_head .page_title
+    {
+        width: 100%;
+    }
+
+
+    .service_head .items
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 50px;
+    }
+
+
+    .service_head .items > *
+    {
+        min-width: 100px;
+    }
+
+
+    .service_head .items > *:last-child:after
+    {
+        width: 350px;
+    }
+
+
+    .service_head .economy
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-left: -35px;
+        padding: 20px 35px;
+    }
+
+
+
+    .service_head .image
+    {
+        position: relative;
+
+        margin-top: 60px;
+    }
+
+    .service_head .image2
+    {
+        margin-right: 0;
+    }
+
+
+    .service_head .image .img
+    {
+        width: 100%;
+        height: auto;
+    }
 
 
 
     /*----------------
-        Typography
+        Advantages
     ----------------*/
+    .advantages .grid,
+    .advantages .grid2
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .advantages .row > *,
+    .advantages .row > *.big
+    {
+        width: 50%;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 170px;
+    }
+
+
+    .advantages .item:nth-child(3) .name,
+    .advantages .item:nth-child(4) .name
+    {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+
+    .advantages .item .desc
+    {
+        font-size: 14px;
+    }
+
+    .advantages .item:nth-child(4) .desc
+    {
+        margin-top: 10px;
+    }
+
+
+
+    .advantages .grid .item:nth-child(1)
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+    .advantages .grid .item:nth-child(4)
+    {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .advantages .grid .item:nth-child(5)
+    {
+        grid-column: 2 / 4;
+        grid-row: auto;
+    }
+
+
+    .advantages .grid .item:nth-child(1) .name,
+    .advantages .grid .item:nth-child(2) .name
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+
+    .advantages .grid .item:nth-child(3) .name,
+    .advantages .grid .item:nth-child(4) .name,
+    .advantages .grid .item:nth-child(5) .name
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(1)
+    {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .advantages .grid2 .item:nth-child(3)
+    {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+
+    .advantages .grid2 .item:nth-child(1) .name,
+    .advantages .grid2 .item:nth-child(2) .name,
+    .advantages .grid2 .item:nth-child(3) .name,
+    .advantages .grid2 .item:nth-child(4) .name
+    {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(3) .name
+    {
+        width: 100%;
+    }
+
+
+    .advantages .grid2 .item:nth-child(3) .exp
+    {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+
+    .advantages .grid2 .item:nth-child(6) .name
+    {
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+
+
+    .advantages .grid2 .data
+    {
+        padding: 60px 24px 60px 220px;
+
+        grid-column: 1 / 4;
+        grid-row: auto;
+    }
+
+
+    .advantages .grid2 .data .message + .message:before
+    {
+        left: -100px;
+
+        width: calc(100% + 124px);
+        max-width: calc(100% + 124px);
+    }
+
+
+    .advantages .grid2 .data .message + .message:after
+    {
+        right: -24px;
+
+        width: calc(100% + 124px);
+    }
+
+
+    .advantages .grid2 .data .image
+    {
+        left: -88px;
+    }
+
+
+    .advantages .grid2 .data .image .img
+    {
+        width: 300px;
+        height: 527px;
+    }
+
+
+    .advantages .grid2 .data .image .sign
+    {
+        top: 80px;
+        right: 60px;
+
+        width: 200px;
+        height: 117px;
+    }
+
+
+
+    /*---------------------
+        Read text below
+    ---------------------*/
+    .read_text_below:after
+    {
+        transform: scale(.7);
+    }
+
+
+    .read_text_below .block_pre_title
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .read_text_below .block_title
+    {
+        font-size: 35px;
+        line-height: 42px;
+
+        width: 340px;
+    }
+
+
+    .read_text_below .block_title .arrow
+    {
+        right: -100px;
+        bottom: -120px;
+
+        transform: scale(.5);
+    }
+
+
+    .read_text_below .data
+    {
+        width: calc(100% - 375px);
+        margin-top: 15px;
+    }
+
+
+    .read_text_below .data .title
+    {
+        font-size: 20px;
+    }
+
+
+    .read_text_below .data .sub_title
+    {
+        font-size: 14px;
+
+        width: 240px;
+    }
+
+
+    .read_text_below .data .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .read_text_below .bg
+    {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*--------------------
+        Sample example
+    --------------------*/
+    .sample_example:before
+    {
+        top: 0;
+        left: 0;
+
+        transform: scale(.5);
+    }
+
+
+    .sample_example .data
+    {
+        width: 400px;
+    }
+
+
+    .sample_example .block_title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .sample_example .message
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        width: 100%;
+        padding: 15px 80px 15px 15px;
+    }
+
+
+    .sample_example .message img
+    {
+        right: -15px;
+
+        width: 85px;
+        height: 85px;
+    }
+
+
+    .sample_example .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        width: 320px;
+        margin-top: 20px;
+    }
+
+
+    .sample_example .next
+    {
+        margin-top: 20px;
+    }
+
+
+    .sample_example .next .label
+    {
+        font-size: 14px;
+    }
+
+
+
+    .sample_example .image
+    {
+        top: 0;
+        left: 35px;
+    }
+
+
+    .sample_example .image img
+    {
+        width: 270px;
+    }
+
+
+
+    .sample_example .mean_to_you
+    {
+        margin-top: 50px;
+        padding: 25px;
+    }
+
+
+    .sample_example .mean_to_you .title
+    {
+        font-size: 35px;
+
+        width: 280px;
+    }
+
+
+    .sample_example .mean_to_you .features > *
+    {
+        padding: 15px 20px;
+    }
+
+
+    .sample_example .mean_to_you .desc
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*---------------------
+        Another example
+    ---------------------*/
+    .another_example
+    {
+        padding-bottom: 0;
+    }
+
+
+    .another_example .data
+    {
+        width: 100%;
+    }
+
+
+    .another_example .block_title
+    {
+        font-size: 40px;
+    }
+
+
+    .another_example .message
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding-right: 120px;
+    }
+
+
+    .another_example .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 380px;
+    }
+
+
+    .another_example .items > *
+    {
+        width: 300px;
+        padding: 10px 20px;
+    }
+
+
+    .another_example .items > *:nth-child(2)
+    {
+        width: calc(100% - 320px);
+        padding-right: 20px;
+    }
+
+
+
+    .another_example .again
+    {
+        font-size: 20px;
+
+        width: calc(100% + 70px);
+        margin-right: -35px;
+
+        border: none;
+    }
+
+
+    .another_example .bg
+    {
+        position: relative;
+        right: 0;
+
+        width: 125%;
+        height: auto;
+        margin-left: -25%;
+    }
+
+
+
+    /*-------------------
+        A lot nuances
+    -------------------*/
+    .a_lot_nuances .data
+    {
+        padding: 30px 40px;
+    }
+
+
+    .a_lot_nuances .data:after
+    {
+        right: -20px;
+        bottom: -20px;
+
+        transform: scale(.5);
+    }
+
+
+    .a_lot_nuances .info
+    {
+        width: 400px;
+    }
+
+
+    .a_lot_nuances .info .title
+    {
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+
+    .a_lot_nuances .img
+    {
+        width: 400px;
+    }
+
+
+
+    /*----------------
+        What to do
+    ----------------*/
+    .what_to_do,
+    .what_to_do.pad2
+    {
+        padding: 60px 0;
+    }
+
+
+    .what_to_do .title,
+    .what_to_do .title.small
+    {
+        font-size: 35px;
+
+        width: 560px;
+    }
+
+
+    .what_to_do .label
+    {
+        font-size: 16px;
+
+        margin-top: 25px;
+    }
+
+
+    .what_to_do .desc
+    {
+        font-size: 20px;
+        line-height: 30px;
+
+        margin-top: 20px;
+    }
+
+
+    .what_to_do .exp
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*------------------
+        Before start
+    ------------------*/
+    .before_start .img
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 80%;
+        margin: 30px auto;
+    }
+
+
+    .before_start .data
+    {
+        width: 100%;
+    }
+
+
+    .before_start .pre_title
+    {
+        font-size: 18px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .before_start .title
+    {
+        font-size: 38px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .before_start .specialists
+    {
+        margin-top: 25px;
+    }
+
+
+    .before_start .specialists > *:nth-child(3)
+    {
+        width: 285px;
+    }
+
+
+
+    .before_start .total
+    {
+        margin-top: 50px;
+        padding: 30px 200px 30px 40px;
+    }
+
+
+    .before_start .total .blur
+    {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+    .before_start .total .title
+    {
+        font-size: 28px;
+        line-height: 34px;
+
+        width: 100%;
+    }
+
+
+    .before_start .total .desc
+    {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    .before_start .total img
+    {
+        right: 25px;
+
+        width: 170px;
+    }
+
+
+
+    /*------------------
+        We undertake
+    ------------------*/
+    .we_undertake
+    {
+        padding: 60px 0;
+    }
+
+
+    .we_undertake:before
+    {
+        display: none;
+    }
+
+
+    .we_undertake .block_title
+    {
+        font-size: 35px;
+        line-height: 41px;
+
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .we_undertake .block_title mark
+    {
+        padding: 6px 12px;
+    }
+
+
+    .we_undertake .grid
+    {
+        height: 960px;
+    }
+
+
+    .we_undertake .item
+    {
+        right: 33.333%;
+
+        width: 66.666%;
+        height: 230px;
+    }
+
+
+    .we_undertake .item:nth-child(2)
+    {
+        width: 33.333%;
+    }
+
+
+    .we_undertake .item:nth-child(3)
+    {
+        top: 230px;
+
+        width: 66.666%;
+        height: 180px;
+        padding: 80px 20px 20px;
+    }
+
+
+    .we_undertake .item:nth-child(4)
+    {
+        top: 410px;
+        left: 0;
+
+        width: 66.666%;
+        height: 240px;
+        padding: 80px 20px 20px;
+    }
+
+
+    .we_undertake .item:nth-child(4) .image
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .we_undertake .item:nth-child(4) .image + *
+    {
+        width: calc(100% - 140px);
+    }
+
+
+    .we_undertake .item:nth-child(5)
+    {
+        top: 650px;
+
+        width: 66.666%;
+        height: 150px;
+    }
+
+
+    .we_undertake .item:nth-child(6)
+    {
+        top: 800px;
+        left: 0;
+
+        width: 66.666%;
+        height: 160px;
+    }
+
+
+
+    /*---------------------
+        Waiting for you
+    ---------------------*/
+    .waiting_for_you
+    {
+        padding-top: 60px;
+    }
+
+
+    .waiting_for_you .head
+    {
+        margin-bottom: 50px;
+        padding-left: 0;
+    }
+
+
+    .waiting_for_you .block_title
+    {
+        font-size: 40px;
+    }
+
+
+    .waiting_for_you .block_desc
+    {
+        font-size: 16px;
+
+        margin-top: 15px;
+    }
+
+
+    .waiting_for_you .item,
+    .waiting_for_you .item:nth-child(2),
+    .waiting_for_you .item:nth-child(3)
+    {
+        padding: 25px 25px 40px;
+    }
+
+
+    .waiting_for_you .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .waiting_for_you .item .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 20px;
+    }
+
+
+    .waiting_for_you .image
+    {
+        right: 60px;
+    }
+
+
+    .waiting_for_you .image:before
+    {
+        transform: scale(.5);
+    }
+
+
+    .waiting_for_you .image img
+    {
+        height: 180px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects
+    {
+        padding: 60px 0;
+    }
+
+
+    .projects .block_title
+    {
+        font-size: 35px;
+    }
+
+
+    .projects .swiper-slide
+    {
+        width: 400px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 60px 0 80px;
+    }
+
+
+    .reviews .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .reviews .block_title
+    {
+        font-size: 35px;
+    }
+
+
+    .reviews .block_sub_title
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .reviews .block_desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .reviews .swiper-slide
+    {
+        width: 400px;
+    }
+
+
+
+    /*---------------------
+        Real apartments
+    ---------------------*/
+    .real_apartments,
+    .real_apartments.pad2
+    {
+        padding: 60px 0;
+    }
+
+
+    .real_apartments:before
+    {
+        transform: scale(.5);
+    }
+
+
+    .real_apartments .img
+    {
+        left: -120px;
+
+        width: 720px;
+    }
+
+
+    .real_apartments .data
+    {
+        width: 335px;
+    }
+
+
+    .real_apartments .title
+    {
+        font-size: 35px;
+    }
+
+
+    .real_apartments .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 320px;
+        margin-top: 20px;
+    }
+
+
+    .real_apartments .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 360px;
+    }
+
+
+    .real_apartments .btn
+    {
+        margin-top: 25px;
+    }
+
+
+
+    /*------------------
+        Main Problem
+    ------------------*/
+    .main_problem .pre_title
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-left: 0;
+    }
+
+
+    .main_problem .block_title
+    {
+        font-size: 36px;
+        line-height: 44px;
+
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .main_problem .block_title:before
+    {
+        display: none;
+    }
+
+
+    .main_problem .answer
+    {
+        right: 35px;
+    }
+
+
+
+    /*-------------------
+        First problem
+    -------------------*/
+    .first_problem .image
+    {
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        margin-top: 28px;
+    }
+
+
+    .first_problem .image img
+    {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+
+    .first_problem .data
+    {
+        width: calc(100% + 70px);
+        max-width: calc(100% + 70px);
+        margin-left: -35px;
+        padding: 40px 35px;
+    }
+
+
+    .first_problem .title
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+
+    .first_problem .text
+    {
+        position: relative;
+        z-index: 3;
+
+        margin-top: -40px;
+    }
+
+
+    .first_problem .text:before
+    {
+        right: 32px;
+        bottom: -12px;
+    }
+
+
+    .first_problem .text img
+    {
+        width: 100px;
+    }
+
+
+
+    /*--------------------
+        Second problem
+    --------------------*/
+    .second_problem .data
+    {
+        width: calc(100% + 70px);
+        max-width: calc(100% + 70px);
+        margin-right: -35px;
+        padding: 40px 35px;
+    }
+
+
+    .second_problem .title
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+
+    .second_problem .title mark
+    {
+        line-height: 36px;
+
+        margin-left: 0;
+        padding: 0 8px;
+        padding-bottom: 4px;
+    }
+
+
+    .second_problem .desc,
+    .second_problem .message
+    {
+        width: 100%;
+    }
+
+
+    .second_problem .messages
+    {
+        width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+        padding: 40px 35px;
+    }
+
+
+    .second_problem .messages .section
+    {
+        width: 340px;
+        max-width: 100%;
+    }
+
+
+    .second_problem .image
+    {
+        right: 35px;
+        left: auto;
+
+        margin-left: 0;
+    }
+
+
+    .second_problem .image img
+    {
+        width: 280px;
+    }
+
+
+
+    /*-------------------
+        Third problem
+    -------------------*/
+    .third_problem .image
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    .third_problem .image img
+    {
+        width: 440px;
+        margin: 0 auto;
+    }
+
+
+    .third_problem .data
+    {
+        width: 100%;
+    }
+
+
+    .third_problem .title
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+
+    .third_problem .title br
+    {
+        display: none;
+    }
+
+
+    .third_problem .message
+    {
+        width: 100%;
+    }
+
+
+    .third_problem .desc
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------------
+        Steps - Step one
+    ----------------------*/
+    .steps .step_one .data
+    {
+        padding-right: 100px;
+    }
+
+
+    .steps .step_one .title
+    {
+        width: 100%;
+    }
+
+
+    .steps .step_one .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_one .message
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_one .number
+    {
+        top: auto;
+        bottom: 80px;
+        left: 35px;
+
+        margin-left: 0;
+    }
+
+
+    .steps .step_one .items
+    {
+        margin-top: 40px;
+        margin-right: 320px;
+    }
+
+
+    .steps .step_one .img
+    {
+        right: 24px;
+
+        width: 400px;
+        height: 509px;
+    }
+
+
+
+    /*----------------------
+        Steps - Step two
+    ----------------------*/
+    .steps .step_two .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: 48px;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+    .steps .step_two .data
+    {
+        width: 100%;
+    }
+
+
+    .steps .step_two .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .steps .step_two .items > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .steps .step_two .img
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 360px;
+        max-width: 100%;
+        margin: 40px auto 0;
+    }
+
+
+
+    /*------------------------
+        Steps - Step three
+    ------------------------*/
+    .steps .step_three .data
+    {
+        width: 100%;
+    }
+
+
+    .steps .step_three .message
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .steps .step_three .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_three .line
+    {
+        display: none;
+    }
+
+
+    .steps .step_three .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: -80px;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+    .steps .step_three .img
+    {
+        position: relative;
+        right: 0;
+
+        width: 360px;
+        max-width: 100%;
+        height: auto;
+        margin: 60px auto -360px;
+    }
+
+
+
+    /*-----------------------
+        Steps - Step four
+    -----------------------*/
+    .steps .step_four
+    {
+        padding-bottom: 0;
+    }
+
+
+    .steps .step_four .data
+    {
+        width: 100%;
+    }
+
+
+    .steps .step_four .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .steps .step_four .message
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_four .image
+    {
+        position: relative;
+        left: 0;
+
+        width: 360px;
+        margin: 60px auto 0;
+    }
+
+
+    .steps .step_four .image .bg
+    {
+        display: none;
+    }
+
+
+    .steps .step_four .image .vr
+    {
+        font-size: 48px;
+
+        top: 44px;
+        right: -36px;
+
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .steps .step_four .image .blur
+    {
+        bottom: 0;
+        left: 50%;
+
+        margin: 0;
+
+        transform: translateX(-50%) scale(.6);
+    }
+
+
+
+    /*-----------------------
+        Steps - Step five
+    -----------------------*/
+    .steps .step_five .line
+    {
+        display: none;
+    }
+
+
+    .steps .step_five .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: 80px;
+        left: 0;
+
+        margin: 0 auto;
+
+        transform: scale(.8);
+    }
+
+
+    .steps .step_five .data
+    {
+        width: 100%;
+    }
+
+
+    .steps .step_five .sub_title
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .steps .step_five .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_five .message
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_five .img
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        width: 440px;
+        margin: 60px auto 0;
+    }
+
+
+
+    /*----------------------
+        Steps - Step six
+    ----------------------*/
+    .steps .step_six
+    {
+        overflow: hidden;
+    }
+
+
+    .steps .step_six .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        margin: 0 auto;
+
+        transform: scale(.7);
+    }
+
+
+    .steps .step_six .data
+    {
+        width: 100%;
+    }
+
+
+    .steps .step_six .label
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .steps .step_six .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_six .message
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .steps .step_six .img
+    {
+        position: relative;
+        left: 0;
+
+        height: 480px;
+        margin: 40px auto -200px;
+    }
+
+
+
+    /*---------------
+        What else
+    ---------------*/
+    .what_else .block_title
+    {
+        font-size: 40px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .what_else .head
+    {
+        margin-bottom: 44px;
+    }
+
+
+    .what_else .item
+    {
+        padding: 24px 24px 48px;
+    }
+
+    .what_else .item:nth-child(2)
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .what_else .item:nth-child(3)
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+    .what_else .item .name
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .what_else .item .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+
+    /*---------------------
+        Can draw design
+    ---------------------*/
+    .can_draw_design .image
+    {
+        right: 0;
+
+        padding-right: 48px;
+    }
+
+
+    .can_draw_design .image img:nth-child(1)
+    {
+        width: 220px;
+    }
+
+
+    .can_draw_design .image img:nth-child(2)
+    {
+        width: 500px;
+    }
+
+
+
+    /*-------------------
+        How implement
+    -------------------*/
+    .how_implement .bg
+    {
+        display: none;
+    }
+
+
+    .how_implement .block_title img
+    {
+        height: 44px;
+        margin-top: 8px;
+    }
+
+
+    .how_implement .data
+    {
+        min-height: 464px;
+        padding-top: 84px;
+        padding-bottom: 80px;
+        padding-left: 72px;
+    }
+
+
+    .how_implement .data:before
+    {
+        width: 20px;
+        height: 48px;
+
+        border-top-width: 24px;
+        border-bottom-width: 24px;
+        border-left-width: 20px;
+    }
+
+
+    .how_implement .label
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .how_implement .label:before
+    {
+        height: 36px;
+
+        border-top-width: 18px;
+        border-bottom-width: 18px;
+    }
+
+
+
+    /*------------------
+        Can you lose
+    ------------------*/
+    .can_you_lose .img
+    {
+        bottom: 0;
+        left: -220px;
+
+        width: 680px;
+    }
+
+
+    .can_you_lose .data
+    {
+        width: calc(100% - 308px);
+    }
+
+
+    .can_you_lose .message
+    {
+        width: 100%;
+    }
+
+
+    .can_you_lose .label
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-----------------------------
+        Materials not avialable
+    -----------------------------*/
+    .materials_not_avialable .title
+    {
+        width: 100%;
+    }
+
+
+    .materials_not_avialable .data > .desc
+    {
+        width: 100%;
+    }
+
+
+    .materials_not_avialable .what_do
+    {
+        width: 100%;
+    }
+
+
+    .materials_not_avialable .bottom
+    {
+        margin-top: 0;
+        margin-bottom: -40px;
+    }
+
+
+    .materials_not_avialable .bottom div
+    {
+        width: 100%;
+    }
+
+
+    .materials_not_avialable .image
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        width: 100%;
+        height: auto;
+        margin: 40px 0 0;
+        padding: 40px 40px 24px;
+    }
+
+
+    .materials_not_avialable .image:before
+    {
+        top: -20px;
+        left: -20px;
+
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .materials_not_avialable .image:after
+    {
+        top: -20px;
+        right: -20px;
+
+        width: 200px;
+        height: 440px;
+    }
+
+
+    .materials_not_avialable .image img
+    {
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: 480px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+    /*-------------------------
+        Starting renovation
+    -------------------------*/
+    .starting_renovation
+    {
+        padding: 120px 0 0;
+    }
+
+
+    .starting_renovation .data
+    {
+        width: 100%;
+    }
+
+
+    .starting_renovation .data:after
+    {
+        display: none;
+    }
+
+
+    .starting_renovation .desc
+    {
+        width: 100%;
+    }
+
+
+    .starting_renovation .messages
+    {
+        margin-top: 40px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .starting_renovation .img
+    {
+        top: 340px;
+        right: 100px;
+
+        width: 280px;
+    }
+
+
+
+    .starting_renovation .and_more
+    {
+        margin-top: 60px;
+        padding: 24px 40px;
+    }
+
+
+    .starting_renovation .and_more > *:first-child
+    {
+        width: 100%;
+    }
+
+
+    .starting_renovation .and_more .pre_title
+    {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+
+    .starting_renovation .and_more .message
+    {
+        width: 224px;
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+
+    .starting_renovation .and_more .message:before
+    {
+        top: -16px;
+        bottom: auto;
+        left: 12px;
+
+        transform: rotate(90deg);
+    }
+
+
+
+    /*---------------------------
+        Looking for solutions
+    ---------------------------*/
+    .looking_for_solutions
+    {
+        padding-bottom: 0;
+    }
+
+
+    .looking_for_solutions .data
+    {
+        width: 100%;
+    }
+
+
+    .looking_for_solutions .img
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 320px;
+        height: auto;
+        margin: 0 auto 40px;
+    }
+
+
+
+    /*----------------------
+        Furniture makers
+    ----------------------*/
+    .furniture_makers .grid
+    {
+        display: flex;
+        align-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        height: auto;
+        margin-bottom: -40px;
+    }
+
+
+    .furniture_makers .data
+    {
+        position: relative;
+        top: 0;
+
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+    .furniture_makers .item
+    {
+        position: relative;
+    }
+
+
+    .furniture_makers .item1
+    {
+        right: 0;
+
+        width: 50%;
+        height: auto;
+        min-height: 332px;
+    }
+
+    .furniture_makers .item2
+    {
+        width: 50%;
+        height: auto;
+    }
+
+    .furniture_makers .item3
+    {
+        top: 0;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 50%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .furniture_makers .item4
+    {
+        top: 0;
+
+        width: 50%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .furniture_makers .item5
+    {
+        left: 0;
+
+        width: 50%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .furniture_makers .item6
+    {
+        width: 50%;
+        height: auto;
+        min-height: 200px;
+    }
+
+
+
+    /*-----------
+        Jambs
+    -----------*/
+    .jambs
+    {
+        min-height: 500px;
+        padding: 120px 0 0;
+    }
+
+
+    .jambs .data
+    {
+        width: 100%;
+    }
+
+
+    .jambs .pre_title
+    {
+        width: 100%;
+    }
+
+
+    .jambs .desc
+    {
+        width: 100%;
+    }
+
+
+    .jambs .bg
+    {
+        position: relative;
+        right: 0;
+
+        width: 125%;
+        margin-top: 60px;
+        margin-left: -25%;
+    }
+
+
+
+    /*--------------------
+        What to do big
+    --------------------*/
+    .what_to_do_big .block_title
+    {
+        font-size: 72px;
+
+        width: 100%;
+        margin-bottom: 60px;
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+
+    .what_to_do_big .items
+    {
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+    }
+
+
+    .what_to_do_big .items .item
+    {
+        text-align: left;
+    }
+
+
+
+    /*--------------------
+        Again problems
+    --------------------*/
+    .again_problems .data
+    {
+        width: calc(100% + 70px);
+        max-width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+        padding: 40px 35px;
+    }
+
+
+    .again_problems .img
+    {
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+        width: 440px;
+        margin: 40px auto -24px;
+    }
+
+
+
+    /*------------
+        Stole
+    ------------*/
+    .stole
+    {
+        padding-top: 0;
+    }
+
+
+    .stole .data
+    {
+        position: relative;
+
+        width: calc(100% + 70px);
+        max-width: calc(100% + 70px);
+        height: auto;
+        margin-right: -35px;
+        margin-bottom: 48px;
+        margin-left: -35px;
+        padding: 40px 35px;
+    }
+
+
+    .stole .data:after
+    {
+        top: 100%;
+        right: 0;
+        bottom: auto;
+        left: 0;
+
+        width: 48px;
+        height: 20px;
+        margin: 0 auto;
+
+        border-top: 20px solid #ed9468;
+        border-right: 24px solid transparent;
+        border-bottom: none;
+        border-left: 24px solid transparent;
+    }
+
+
+    .stole .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    /*---------------
+        Your flat
+    ---------------*/
+    .your_flat
+    {
+        padding-top: 0;
+    }
+
+
+    .your_flat .data
+    {
+        width: 100%;
+    }
+
+
+    .your_flat .title
+    {
+        text-align: center;
+    }
+
+
+    .your_flat .title:before
+    {
+        top: auto;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+
+        width: 48px;
+        height: 20px;
+        margin: 0 auto;
+
+        border-top: none;
+        border-right: 24px solid transparent;
+        border-bottom: 20px solid #ed9468;
+        border-left: 24px solid transparent;
+    }
+
+
+    .your_flat .img
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 320px;
+        height: auto;
+        margin: 0 auto -40px;
+    }
+
+
+
+    /*-------------------------
+        All real situations
+    -------------------------*/
+    .all_real_situations
+    {
+        padding-top: 0;
+    }
+
+
+    .all_real_situations .data
+    {
+        width: 100%;
+    }
+
+
+    .all_real_situations .img
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        width: 440px;
+        max-width: 100%;
+        margin: 0 auto 40px;
+    }
+
+
+
+    /*------------------
+        About author
+    ------------------*/
+    .about_author .bg
+    {
+        top: 115px;
+        bottom: auto;
+        left: 35px;
+
+        width: 200px;
+        height: auto;
+    }
+
+
+    .about_author .img
+    {
+        top: 80px;
+        bottom: auto;
+
+        width: 200px;
+        height: 319px;
+    }
+
+
+    .about_author .data
+    {
+        width: 100%;
+    }
+
+
+    .about_author .data:before
+    {
+        display: none;
+    }
+
+
+    .about_author .title
+    {
+        padding-right: 24px;
+        padding-left: 240px;
+    }
+
+
+    .about_author .sub_title
+    {
+        padding-right: 24px;
+        padding-left: 240px;
+    }
+
+
+    .about_author .desc
+    {
+        width: 100%;
+        padding-right: 24px;
+        padding-left: 240px;
+    }
 
 
 
     /*-----------------
-        Main slider
+        My projects
     -----------------*/
+
+    .my_projects .data
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    .my_projects .data:after
+    {
+        display: none;
+    }
+
+
+    .my_projects .exp
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .my_projects .swiper
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .my_projects .swiper-slide
+    {
+        width: 320px;
+    }
+
+
+    .my_projects .swiper-button-next
+    {
+        right: 0;
+    }
+
+
+
+    /*--------------------
+        What look like
+    --------------------*/
+    .what_look_like .data
+    {
+        width: 100%;
+    }
+
+
+    .what_look_like .desc
+    {
+        width: 100%;
+        padding-right: 80px;
+    }
+
+
+    .what_look_like .bg
+    {
+        right: -320px;
+    }
+
+
+
+    /*-------------------------
+        Our work looks like
+    -------------------------*/
+    .our_work_looks_like .data:after
+    {
+        right: 0;
+        left: auto;
+    }
+
+
+
+    /*----------------
+        First step
+    ----------------*/
+    .first_step .data
+    {
+        width: 100%;
+    }
+
+
+    .first_step .message .desc
+    {
+        width: 100%;
+    }
+
+
+    .first_step .items
+    {
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: 60px;
+        padding-top: 0;
+
+        text-align: left;
+    }
+
+
+    .first_step .number
+    {
+        left: 35px;
+
+        margin-left: 0;
+    }
+
+
+    .first_step .img
+    {
+        right: 35px;
+
+        width: 380px;
+    }
+
+
+
+    /*-----------------
+        Second step
+    -----------------*/
+    .second_step .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: 80px;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+    .second_step .data
+    {
+        width: 100%;
+    }
+
+
+    .second_step .desc
+    {
+        width: 100%;
+    }
+
+
+    .second_step .img
+    {
+        position: relative;
+        left: 0;
+
+        width: 320px;
+        margin: 40px auto 0;
+    }
+
+
+    .second_step .bg
+    {
+        display: none;
+    }
+
+
+
+    /*---------------------
+        We work as team
+    ---------------------*/
+    .we_work_as_team .lines
+    {
+        display: none;
+    }
+
+
+    .we_work_as_team .number
+    {
+        top: 0;
+        left: 35px;
+    }
+
+
+    .we_work_as_team .blur
+    {
+        transform: rotate(13.617deg) scale(.7);
+    }
+
+
+    .we_work_as_team .data
+    {
+        width: 100%;
+    }
+
+
+    .we_work_as_team .row
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .we_work_as_team .img
+    {
+        left: 35px;
+
+        width: 400px;
+    }
+
+
+
+    /*--------------------
+        Several stages
+    --------------------*/
+    .several_stages
+    {
+        padding-top: 0;
+    }
+
+
+    .several_stages .data
+    {
+        width: 100%;
+        padding-right: 280px;
+    }
+
+
+    .several_stages .image
+    {
+        width: 320px;
+    }
+
+
+    .several_stages .image .bg
+    {
+        display: none;
+    }
+
+
+    .several_stages .image .vr
+    {
+        font-size: 48px;
+
+        top: 80px;
+        right: -36px;
+
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .several_stages .image .blur
+    {
+        bottom: -60px;
+        left: 50%;
+
+        margin: 0;
+
+        transform: translateX(-50%) scale(.5);
+
+        opacity: .5;
+    }
+
+
+
+    /*--------------------
+        Show materials
+    --------------------*/
+    .show_materials .image
+    {
+        order: 2;
+
+        width: 360px;
+        height: auto;
+        margin: 40px auto 0;
+    }
+
+
+    .show_materials .image img
+    {
+        position: relative;
+
+        height: auto;
+    }
+
+
+    .show_materials .data
+    {
+        width: 100%;
+    }
+
+
+    .show_materials .desc
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Third step
+    ----------------*/
+    .third_step
+    {
+        padding-bottom: 0;
+    }
+
+
+    .third_step .data
+    {
+        width: 100%;
+    }
+
+
+    .third_step .block_title
+    {
+        font-size: 52px;
+    }
+
+
+    .third_step .desc
+    {
+        width: 100%;
+    }
+
+
+    .third_step .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: 80px;
+        left: 0;
+
+        margin: 0 auto;
+
+        transform: scale(.7);
+    }
+
+
+    .third_step .number
+    {
+        top: auto;
+        bottom: 80px;
+        left: 50%;
+
+        margin-left: -240px;
+    }
+
+
+    .third_step .img
+    {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 400px;
+        margin: 24px auto 0;
+    }
+
+
+
+    /*---------------------
+        Third step next
+    ---------------------*/
+    .third_step_next
+    {
+        padding-top: 60px;
+    }
+
+
+    .third_step_next .data
+    {
+        width: 100%;
+    }
+
+
+    .third_step_next .bottom
+    {
+        position: relative;
+        z-index: 5;
+
+        margin-top: 0;
+    }
+
+
+    .third_step_next .bottom .item:nth-child(1),
+    .third_step_next .bottom .item:nth-child(2)
+    {
+        width: 50%;
+    }
+
+    .third_step_next .bottom .item:nth-child(3)
+    {
+        width: 100%;
+    }
+
+
+    .third_step_next .img
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        width: 400px;
+        margin: 40px auto -140px;
+    }
+
+
+
+    /*-----------------
+        Fourth step
+    -----------------*/
+    .fourth_step .data
+    {
+        width: 100%;
+    }
+
+
+    .fourth_step .block_title
+    {
+        width: 100%;
+    }
+
+
+    .fourth_step .number
+    {
+        top: auto;
+        bottom: 140px;
+        left: 0;
+        left: 50%;
+
+        margin-left: -280px;
+    }
+
+
+    .fourth_step .img
+    {
+        position: relative;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 300px;
+        margin: 48px auto 0;
+    }
+
+
+
+    /*-------------------
+        Another point
+    -------------------*/
+    .another_point .data
+    {
+        width: 100%;
+        padding-right: 240px;
+    }
+
+
+    .another_point .img
+    {
+        right: 35px;
+
+        width: 220px;
+    }
+
+
+
+    /*----------------
+        Fifth step
+    ----------------*/
+    .fifth_step .block_title
+    {
+        font-size: 44px;
+    }
+
+
+    .fifth_step .desc
+    {
+        width: 100%;
+        padding-right: 260px;
+    }
+
+
+    .fifth_step .img
+    {
+        right: -100px;
+
+        min-width: 200px;
+        height: 90%;
+    }
+
+
+
+    /*------------------------
+        What do you choose
+    ------------------------*/
+    .what_do_you_choose .block_title
+    {
+        font-size: 52px;
+    }
+
+
+    .what_do_you_choose .one .data,
+    .what_do_you_choose .two .data
+    {
+        width: 100%;
+        padding: 24px;
+    }
+
+
+    .what_do_you_choose .one .data br,
+    .what_do_you_choose .two .data br
+    {
+        display: none;
+    }
+
+
+    .what_do_you_choose .one .data .item,
+    .what_do_you_choose .two .data .item
+    {
+        width: 100%;
+    }
+
+
+    .what_do_you_choose .one .data .sep,
+    .what_do_you_choose .two .data .sep
+    {
+        width: 100px;
+        height: 1px;
+        margin: 24px auto;
+    }
+
+
+    .what_do_you_choose .one img,
+    .what_do_you_choose .two img
+    {
+        display: none;
+    }
+
+
+    .what_do_you_choose .or
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*-------------------------
+        Already have design
+    -------------------------*/
+    .already_have_design:after
+    {
+        width: 80px;
+    }
+
+
+    .already_have_design .data
+    {
+        width: calc(100% - 248px);
+    }
+
+
+    .already_have_design .link
+    {
+        margin-top: 48px;
+    }
+
+
+    .already_have_design .img
+    {
+        right: 0;
+
+        width: 260px;
+    }
+
+
+
+    /*-------------------------
+        Only design project
+    -------------------------*/
+    .only_design_project .data
+    {
+        width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+        padding: 80px 35px;
+    }
+
+
+    .only_design_project .desc
+    {
+        width: 100%;
+    }
+
+
+    .only_design_project .link
+    {
+        margin-top: 48px;
+    }
+
+
+    .only_design_project .img
+    {
+        position: relative;
+        left: 0;
+
+        width: 440px;
+        margin: -40px auto 0;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer .logo img
+    {
+        height: 36px;
+    }
+
+
+    footer .privacy_policy_link
+    {
+        margin-top: 10px;
+    }
 
 
 
-    /*-----------
-        PopUp
-    -----------*/
+    footer .socials .items > * + *
+    {
+        margin-left: 10px;
+    }
+
+
+
+    footer .phone .val
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+
+    footer .location .val
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        width: 155px;
+    }
 }

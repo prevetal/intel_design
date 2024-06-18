@@ -4,15 +4,66 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 20px;
+        --font_size_title_small: 36px;
+        --font_size_title: 48px;
+        --font_size_title_big: 56px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .prev,
+    .pagination .next
+    {
+        order: 2;
+
+        width: calc(50% - 10px);
+        margin-top: 20px;
+    }
+
+
+    .pagination .prev
+    {
+        margin-right: auto;
+    }
+
+    .pagination .next
+    {
+        margin-left: auto;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        text-align: center;
+    }
+
+
+    .form .submit_btn span
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .form .submit_btn .icon
+    {
+        margin-left: 26px;
     }
 
 
@@ -20,52 +71,3810 @@
     /*-----------------
         Mob. header
     -----------------*/
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
-
-
-
-    /*----------------
-        Block head
-    ----------------*/
+    .mob_header .logo img
+    {
+        height: 33px;
+    }
 
 
 
     /*------------------
-        Form elements
+        First section
     ------------------*/
+    .first_section .data
+    {
+        padding-top: 40px;
+    }
+
+
+    .first_section .items
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 40px;
+    }
+
+
+    .first_section .items > *
+    {
+        min-width: 0;
+    }
+
+
+    .first_section .items > *:last-child:after
+    {
+        width: 350px;
+    }
+
+
+    .first_section .economy
+    {
+        font-size: 21px;
+        line-height: 24px;
+
+        width: 292px;
+        margin-top: 30px;
+        padding: 14px 35px 18px;
+    }
+
+
+
+    .first_section .image
+    {
+        width: 130%;
+        margin-left: -30%;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .page_title
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+
+    .contacts_info .info
+    {
+        padding-bottom: 40px;
+
+        border: none;
+    }
+
+
+    .contacts_info .info .item
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .info .item + .item
+    {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+
+    .contacts_info .info .item .label
+    {
+        font-size: 13px;
+    }
+
+
+    .contacts_info .info .item .val
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .contacts_info .socials
+    {
+        margin-top: 40px;
+    }
+
+
+    .contacts_info .socials .items
+    {
+        justify-content: space-between;
+
+        width: 290px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .contacts_info .socials .items a
+    {
+        margin-left: 0;
+    }
+
+
+    .contacts_info .socials .exp
+    {
+        font-size: 11px;
+
+        margin-top: 12px;
+    }
+
+
+    .contacts_info .order
+    {
+        padding: 0;
+
+        border: none;
+        background: none;
+    }
+
+
+    .contacts_info .order .form .line
+    {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+
+    .contacts_info .order .form .submit
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------
+        Portfolio head
+    --------------------*/
+    .portfolio_head .data
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .portfolio_head .page_title
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .portfolio_head .desc
+    {
+        font-size: 21px;
+        line-height: 24px;
+
+        width: 271px;
+        padding: 12px 25px 16px 35px;
+    }
+
+
+    .portfolio_head .desc small
+    {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+    .portfolio_head .desc:before
+    {
+        width: 9px;
+        height: 20px;
+
+        border-top-width: 10px;
+        border-right-width: 9px;
+        border-bottom-width: 10px;
+    }
+
+
+    .portfolio_head .img
+    {
+        position: relative;
+        right: 0;
+
+        width: 185%;
+        height: auto;
+        margin-left: -85%;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .tabs .btn
+    {
+        font-size: 16px;
+
+        padding: 18px;
+    }
+
+
+    .portfolio .row
+    {
+        margin-bottom: -43px;
+        margin-left: 0;
+    }
+
+
+    .portfolio .row > *
+    {
+        width: 100%;
+        margin-bottom: 43px;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Lets meet
+    ---------------*/
+    .lets_meet
+    {
+        padding: 50px 0;
+    }
+
+
+    .lets_meet .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .lets_meet .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .lets_meet .row > *:nth-child(1),
+    .lets_meet .row > *:nth-child(2),
+    .lets_meet .row > *:nth-child(3),
+    .lets_meet.have_design .row > *:nth-child(1),
+    .lets_meet.have_design .row > *:nth-child(2),
+    .lets_meet.have_design .row > *:nth-child(3)
+    {
+        width: 100%;
+    }
+
+
+    .lets_meet.have_design .row > *:nth-child(4)
+    {
+        padding: 54px 20px 22px;
+    }
+
+
+
+    .lets_meet .free
+    {
+        padding: 30px 30px 180px;
+
+        text-align: center;
+    }
+
+
+    .lets_meet .free img
+    {
+        right: -15px;
+
+        width: 280px;
+    }
+
+
+
+    .lets_meet.small_part_of_nuances
+    {
+        padding: 60px 0;
+    }
+
+
+    .lets_meet.small_part_of_nuances .title
+    {
+        font-size: 40px;
+
+        width: 100%;
+    }
+
+
+    .lets_meet.small_part_of_nuances .message
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .row
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    .lets_meet.small_part_of_nuances .row > *:nth-child(1),
+    .lets_meet.small_part_of_nuances .row > *:nth-child(2),
+    .lets_meet.small_part_of_nuances .row > *:nth-child(3)
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        margin-top: 40px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action div
+    {
+        width: 184px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action .btn
+    {
+        height: 52px;
+        margin-left: 24px;
+        padding-left: 20px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action .btn .icon
+    {
+        width: 52px;
+        height: 52px;
+        margin-left: 20px;
+    }
 
 
 
     /*----------------
-        Typography
+        Order form
     ----------------*/
+    .order_form
+    {
+        padding: 50px 0;
+    }
+
+
+    .order_form .data
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .order_form .data .arrow
+    {
+        display: none;
+    }
+
+
+    .order_form .title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .order_form .desc
+    {
+        line-height: 20px;
+
+        width: 269px;
+        margin: 14px auto 0;
+    }
+
+
+    .order_form .form
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*------------------
+        Project head
+    ------------------*/
+    .project_head
+    {
+        padding-top: 40px;
+    }
+
+
+    .project_head .project_name
+    {
+        font-size: 35px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .project_head .features > *
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*---------------
+        Few words
+    ---------------*/
+    .few_words
+    {
+        padding-top: 50px;
+    }
+
+
+    .few_words .data
+    {
+        width: 100%;
+
+        border: none;
+    }
+
+
+    .few_words .title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 9px);
+
+        padding: 0;
+
+        background: none;
+    }
+
+
+    .few_words .sub_title
+    {
+        font-size: 18px;
+        line-height: 23px;
+
+        width: 231px;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    .few_words .desc
+    {
+        padding: 15px 0 0;
+    }
+
+    .few_words .desc:before
+    {
+        display: none;
+    }
+
+
+    .few_words .desc .mark
+    {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+
+    .few_words .image
+    {
+        position: relative;
+        left: 0;
+
+        width: 240px;
+        margin: 20px auto -95px;
+    }
+
+
+    .few_words .image:before
+    {
+        transform: scale(.5);
+    }
+
+
+    .few_words .image .photo
+    {
+        width: 100%;
+    }
+
+
+    .few_words .image .signature
+    {
+        top: 100px;
+
+        width: 120px;
+    }
+
+
+
+    /*------------------
+        Project plan
+    ------------------*/
+    .project_plan
+    {
+        padding: 50px 0;
+    }
+
+
+    .project_plan .block_title
+    {
+        font-size: 40px;
+        line-height: calc(100% + 5px);
+    }
+
+
+
+    /*---------------------
+        Project gallery
+    ---------------------*/
+    .project_gallery .block_title
+    {
+        font-size: 25px;
+
+        padding-top: 40px;
+    }
+
+
+    .project_gallery .block_title:before
+    {
+        height: 25px;
+    }
+
+
+    .project_gallery .row
+    {
+        margin-bottom: -30px;
+        margin-left: 0;
+    }
+
+
+    .project_gallery .row > *,
+    .project_gallery .row.small > *
+    {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head .data
+    {
+        padding-top: 40px;
+    }
+
+
+    .service_head .items
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 40px;
+    }
+
+
+    .service_head .items > *
+    {
+        min-width: 0;
+    }
+
+
+    .service_head .items > *:last-child:after
+    {
+        width: 350px;
+    }
+
+
+    .service_head .economy
+    {
+        font-size: 21px;
+        line-height: 24px;
+
+        width: 292px;
+        margin-top: 30px;
+        padding: 14px 35px 18px;
+    }
+
+
+
+    .service_head .image
+    {
+        margin-top: 50px;
+    }
+
+
+    .service_head .image2 .img
+    {
+        width: 125%;
+        margin-left: -25%;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .grid,
+    .advantages .grid2
+    {
+        width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .advantages .row
+    {
+        width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+    }
+
+
+    .advantages .row > *,
+    .advantages .row > *.big
+    {
+        width: 100%;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 150px;
+    }
+
+
+    .advantages .item:nth-child(3) .name,
+    .advantages .item:nth-child(4) .name
+    {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+
+
+    .advantages .grid .item:nth-child(1)
+    {
+        padding: 100px 24px 24px;
+
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+
+    .advantages .grid .item:nth-child(2),
+    .advantages .grid .item:nth-child(3),
+    .advantages .grid .item:nth-child(4)
+    {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+
+    .advantages .grid .item:nth-child(5)
+    {
+        grid-column: 1 / 3;
+    }
+
+
+    .advantages .grid .item:nth-child(1) .name,
+    .advantages .grid .item:nth-child(2) .name,
+    .advantages .grid .item:nth-child(3) .name,
+    .advantages .grid .item:nth-child(4) .name,
+    .advantages .grid .item:nth-child(5) .name
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    .advantages .grid .item:nth-child(2) .name
+    {
+        width: 100%;
+    }
+
+
+    .advantages .grid .item:nth-child(2) .exp
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+
+    .advantages .grid2 .item:nth-child(1) .name,
+    .advantages .grid2 .item:nth-child(2) .name,
+    .advantages .grid2 .item:nth-child(3) .name,
+    .advantages .grid2 .item:nth-child(4) .name
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    .advantages .grid2 .data
+    {
+        padding: 40px 24px 60px;
+
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+
+
+    .advantages .grid2 .data .image
+    {
+        display: none;
+    }
+
+
+    .advantages .grid2 .data .author
+    {
+        display: flex;
+        align-content: flex-end;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-top: 52px;
+        padding-left: 0;
+    }
+
+
+    .advantages .grid2 .data .author .name
+    {
+        width: calc(100% - 147px);
+    }
+
+
+    .advantages .grid2 .data .author .name:before
+    {
+        display: none;
+    }
+
+
+    .advantages .grid2 .data .author .desc
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .advantages .grid2 .data .author .exp
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .advantages .grid2 .data .author .exp:after
+    {
+        right: 0;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+
+    /*---------------------
+        Read text below
+    ---------------------*/
+    .read_text_below
+    {
+        padding-bottom: 60px;
+    }
+
+
+    .read_text_below:after
+    {
+        display: none;
+    }
+
+
+    .read_text_below .block_pre_title
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .read_text_below .block_title
+    {
+        font-size: 35px;
+        line-height: 43px;
+
+        width: 100%;
+    }
+
+
+    .read_text_below .block_title .arrow
+    {
+        display: none;
+    }
+
+
+    .read_text_below .data
+    {
+        width: 100%;
+        margin-top: 35px;
+        padding: 25px;
+    }
+
+
+    .read_text_below .data .title
+    {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+
+    .read_text_below .bg
+    {
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+
+
+
+    /*--------------------
+        Sample example
+    --------------------*/
+    .sample_example
+    {
+        padding-top: 60px;
+    }
+
+
+    .sample_example:before
+    {
+        display: none;
+    }
+
+
+    .sample_example .data
+    {
+        width: 100%;
+    }
+
+
+    .sample_example .block_title
+    {
+        margin-bottom: 25px;
+    }
+
+
+    .sample_example .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .sample_example .desc
+    {
+        width: 100%;
+    }
+
+
+
+    .sample_example .image
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        margin-top: 30px;
+    }
+
+
+    .sample_example .image img
+    {
+        width: 240px;
+        margin: 0 auto;
+    }
+
+
+
+    .sample_example .mean_to_you
+    {
+        z-index: 9;
+
+        width: calc(100% + 70px);
+        margin: 0 -35px 0;
+        padding: 35px;
+    }
+
+
+    .sample_example .mean_to_you .title
+    {
+        font-size: 30px;
+        line-height: 36px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .sample_example .mean_to_you .features
+    {
+        justify-content: space-between;
+
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    .sample_example .mean_to_you .features > *
+    {
+        width: calc(50% - 10px);
+        margin-left: 0;
+    }
+
+
+    .sample_example .mean_to_you .desc
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*---------------------
+        Another example
+    ---------------------*/
+    .another_example
+    {
+        padding-top: 60px;
+    }
+
+
+    .another_example .block_title
+    {
+        font-size: 35px;
+    }
+
+
+    .another_example .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .another_example .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 100%;
+    }
+
+
+    .another_example .items > *
+    {
+        width: 100%;
+    }
+
+
+    .another_example .items > *:nth-child(2)
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    .another_example .again
+    {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+
+    .another_example .bg
+    {
+        width: 150%;
+        margin-bottom: -12%;
+        margin-left: -50%;
+    }
+
+
+
+    /*-------------------
+        A lot nuances
+    -------------------*/
+    .a_lot_nuances
+    {
+        padding-bottom: 0;
+    }
+
+
+    .a_lot_nuances .data
+    {
+        width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+        padding: 35px 35px 0;
+    }
+
+
+    .a_lot_nuances .data:before
+    {
+        right: 0;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+    .a_lot_nuances .info
+    {
+        width: 100%;
+    }
+
+
+    .a_lot_nuances .info .title
+    {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+
+    .a_lot_nuances .img
+    {
+        position: relative;
+        right: 0;
+
+        width: calc(100% + 160px);
+        margin-top: 25px;
+        margin-left: -35px;
+    }
+
+
+
+    /*----------------
+        What to do
+    ----------------*/
+    .what_to_do .title,
+    .what_to_do .title.small
+    {
+        font-size: 30px;
+        line-height: 35px;
+
+        width: 100%;
+    }
+
+
+    .what_to_do .label
+    {
+        font-size: 15px;
+
+        margin-top: 20px;
+    }
+
+
+    .what_to_do .desc
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .what_to_do .exp
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    /*------------------
+        Before start
+    ------------------*/
+    .before_start
+    {
+        padding-top: 60px;
+    }
+
+
+    .before_start .pre_title
+    {
+        font-size: 16px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .before_start .title
+    {
+        font-size: 35px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .before_start .specialists
+    {
+        margin-top: 25px;
+    }
+
+
+    .before_start .specialists > *:nth-child(3)
+    {
+        width: 392px;
+    }
+
+
+
+    .before_start .total
+    {
+        margin-top: 40px;
+        padding: 25px 25px 0;
+    }
+
+
+    .before_start .total .blur
+    {
+        right: 50%;
+
+        transform: translateX(50%);
+    }
+
+
+    .before_start .total .title
+    {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+
+    .before_start .total img
+    {
+        position: relative;
+        right: 0;
+
+        margin: 25px auto 0;
+    }
+
+
+
+    /*------------------
+        We undertake
+    ------------------*/
+    .we_undertake
+    {
+        padding-bottom: 15px;
+    }
+
+
+    .we_undertake .block_title
+    {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+
+    .we_undertake .block_title mark
+    {
+        padding: 4px 10px;
+    }
+
+    .we_undertake .block_title mark:after
+    {
+        height: 30px;
+
+        border-top-width: 15px;
+        border-bottom-width: 15px;
+    }
+
+
+    .we_undertake .grid
+    {
+        width: calc(100% + 70px);
+        height: auto;
+        margin-right: -35px;
+        margin-left: -35px;
+    }
+
+
+    .we_undertake .item
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        height: auto;
+        padding: 80px 35px 35px;
+    }
+
+
+    .we_undertake .item:before
+    {
+        line-height: normal;
+
+        top: 25px;
+        left: 35px;
+
+        width: auto;
+        height: auto;
+    }
+
+
+    .we_undertake .item:nth-child(2)
+    {
+        width: 100%;
+        padding: 80px 35px 35px;
+    }
+
+
+    .we_undertake .item:nth-child(2):before
+    {
+        background: none;
+    }
+
+
+    .we_undertake .item:nth-child(2) .image .caption
+    {
+        padding: 15px;
+    }
+
+
+    .we_undertake .item:nth-child(3)
+    {
+        top: 0;
+
+        width: 100%;
+        height: auto;
+        padding: 80px 35px 35px;
+    }
+
+
+    .we_undertake .item:nth-child(3):before
+    {
+        background: none;
+    }
+
+
+    .we_undertake .item:nth-child(4)
+    {
+        top: 0;
+
+        width: 100%;
+        height: auto;
+        padding: 80px 35px 35px;
+    }
+
+
+    .we_undertake .item:nth-child(4):before
+    {
+        background: none;
+    }
+
+
+    .we_undertake .item:nth-child(4) .image
+    {
+        order: 2;
+
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+        padding-bottom: 100%;
+    }
+
+
+    .we_undertake .item:nth-child(4) .image + *
+    {
+        width: 100%;
+    }
+
+
+    .we_undertake .item:nth-child(5)
+    {
+        top: 0;
+
+        width: 100%;
+        height: auto;
+        padding: 80px 35px 35px;
+    }
+
+
+    .we_undertake .item:nth-child(5):before
+    {
+        background: none;
+    }
+
+
+    .we_undertake .item:nth-child(6)
+    {
+        top: 0;
+
+        width: 100%;
+        height: auto;
+        padding: 80px 35px 35px;
+    }
+
+
+    .we_undertake .item:nth-child(6):before
+    {
+        background: none;
+    }
+
+
+
+    /*---------------------
+        Waiting for you
+    ---------------------*/
+    .waiting_for_you .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .waiting_for_you .block_title
+    {
+        font-size: 35px;
+
+        text-align: center;
+    }
+
+
+    .waiting_for_you .block_desc
+    {
+        font-size: 15px;
+
+        text-align: center;
+    }
+
+
+    .waiting_for_you .row
+    {
+        margin-bottom: -40px;
+        padding: 0;
+    }
+
+
+    .waiting_for_you .row > *
+    {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+
+    .waiting_for_you .item,
+    .waiting_for_you .item:nth-child(2),
+    .waiting_for_you .item:nth-child(3)
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+
+    .waiting_for_you .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .waiting_for_you .item .desc
+    {
+        line-height: 24px;
+
+        margin-top: 15px;
+    }
+
+
+    .waiting_for_you .image
+    {
+        position: relative;
+        right: 0;
+
+        margin: 30px 0 0;
+    }
+
+
+    .waiting_for_you .image:before
+    {
+        transform: none;
+    }
+
+
+    .waiting_for_you .image img
+    {
+        height: 280px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .block_title
+    {
+        font-size: 30px;
+    }
+
+
+    .projects .block_desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 10px;
+    }
+
+
+    .projects .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .reviews .block_title
+    {
+        font-size: 30px;
+    }
+
+
+    .reviews .block_sub_title
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .reviews .block_desc
+    {
+        margin-top: 10px;
+    }
+
+
+    .reviews .swiper-slide
+    {
+        width: 300px;
+    }
+
+
+    .reviews .item .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .reviews .item .icon svg
+    {
+        width: 14px;
+        height: 18px;
+        margin-left: 4px;
+    }
+
+
+
+    /*---------------------
+        Real apartments
+    ---------------------*/
+    .real_apartments
+    {
+        padding-bottom: 0;
+    }
+
+
+    .real_apartments:before
+    {
+        transform: scale(.7);
+    }
+
+
+    .real_apartments .img
+    {
+        position: relative;
+        left: 0;
+
+        width: 170%;
+        margin: 40px 0 0 -18%;
+    }
+
+
+    .real_apartments .data
+    {
+        width: 100%;
+    }
+
+
+    .real_apartments .title
+    {
+        font-size: 30px;
+    }
+
+
+    .real_apartments .desc
+    {
+        width: 100%;
+    }
+
+
+    .real_apartments .message
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Main Problem
+    ------------------*/
+    .main_problem
+    {
+        padding: 60px 0;
+    }
+
+
+    .main_problem .pre_title
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .main_problem .block_title
+    {
+        font-size: 35px;
+        line-height: 42px;
+
+        width: 100%;
+    }
+
+
+    .main_problem .answer
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .main_problem .answer > * + *
+    {
+        margin-top: 4px;
+    }
+
+
+    .main_problem .answer:before
+    {
+        top: -16px;
+        bottom: auto;
+        left: 16px;
+
+        transform: rotate(90deg);
+    }
+
+
+    .main_problem .answer:after
+    {
+        right: 0;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+
+    /*-------------------
+        First problem
+    -------------------*/
+    .first_problem .image img
+    {
+        width: 280px;
+    }
+
+
+    .first_problem .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .first_problem .message
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-left: 0;
+    }
+
+
+    .first_problem .desc
+    {
+        line-height: 23px;
+    }
+
+
+    .first_problem .text
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 15px 20px;
+    }
+
+
+    .first_problem .text:before,
+    .first_problem .text img
+    {
+        display: none;
+    }
+
+
+
+    /*--------------------
+        Second problem
+    --------------------*/
+    .second_problem .data
+    {
+        padding-bottom: 364px;
+    }
+
+
+    .second_problem .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .second_problem .title mark
+    {
+        line-height: 32px;
+    }
+
+
+    .second_problem .message
+    {
+        line-height: 21px;
+    }
+
+
+    .second_problem .image
+    {
+        right: 0;
+        bottom: 352px;
+        left: 50%;
+
+        width: 280px;
+        margin: 0;
+
+        transform: translateX(-50%);
+    }
+
+
+    .second_problem .image img
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Third problem
+    -------------------*/
+    .third_problem
+    {
+        padding: 60px 0;
+    }
+
+
+    .third_problem .image img
+    {
+        width: 400px;
+    }
+
+
+    .third_problem .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+
+    /*----------------------
+        Steps - Step one
+    ----------------------*/
+    .steps .step_one
+    {
+        padding: 60px 0;
+    }
+
+
+    .steps .step_one .data
+    {
+        padding-right: 0;
+    }
+
+
+    .steps .step_one:after
+    {
+        display: none;
+    }
+
+
+    .steps .step_one .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_one .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_one .number
+    {
+        display: none;
+    }
+
+
+    .steps .step_one .items
+    {
+        margin-right: 0;
+        margin-left: 0;
+
+        text-align: left;
+    }
+
+
+    .steps .step_one .img
+    {
+        right: -48px;
+
+        width: 380px;
+        height: 484px;
+    }
+
+
+
+    /*----------------------
+        Steps - Step two
+    ----------------------*/
+    .steps .step_two
+    {
+        padding: 60px 0;
+    }
+
+
+    .steps .step_two .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: 48px;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+    .steps .step_two .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .steps .step_two .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_two .items > *
+    {
+        padding: 48px 20px 20px;
+    }
+
+
+    .steps .step_two .img
+    {
+        width: 320px;
+    }
+
+
+
+    /*------------------------
+        Steps - Step three
+    ------------------------*/
+    .steps .step_three
+    {
+        padding: 60px 0;
+    }
+
+
+    .steps .step_three .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .steps .step_three .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_three .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_three .blur
+    {
+        bottom: -140px;
+
+        transform: scale(.7);
+    }
+
+
+    .steps .step_three .img
+    {
+        width: 320px;
+        margin: 48px auto -320px;
+    }
+
+
+
+    /*-----------------------
+        Steps - Step four
+    -----------------------*/
+    .steps .step_four
+    {
+        padding-top: 60px;
+    }
+
+
+    .steps .step_four .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .steps .step_four .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_four .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_four .image
+    {
+        width: 300px;
+        margin-top: 48px;
+    }
+
+
+    .steps .step_four .image .vr
+    {
+        font-size: 44px;
+
+        top: 40px;
+        right: -40px;
+
+        width: 108px;
+        height: 108px;
+    }
+
+
+    .steps .step_four .image .blur
+    {
+        bottom: -40px;
+
+        transform: translateX(-50%) scale(.5);
+
+        opacity: .5;
+    }
+
+
+
+    /*-----------------------
+        Steps - Step five
+    -----------------------*/
+    .steps .step_five
+    {
+        padding: 60px 0;
+    }
+
+
+    .steps .step_five .blur
+    {
+        bottom: 60px;
+
+        transform: scale(.7);
+    }
+
+
+    .steps .step_five .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .steps .step_five .sub_title
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .steps .step_five .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_five .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_five .img
+    {
+        width: 400px;
+        margin-top: 48px;
+    }
+
+
+
+    /*----------------------
+        Steps - Step six
+    ----------------------*/
+    .steps .step_six
+    {
+        padding: 60px 0;
+    }
+
+
+    .steps .step_six .blur
+    {
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        margin: 0 auto;
+
+        transform: scale(.7);
+    }
+
+
+    .steps .step_six .title
+    {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+    .steps .step_six .label
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .steps .step_six .label:before
+    {
+        top: auto;
+        right: auto;
+        bottom: 100%;
+        left: 15px;
+
+        width: 20px;
+        height: 5px;
+
+        border-top: none;
+        border-right: 10px solid transparent;
+        border-bottom: 5px solid #ed9468;
+        border-left: 10px solid transparent;
+    }
+
+
+    .steps .step_six .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_six .message
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .steps .step_six .img
+    {
+        height: 400px;
+        margin-bottom: -160px;
+    }
+
+
+
+    /*---------------
+        What else
+    ---------------*/
+    .what_else
+    {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .what_else .block_title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .what_else .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .what_else .row
+    {
+        margin-bottom: -40px;
+    }
+
+
+    .what_else .row > *
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+
+    .what_else .item,
+    .what_else .item:nth-child(2),
+    .what_else .item:nth-child(3)
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+
+    .what_else .item .name
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .what_else .item .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*---------------------
+        Can draw design
+    ---------------------*/
+    .can_draw_design
+    {
+        padding: 60px 0 0;
+    }
+
+
+    .can_draw_design .block_title
+    {
+        width: 100%;
+    }
+
+
+    .can_draw_design .desc
+    {
+        width: 290px;
+    }
+
+
+    .can_draw_design .message
+    {
+        width: 264px;
+        padding: 12px 20px 16px;
+    }
+
+
+    .can_draw_design .image
+    {
+        position: relative;
+        right: 0;
+
+        height: auto;
+        margin-top: 39px;
+        padding: 0;
+    }
+
+
+    .can_draw_design .image img:nth-child(1)
+    {
+        width: 205px;
+        max-width: 100%;
+        margin: 0 auto -24px;
+    }
+
+
+    .can_draw_design .image img:nth-child(2)
+    {
+        right: 0;
+        bottom: 17px;
+        left: 50%;
+
+        width: 511px;
+
+        transform: translateX(-50%);
+    }
+
+
+    .can_draw_design .image img:nth-child(3)
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        How implement
+    -------------------*/
+    .how_implement .block_title
+    {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+
+    .how_implement .block_title img
+    {
+        display: inline-block;
+
+        height: 38px;
+        margin-top: 0;
+
+        vertical-align: middle;
+    }
+
+
+    .how_implement .data
+    {
+        width: calc(100% + 70px);
+        max-width: calc(100% + 70px);
+        min-height: 0;
+        margin: 35px -35px 0;
+        padding: 48px 35px 164px;
+    }
+
+
+    .how_implement .data:before
+    {
+        display: none;
+    }
+
+
+    .how_implement .data:after
+    {
+        top: 60px;
+        right: 0;
+        left: 0;
+
+        width: 321px;
+        height: 137px;
+        margin: 0 auto;
+
+        border-radius: 321px;
+    }
+
+
+    .how_implement .label
+    {
+        position: absolute;
+        top: -10px;
+        right: 0;
+        left: 0;
+
+        width: calc(100% - 70px);
+        margin: 0 auto;
+    }
+
+
+    .how_implement .label:before
+    {
+        top: auto;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+
+        width: 18px;
+        height: 5px;
+        margin: 0 auto;
+
+        border: none;
+        border-right: 9px solid transparent;
+        border-bottom: 5px solid #ed9468;
+        border-left: 9px solid transparent;
+    }
+
+
+    .how_implement .desc
+    {
+        width: 100%;
+        margin-top: 0;
+
+        text-align: center;
+    }
+
+
+    .how_implement .data > img
+    {
+        display: none;
+    }
+
+    .how_implement .data > img.mob
+    {
+        display: block;
+    }
+
+
+    .how_implement .difficulties
+    {
+        top: 100%;
+        right: 0;
+        bottom: auto;
+        left: 0;
+
+        width: calc(100% - 70px);
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+    .how_implement .difficulties .avatar + div
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: calc(100% - 70px);
+        max-width: calc(100% - 70px);
+    }
+
+
+
+    /*------------------
+        Can you lose
+    ------------------*/
+    .can_you_lose
+    {
+        padding: 192px 0 0;
+    }
+
+
+    .can_you_lose .img
+    {
+        position: relative;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+
+        width: 130%;
+        margin: 0 -15% -40px;
+    }
+
+
+    .can_you_lose .data
+    {
+        width: 100%;
+    }
+
+
+    .can_you_lose .block_title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .can_you_lose .message
+    {
+        width: 240px;
+
+        white-space: normal;
+    }
+
+    .can_you_lose .message:after
+    {
+        display: none;
+    }
+
+
+    .can_you_lose .label
+    {
+        font-size: var(--font_size);
+        line-height: 18px;
+
+        position: absolute;
+        bottom: -60%;
+        left: 50%;
+
+        width: 242px;
+        max-width: 100%;
+        margin: 0;
+
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+
+    .can_you_lose .label:before
+    {
+        top: auto;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+
+        width: 24px;
+        height: 8px;
+        margin: 0 auto;
+
+        border: none;
+        border-right: 12px solid transparent;
+        border-bottom: 8px solid #ed9468;
+        border-left: 12px solid transparent;
+    }
+
+
+
+    /*-----------------------------
+        Materials not avialable
+    -----------------------------*/
+    .materials_not_avialable
+    {
+        padding-top: 60px;
+    }
+
+
+    .materials_not_avialable .title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 8px);
+    }
+
+
+    .materials_not_avialable .title mark
+    {
+        font-size: 25px;
+    }
+
+
+    .materials_not_avialable .what_do .row
+    {
+        margin-left: 0;
+    }
+
+
+    .materials_not_avialable .what_do .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .materials_not_avialable .image
+    {
+        margin-top: 50px;
+        padding: 1px 0 4px;
+    }
+
+
+    .materials_not_avialable .image:before,
+    .materials_not_avialable .image:after
+    {
+        display: none;
+    }
+
+
+    .materials_not_avialable .image img
+    {
+        margin-top: -40px;
+    }
+
+
+    .materials_not_avialable .bottom
+    {
+        padding: 20px 24px;
+    }
+
+
+
+    /*-------------------------
+        Starting renovation
+    -------------------------*/
+    .starting_renovation
+    {
+        padding: 100px 0 0;
+    }
+
+
+    .starting_renovation .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+    }
+
+
+    .starting_renovation .title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 8px);
+    }
+
+
+    .starting_renovation .img
+    {
+        top: 422px;
+        right: 35px;
+
+        width: 176px;
+    }
+
+
+
+    .starting_renovation .and_more
+    {
+        width: calc(100% + 70px);
+        max-width: calc(100% + 70px);
+        margin: 50px -35px 0;
+        padding: 35px;
+    }
+
+
+
+    /*---------------------------
+        Looking for solutions
+    ---------------------------*/
+    .looking_for_solutions
+    {
+        padding: 60px 0 45px;
+    }
+
+
+    .looking_for_solutions .block_title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .looking_for_solutions .message
+    {
+        padding: 8px 16px;
+    }
+
+
+    .looking_for_solutions .img
+    {
+        width: 280px;
+    }
+
+
+
+    /*----------------------
+        Furniture makers
+    ----------------------*/
+    .furniture_makers
+    {
+        padding-top: 45px;
+
+        border-top: 1px solid rgba(99, 81, 72, .2);
+    }
+
+
+    .furniture_makers .data .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .furniture_makers .item .name
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+
+        width: 100%;
+    }
+
+
+    .furniture_makers .item .name br
+    {
+        display: none;
+    }
+
+
+    .furniture_makers .item1
+    {
+        width: 100%;
+        min-height: 332px;
+    }
+
+    .furniture_makers .item1 .name
+    {
+        width: 210px;
+    }
+
+
+    .furniture_makers .item2
+    {
+        width: 100%;
+        min-height: 180px;
+    }
+
+    .furniture_makers .item2 .name
+    {
+        width: 250px;
+        padding: 8px 11px;
+    }
+
+
+    .furniture_makers .item3
+    {
+        width: 100%;
+        min-height: 115px;
+    }
+
+    .furniture_makers .item3 .name
+    {
+        width: 168px;
+    }
+
+
+    .furniture_makers .item4
+    {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .furniture_makers .item4 .name
+    {
+        width: 210px;
+    }
+
+
+    .furniture_makers .item5
+    {
+        width: 100%;
+        min-height: 170px;
+    }
+
+    .furniture_makers .item5 .name
+    {
+        width: 210px;
+    }
+
+
+    .furniture_makers .item6
+    {
+        width: 100%;
+        min-height: 170px;
+    }
+
+    .furniture_makers .item6 .name
+    {
+        width: 210px;
+    }
+
+
+
+    /*-----------
+        Jambs
+    -----------*/
+    .jambs
+    {
+        min-height: 0;
+        padding-top: 100px;
+    }
+
+
+    .jambs .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+    }
+
+
+    .jambs .title
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .jambs .message
+    {
+        padding: 15px 15px 30px;
+    }
+
+
+    .jambs .message > *:first-child
+    {
+        width: 100%;
+    }
+
+
+    .jambs .message .image
+    {
+        display: none;
+    }
+
+
+    .jambs .message .label
+    {
+        bottom: -17px;
+        left: 15px;
+
+        width: calc(100% - 30px);
+        padding: 6px 12px;
+
+        text-align: center;
+    }
+
+
+    .jambs .bg
+    {
+        width: 205%;
+        margin-top: 50px;
+        margin-bottom: -60px;
+        margin-left: -105%;
+    }
+
+
+
+    /*--------------------
+        What to do big
+    --------------------*/
+    .what_to_do_big
+    {
+        padding: 60px 0;
+    }
+
+
+    .what_to_do_big .block_title
+    {
+        font-size: 60px;
+
+        margin-bottom: 40px;
+    }
+
+
+
+    /*--------------------
+        Again problems
+    --------------------*/
+    .again_problems .data
+    {
+        padding: 40px 35px;
+    }
+
+
+    .again_problems .title
+    {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+
+    .again_problems .message
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+    }
+
+
+
+    .again_problems .img
+    {
+        width: 360px;
+    }
+
+
+
+    /*------------
+        Stole
+    ------------*/
+    .stole
+    {
+        padding-bottom: 60px;
+    }
+
+
+    .stole .data
+    {
+        padding: 35px;
+    }
+
+
+    .stole .data .title
+    {
+        font-size: 30px;
+        line-height: 39px;
+
+        margin: 4px 0;
+    }
+
+
+    .stole .info .title
+    {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+
+
+    /*---------------
+        Your flat
+    ---------------*/
+    .your_flat
+    {
+        padding-bottom: 60px;
+    }
+
+
+    .your_flat .img
+    {
+        width: 280px;
+    }
+
+
+    .your_flat .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        padding: 12px 24px;
+    }
+
+
+    .your_flat .price
+    {
+        width: 100%;
+        padding: 6px 16px;
+
+        text-align: center;
+    }
+
+
+    .your_flat .message
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        padding: 12px 20px;
+    }
+
+
+
+    /*-------------------------
+        All real situations
+    -------------------------*/
+    .all_real_situations .img
+    {
+        width: calc(100% - 70px);
+    }
+
+
+    .all_real_situations .data .title
+    {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+
+    .all_real_situations .row
+    {
+        width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+    }
+
+
+    .all_real_situations .row > *
+    {
+        width: 100%;
+    }
+
+
+    .all_real_situations .item
+    {
+        padding: 68px 35px 24px;
+    }
+
+
+    .all_real_situations .item:before
+    {
+        line-height: normal;
+
+        top: 24px;
+        left: 35px;
+
+        width: auto;
+        height: auto;
+
+        background: none !important;
+    }
+
+
+
+    /*------------------
+        About author
+    ------------------*/
+    .about_author
+    {
+        padding: 60px 0;
+    }
+
+
+    .about_author .bg
+    {
+        top: 64px;
+
+        width: 140px;
+    }
+
+
+    .about_author .img
+    {
+        top: 40px;
+
+        width: 140px;
+        height: 223px;
+    }
+
+
+    .about_author .title
+    {
+        padding-right: 0;
+        padding-left: 168px;
+    }
+
+
+    .about_author .sub_title
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        padding-right: 0;
+        padding-left: 168px;
+    }
+
+
+    .about_author .desc
+    {
+        margin-top: 60px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .about_author ol:before
+    {
+        display: none;
+    }
+
+
+
+    /*--------------------
+        What look like
+    --------------------*/
+    .what_look_like
+    {
+        padding: 60px 0 0;
+    }
+
+
+    .what_look_like .title
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .what_look_like .title mark
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        padding: 6px 12px;
+    }
+
+
+    .what_look_like .title mark:before
+    {
+        height: 36px;
+
+        border-top-width: 18px;
+        border-bottom-width: 18px;
+    }
+
+
+    .what_look_like .message
+    {
+        width: 100%;
+    }
+
+
+    .what_look_like .desc
+    {
+        padding: 0;
+    }
+
+
+    .what_look_like .bg
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------------
+        Our work looks like
+    -------------------------*/
+    .our_work_looks_like
+    {
+        margin-top: -48px;
+    }
+
+
+    .our_work_looks_like .data
+    {
+        padding: 24px 28px;
+    }
+
+
+    .our_work_looks_like .data:before
+    {
+        right: 0;
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+    .our_work_looks_like .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        width: 100%;
+    }
+
+
+    .our_work_looks_like .desc
+    {
+        line-height: 21px;
+
+        width: 100%;
+    }
+
+
+    .our_work_looks_like .data:after
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        First step
+    ----------------*/
+    .first_step
+    {
+        padding: 60px 0;
+    }
+
+
+    .first_step .block_title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .first_step .message
+    {
+        margin-top: 24px;
+        padding: 20px 24px;
+    }
+
+
+    .first_step .items
+    {
+        margin-left: 0;
+    }
+
+
+    .first_step .img
+    {
+        right: 0;
+
+        width: 352px;
+    }
+
+
+    .first_step .number
+    {
+        display: none;
+    }
 
 
 
     /*-----------------
-        Main slider
+        Second step
     -----------------*/
+    .second_step .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .second_step .img
+    {
+        width: 280px;
+        margin-top: 30px;
+    }
+
+
+    .second_step .blur
+    {
+        transform: scale(.7);
+    }
+
+
+
+    /*---------------------
+        We work as team
+    ---------------------*/
+    .we_work_as_team
+    {
+        padding: 60px 0;
+    }
+
+
+    .we_work_as_team .block_title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .we_work_as_team .number
+    {
+        display: none;
+    }
+
+
+    .we_work_as_team .col,
+    .we_work_as_team .col + .col
+    {
+        width: 100%;
+        min-height: 0;
+    }
+
+
+    .we_work_as_team .img
+    {
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .we_work_as_team .blur
+    {
+        bottom: 60px;
+    }
+
+
+
+    /*--------------------
+        Several stages
+    --------------------*/
+    .several_stages
+    {
+        padding-bottom: 0;
+    }
+
+
+    .several_stages .data
+    {
+        padding: 0;
+    }
+
+
+    .several_stages .title
+    {
+        font-size: 30px;
+        line-height: calc(100% + 7px);
+    }
+
+
+
+    .several_stages .image
+    {
+        position: relative;
+        right: 0;
+
+        width: 300px;
+        height: auto;
+        margin: 20px auto -60px;
+        margin-top: 48px;
+    }
+
+
+    .several_stages .image .vr
+    {
+        font-size: 44px;
+
+        top: 40px;
+        right: -40px;
+
+        width: 108px;
+        height: 108px;
+    }
+
+
+    .several_stages .image .blur
+    {
+        bottom: -60px;
+
+        transform: translateX(-50%) scale(.5);
+
+        opacity: .5;
+    }
+
+
+
+    /*--------------------
+        Show materials
+    --------------------*/
+    .show_materials .block_title
+    {
+        font-size: 26px;
+        line-height: calc(100% + 8px);
+    }
+
+
+    .show_materials .why_necessary
+    {
+        padding: 16px 24px;
+    }
+
+
+    .show_materials .why_necessary .title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .show_materials .why_necessary:after,
+    .show_materials .why_necessary img
+    {
+        display: none;
+    }
+
+
+    .show_materials .image
+    {
+        width: 320px;
+    }
+
+
+
+    /*----------------
+        Third step
+    ----------------*/
+    .third_step
+    {
+        padding: 60px 0 0;
+    }
+
+
+    .third_step .block_title
+    {
+        font-size: 40px;
+    }
+
+
+    .third_step .message
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+
+        padding: 12px 24px;
+    }
+
+
+    .third_step .number
+    {
+        bottom: 68px;
+
+        width: 108px;
+        margin-left: -200px;
+    }
+
+
+    .third_step .img
+    {
+        width: 360px;
+        margin-top: 20px;
+    }
+
+
+
+    /*---------------------
+        Third step next
+    ---------------------*/
+    .third_step_next .block_title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 5px);
+    }
+
+
+    .third_step_next .items
+    {
+        margin-top: 30px;
+    }
+
+
+    .third_step_next .img
+    {
+        width: 320px;
+        margin-top: 30px;
+        margin-bottom: -120px;
+    }
+
+
+    .third_step_next .bottom
+    {
+        width: calc(100% + 70px);
+        margin-right: -35px;
+        margin-left: -35px;
+    }
+
+
+    .third_step_next .bottom .item
+    {
+        padding: 24px 35px;
+    }
+
+
+    .third_step_next .bottom .item:nth-child(1),
+    .third_step_next .bottom .item:nth-child(2)
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------------
+        Fourth step
+    -----------------*/
+    .fourth_step
+    {
+        padding: 60px 0;
+    }
+
+
+    .fourth_step .block_title
+    {
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+
+    .fourth_step .block_title mark
+    {
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+
+
+    .fourth_step .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .fourth_step .number
+    {
+        bottom: 120px;
+
+        width: 140px;
+        margin-left: -204px;
+    }
+
+
+    .fourth_step .img
+    {
+        left: 40px;
+
+        width: 280px;
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        Another point
+    -------------------*/
+    .another_point
+    {
+        padding: 60px 0 0;
+    }
+
+
+    .another_point .data
+    {
+        padding: 0;
+    }
+
+
+    .another_point .message
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+
+        padding: 12px 24px;
+    }
+
+
+    .another_point .img
+    {
+        position: relative;
+        right: 0;
+
+        width: 220px;
+        margin: 30px auto 0;
+    }
+
+
+
+    /*----------------
+        Fifth step
+    ----------------*/
+    .fifth_step
+    {
+        padding: 60px 0;
+    }
+
+
+    .fifth_step .block_title
+    {
+        font-size: 38px;
+    }
+
+
+    .fifth_step .sub_title
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .fifth_step .desc
+    {
+        padding: 0;
+    }
+
+
+    .fifth_step .items
+    {
+        position: relative;
+        z-index: 2;
+
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+    }
+
+
+    .fifth_step .items > *
+    {
+        width: 100%;
+    }
+
+
+    .fifth_step .items .sep
+    {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+
+    .fifth_step .items br
+    {
+        display: none;
+    }
+
+
+    .fifth_step .img
+    {
+        position: relative;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+
+        width: 75%;
+        height: auto;
+        margin: -20px auto -80px;
+    }
+
+
+
+    /*------------------------
+        What do you choose
+    ------------------------*/
+    .what_do_you_choose
+    {
+        padding: 60px 0 0;
+    }
+
+
+    .what_do_you_choose .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .what_do_you_choose .block_title
+    {
+        font-size: 40px;
+    }
+
+
+
+    /*-------------------------
+        Already have design
+    -------------------------*/
+    .already_have_design
+    {
+        padding: 60px 0 0;
+    }
+
+
+    .already_have_design:after
+    {
+        display: none;
+    }
+
+
+    .already_have_design .data
+    {
+        width: 100%;
+    }
+
+
+    .already_have_design .block_title
+    {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+
+    .already_have_design .link
+    {
+        font-size: 13px;
+
+        margin-top: 40px;
+    }
+
+
+    .already_have_design .link .btn
+    {
+        height: 52px;
+        margin-left: 24px;
+        padding-left: 20px;
+    }
+
+
+    .already_have_design .link .btn .icon
+    {
+        width: 52px;
+        height: 52px;
+        margin-left: 20px;
+    }
+
+
+    .already_have_design .img
+    {
+        position: relative;
+        right: 0;
+
+        margin: 40px auto -80px;
+    }
+
+
+
+    /*-------------------------
+        Only design project
+    -------------------------*/
+    .only_design_project
+    {
+        z-index: 12;
+    }
+
+
+    .only_design_project .data
+    {
+        padding: 60px 35px;
+    }
+
+
+    .only_design_project .title
+    {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+
+    .only_design_project .link
+    {
+        font-size: 14px;
+
+        margin-top: 40px;
+    }
+
+
+    .only_design_project .link .btn
+    {
+        height: 52px;
+        margin-left: 24px;
+        padding-left: 20px;
+    }
+
+
+    .only_design_project .link .btn .icon
+    {
+        width: 52px;
+        height: 52px;
+        margin-left: 20px;
+    }
+
+
+    .only_design_project .img
+    {
+        width: 360px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer .col
+    {
+        width: 100%;
+
+        text-align: center;
+    }
 
 
 
-    /*-----------
-        PopUp
-    -----------*/
+    footer .logo img
+    {
+        height: 33px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    footer .socials
+    {
+        width: 100%;
+        margin-top: 30px;
+
+        text-align: center;
+    }
+
+
+    footer .socials .label
+    {
+        font-size: 13px;
+
+        margin-bottom: 15px;
+    }
+
+
+    footer .socials .items
+    {
+        justify-content: center;
+    }
+
+
+    footer .socials .items a
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    footer .socials .items > * + *
+    {
+        margin-left: 25px;
+    }
+
+
+    footer .socials .exp
+    {
+        font-size: 9px;
+        line-height: 12px;
+
+        margin-top: 10px;
+    }
+
+
+
+    footer .phone
+    {
+        width: 100%;
+        margin-top: 30px;
+
+        text-align: center;
+    }
+
+
+    footer .phone .label
+    {
+        font-size: 13px;
+
+        margin-bottom: 15px;
+    }
+
+
+    footer .phone .val
+    {
+        font-size: 17px;
+        line-height: 12px;
+    }
+
+
+
+    footer .location
+    {
+        width: 100%;
+        margin-top: 30px;
+
+        text-align: center;
+    }
+
+
+    footer .location .label
+    {
+        font-size: 13px;
+
+        margin-bottom: 15px;
+    }
+
+
+    footer .location .val
+    {
+        font-size: 17px;
+        line-height: 12px;
+
+        width: 100%;
+    }
+
+
+
+    footer .line
+    {
+        width: calc(100% + 70px);
+        margin: 40px -35px 20px;
+    }
+
+
+
+    footer .menu
+    {
+        display: none;
+    }
+
+
+
+    footer .creator
+    {
+        font-size: 11px;
+    }
+
+
+    footer .creator + .creator
+    {
+        margin-left: 30px;
+    }
 }

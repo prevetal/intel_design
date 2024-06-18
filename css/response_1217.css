@@ -1,0 +1,5943 @@
+@media print,
+(max-width: 1217px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_small: 44px;
+        --font_size_title: 64px;
+        --font_size_title_big: 80px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .main:before
+    {
+        display: none;
+    }
+
+
+    .cont
+    {
+        padding: 0 35px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .swiper-button-prev
+    {
+        right: 70px;
+    }
+
+    .swiper-button-next
+    {
+        right: 0;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 60px;
+        padding-left: 0;
+    }
+
+
+    .pagination > * + *
+    {
+        margin-left: 15px;
+    }
+
+
+    .pagination .prev,
+    .pagination .next
+    {
+        width: 120px;
+    }
+
+
+    .pagination .prev
+    {
+        margin-right: 35px;
+    }
+
+
+    .pagination .next
+    {
+        margin-left: 50px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 24px 0;
+    }
+
+
+    header .cont
+    {
+        padding-left: 35px;
+    }
+
+
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 8px;
+    }
+
+
+    header .menu_item > a
+    {
+        padding: 10px 20px;
+    }
+
+
+
+    header .socials
+    {
+        margin-left: 16px;
+    }
+
+
+
+    /*------------------
+        First section
+    ------------------*/
+    .first_section
+    {
+        min-height: 621px;
+        padding-bottom: 100px;
+    }
+
+
+    .first_section:after
+    {
+        display: none;
+    }
+
+
+    .first_section:before
+    {
+        bottom: 205px;
+
+        width: calc(100vw - 444px);
+    }
+
+
+    .first_section .data
+    {
+        width: 575px;
+        padding-top: 60px;
+
+        border: none;
+    }
+
+
+    .first_section .title
+    {
+        width: 660px;
+        padding-left: 0;
+    }
+
+
+    .first_section .items
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 60px;
+        margin-left: -35px;
+        padding-left: 35px;
+    }
+
+
+    .first_section .items > *
+    {
+        min-width: 120px;
+        padding-top: 20px;
+    }
+
+
+    .first_section .items > *:last-child:after
+    {
+        width: 150px;
+    }
+
+
+    .first_section .economy
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        width: 340px;
+        margin-top: 40px;
+        padding: 20px 32px;
+    }
+
+
+
+    .first_section .image
+    {
+        right: -120px;
+
+        margin-right: 0;
+    }
+
+
+    .first_section .image .img
+    {
+        height: 706px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info:before
+    {
+        top: 100px;
+        right: 70px;
+
+        width: 450px;
+        height: 450px;
+        margin-right: 0;
+
+        border-radius: 450px;
+    }
+
+
+    .contacts_info .data
+    {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+
+    .contacts_info .page_title
+    {
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+
+
+    .contacts_info .info
+    {
+        padding: 30px 0;
+    }
+
+
+    .contacts_info .info .item
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .info .item + .item
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    .contacts_info .socials .exp
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .contacts_info .order .form .line
+    {
+        width: calc(100% - 240px);
+    }
+
+    .contacts_info .order .form .submit
+    {
+        width: 220px;
+        margin-left: 20px;
+    }
+
+
+
+    .contacts_info .map
+    {
+        width: 480px;
+    }
+
+
+
+    /*--------------------
+        Portfolio head
+    --------------------*/
+    .portfolio_head:before
+    {
+        top: 100px;
+        right: 70px;
+
+        width: 450px;
+        height: 450px;
+        margin-right: 0;
+
+        border-radius: 450px;
+    }
+
+
+    .portfolio_head .data
+    {
+        min-height: 465px;
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+
+    .portfolio_head .page_title
+    {
+        padding-bottom: 60px;
+        padding-left: 0;
+    }
+
+
+    .portfolio_head .desc
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        width: 340px;
+        padding: 20px 40px;
+    }
+
+
+    .portfolio_head .desc small
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .portfolio_head .img
+    {
+        right: 0;
+
+        margin-right: 0;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .tabs
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .portfolio .tabs .btn
+    {
+        font-size: 18px;
+        line-height: 15px;
+
+        padding: 25px;
+    }
+
+
+    .portfolio .row
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .portfolio .row > *
+    {
+        width: calc(50% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+
+    .portfolio .item .info
+    {
+        padding: 0 25px;
+    }
+
+
+    .portfolio .item .info > div:first-child
+    {
+        width: calc(100% - 195px);
+    }
+
+
+    .portfolio .item .features
+    {
+        margin-top: 10px;
+    }
+
+
+    .portfolio .item .link
+    {
+        width: 170px;
+    }
+
+
+
+    /*---------------
+        Lets meet
+    ---------------*/
+    .lets_meet,
+    .lets_meet.small_part_of_nuances
+    {
+        padding: 80px 0;
+    }
+
+
+    .lets_meet .title
+    {
+        line-height: calc(100% + 8px);
+
+        width: 680px;
+    }
+
+
+    .lets_meet .desc
+    {
+        line-height: 23px;
+
+        width: 444px;
+        margin-top: 20px;
+    }
+
+
+    .lets_meet .row
+    {
+        margin-top: 40px;
+    }
+
+
+    .lets_meet .row > *:nth-child(1),
+    .lets_meet .row > *:nth-child(2)
+    {
+        width: 220px;
+    }
+
+    .lets_meet .row > *:nth-child(3)
+    {
+        width: 260px;
+    }
+
+
+    .lets_meet .item
+    {
+        line-height: 20px;
+
+        padding: 56px 24px 24px;
+    }
+
+
+    .lets_meet .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .lets_meet .free
+    {
+        bottom: -180px;
+
+        width: 720px;
+        padding: 40px;
+    }
+
+
+    .lets_meet .free .title
+    {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+
+    .lets_meet .free .desc
+    {
+        width: 360px;
+        margin-top: 15px;
+    }
+
+
+    .lets_meet .free img
+    {
+        right: -16px;
+
+        width: 300px;
+        height: auto;
+    }
+
+
+    .lets_meet.small_part_of_nuances .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .title
+    {
+        font-size: 52px;
+
+        width: 520px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .message
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .item
+    {
+        padding-right: 24px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .row > *:nth-child(1),
+    .lets_meet.small_part_of_nuances .row > *:nth-child(2),
+    .lets_meet.small_part_of_nuances .row > *:nth-child(3)
+    {
+        width: 240px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 28px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action div
+    {
+        width: 300px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action .btn
+    {
+        height: 56px;
+        margin-left: 32px;
+        padding-left: 24px;
+    }
+
+
+    .lets_meet.small_part_of_nuances .get_action .btn .icon
+    {
+        width: 56px;
+        height: 56px;
+        margin-left: 24px;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form
+    {
+        padding: 60px 0 80px;
+    }
+
+    .order_form.top_p
+    {
+        padding-top: 250px;
+    }
+
+
+    .order_form .data
+    {
+        width: 440px;
+        margin-left: 60px;
+    }
+
+
+    .order_form .title
+    {
+        font-size: 38px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .order_form .desc
+    {
+        line-height: 22px;
+
+        width: 285px;
+        margin-top: 15px;
+    }
+
+    .order_form .desc.big
+    {
+        width: 325px;
+    }
+
+
+    .order_form .data .arrow
+    {
+        top: 70px;
+        right: -120px;
+
+        transform: scale(.85);
+    }
+
+
+    .order_form .form
+    {
+        margin-right: 60px;
+    }
+
+
+
+    /*------------------
+        Project head
+    ------------------*/
+    .project_head
+    {
+        margin-bottom: 0;
+        padding-top: 60px;
+    }
+
+
+    .project_head .project_name
+    {
+        font-size: 52px;
+        line-height: calc(100% + 6px);
+
+        width: 660px;
+    }
+
+
+    .project_head .features
+    {
+        margin-top: 20px;
+    }
+
+
+    .project_head .image
+    {
+        width: calc(100% + 70px);
+        margin: 50px -35px 0;
+    }
+
+
+
+    /*---------------
+        Few words
+    ---------------*/
+    .few_words
+    {
+        padding-top: 80px;
+    }
+
+
+    .few_words .data
+    {
+        width: 525px;
+        margin-right: 0;
+    }
+
+
+    .few_words .title
+    {
+        font-size: 40px;
+        line-height: calc(100% + 8px);
+
+        padding: 25px 25px 25px 35px;
+    }
+
+
+    .few_words .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        padding: 40px 25px 80px 35px;
+    }
+
+
+    .few_words .desc > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .few_words .desc .mark
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        width: 345px;
+        padding: 12px 20px;
+    }
+
+
+
+    .few_words .image
+    {
+        left: 70px;
+
+        margin-left: 0;
+    }
+
+
+    .few_words .image:before
+    {
+        bottom: -20px;
+        left: 0;
+
+        transform: scale(.8);
+    }
+
+
+    .few_words .image .photo
+    {
+        width: 340px;
+    }
+
+
+    .few_words .image .signature
+    {
+        top: 140px;
+        left: -20px;
+
+        width: 200px;
+    }
+
+
+
+    /*------------------
+        Project plan
+    ------------------*/
+    .project_plan
+    {
+        padding: 80px 0;
+    }
+
+
+    .project_plan .data
+    {
+        padding-left: 0;
+    }
+
+
+    .project_plan .block_title
+    {
+        font-size: 50px;
+        line-height: calc(100% + 8px);
+
+        margin-bottom: 40px;
+    }
+
+
+    .project_plan .block_title:before
+    {
+        display: none;
+    }
+
+
+    .project_plan .rooms > * + *
+    {
+        margin-top: 15px;
+    }
+
+
+
+    /*---------------------
+        Project gallery
+    ---------------------*/
+    .project_gallery
+    {
+        padding-bottom: 80px;
+    }
+
+
+    .project_gallery .block_title
+    {
+        font-size: 32px;
+        line-height: 100%;
+
+        width: calc(100% + 70px);
+        margin: 0 -35px 30px;
+        padding: 50px 35px 0;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        min-height: 500px;
+        padding-bottom: 100px;
+    }
+
+
+    .service_head:after
+    {
+        display: none;
+    }
+
+
+    .service_head:before
+    {
+        bottom: 205px;
+
+        width: calc(100vw - 444px);
+    }
+
+
+    .service_head .data
+    {
+        width: 575px;
+        padding-top: 60px;
+
+        border: none;
+    }
+
+
+    .service_head .page_title
+    {
+        width: 660px;
+        padding-left: 0;
+    }
+
+
+    .service_head .items
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 60px;
+        margin-left: -35px;
+        padding-left: 35px;
+    }
+
+
+    .service_head .items > *
+    {
+        min-width: 120px;
+        padding-top: 20px;
+    }
+
+
+    .service_head .items > *:last-child:after
+    {
+        width: 150px;
+    }
+
+
+    .service_head .economy
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        width: 340px;
+        margin-top: 40px;
+        padding: 20px 32px;
+    }
+
+
+
+    .service_head .image
+    {
+        right: 0;
+
+        margin-right: 0;
+    }
+
+    .service_head .image2
+    {
+        margin-right: -74px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        margin-top: -25px;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 200px;
+        padding: 70px 25px 25px;
+    }
+
+
+    .advantages .item:before,
+    .advantages .item:nth-child(2):before
+    {
+        top: 20px;
+        left: 25px;
+    }
+
+
+    .advantages .item:nth-child(4)
+    {
+        padding-right: 60px;
+    }
+
+
+    .advantages .item .name
+    {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+
+    .advantages .item:nth-child(3) .name,
+    .advantages .item:nth-child(4) .name
+    {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+
+    .advantages .item .desc
+    {
+        font-size: 14px;
+    }
+
+    .advantages .item:nth-child(4) .desc
+    {
+        margin-top: 10px;
+    }
+
+
+
+    .advantages .grid .item:nth-child(1)
+    {
+        padding: 100px 20px 24px;
+    }
+
+    .advantages .grid .item:nth-child(1) .name
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .advantages .grid .item:nth-child(2) .name
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .advantages .grid .item:nth-child(2),
+    .advantages .grid .item:nth-child(3),
+    .advantages .grid .item:nth-child(4),
+    .advantages .grid .item:nth-child(5)
+    {
+        padding: 80px 24px 24px;
+    }
+
+
+    .advantages .grid .item:nth-child(5):before
+    {
+        top: 24px !important;
+        left: 24px !important;
+    }
+
+
+    .advantages .grid .item:nth-child(5):after
+    {
+        right: 64px;
+        bottom: 24px;
+
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .advantages .grid .item:nth-child(5) img
+    {
+        right: -48px;
+
+        min-width: 100px;
+        height: 188px;
+    }
+
+
+
+    .advantages .grid2 .item:nth-child(1)
+    {
+        padding: 100px 20px 24px;
+    }
+
+    .advantages .grid2 .item:nth-child(2),
+    .advantages .grid2 .item:nth-child(3),
+    .advantages .grid2 .item:nth-child(4),
+    .advantages .grid2 .item:nth-child(5),
+    .advantages .grid2 .item:nth-child(6)
+    {
+        padding: 80px 24px 24px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(2):before,
+    .advantages .grid2 .item:nth-child(4):before,
+    .advantages .grid2 .item:nth-child(5):before
+    {
+        top: 24px;
+        left: 24px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(1) .name,
+    .advantages .grid2 .item:nth-child(2) .name,
+    .advantages .grid2 .item:nth-child(3) .name,
+    .advantages .grid2 .item:nth-child(4) .name
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(2) .pre_name
+    {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(4) .desc
+    {
+        margin-top: 8px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(5) .name
+    {
+        width: 100%;
+    }
+
+
+    .advantages .grid2 .item:nth-child(5) .desc
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(6) .name
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+    .advantages .grid2 .item:nth-child(6) .name mark
+    {
+        margin-top: 4px;
+        padding: 0 8px;
+    }
+
+
+
+    .advantages .grid2 .data
+    {
+        padding: 60px 40px 60px 100px;
+    }
+
+
+    .advantages .grid2 .data .block_title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .advantages .grid2 .data .message
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+
+    .advantages .grid2 .data .message + .message
+    {
+        padding: 16px 0 20px;
+    }
+
+
+    .advantages .grid2 .data .message + .message:before
+    {
+        left: -100px;
+
+        width: 576px;
+        max-width: calc(100% + 100px);
+    }
+
+
+    .advantages .grid2 .data .message + .message:after
+    {
+        right: -40px;
+
+        width: calc(100% + 140px);
+    }
+
+
+    .advantages .grid2 .data .author
+    {
+        margin-top: 28px;
+    }
+
+
+    .advantages .grid2 .data .author .name
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+    .advantages .grid2 .data .author .name:before
+    {
+        left: -155px;
+
+        width: 120px;
+    }
+
+
+    .advantages .grid2 .data .author .desc
+    {
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 12px;
+    }
+
+
+    .advantages .grid2 .data .author .exp
+    {
+        line-height: 23px;
+
+        margin-top: 20px;
+        padding: 8px 16px;
+    }
+
+
+    .advantages .grid2 .data .image
+    {
+        left: -252px;
+    }
+
+
+    .advantages .grid2 .data .image .img
+    {
+        width: 340px;
+        height: 597px;
+    }
+
+
+    .advantages .grid2 .data .image .sign
+    {
+        top: 108px;
+        right: 72px;
+
+        width: 280px;
+        height: 163px;
+    }
+
+
+
+    /*---------------------
+        Read text below
+    ---------------------*/
+    .read_text_below
+    {
+        padding-top: 80px;
+    }
+
+
+    .read_text_below:before
+    {
+        display: none;
+    }
+
+
+    .read_text_below:after
+    {
+        right: 35px;
+        bottom: 50px;
+
+        margin-right: 0;
+
+        transform: scale(.85);
+    }
+
+
+    .read_text_below .block_pre_title
+    {
+        font-size: 16px;
+        line-height: 40px;
+
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+
+    .read_text_below .block_pre_title:before
+    {
+        display: none;
+    }
+
+
+    .read_text_below .block_title
+    {
+        font-size: 44px;
+
+        width: 480px;
+        padding: 0;
+    }
+
+
+    .read_text_below .block_title .arrow
+    {
+        right: -130px;
+        bottom: -140px;
+
+        transform: scale(.7);
+    }
+
+
+    .read_text_below .data
+    {
+        margin-top: 20px;
+        margin-right: 0;
+        padding: 30px 30px 40px;
+    }
+
+
+    .read_text_below .data:after
+    {
+        display: none;
+    }
+
+
+    .read_text_below .data .title
+    {
+        font-size: 22px;
+    }
+
+
+    .read_text_below .data .sub_title
+    {
+        font-size: 15px;
+
+        width: 260px;
+    }
+
+
+    .read_text_below .data .desc
+    {
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .read_text_below .bg
+    {
+        top: 0;
+        right: 0;
+
+        width: 960px;
+        height: 540px;
+        margin-right: 0;
+    }
+
+
+
+    /*--------------------
+        Sample example
+    --------------------*/
+    .sample_example
+    {
+        padding-top: 80px;
+    }
+
+
+    .sample_example:before
+    {
+        top: 70px;
+        left: 70px;
+
+        margin-left: 0;
+
+        transform: scale(.7);
+    }
+
+
+    .sample_example .lines
+    {
+        display: none;
+    }
+
+
+    .sample_example .data
+    {
+        width: 500px;
+    }
+
+
+    .sample_example .block_title
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .sample_example .message
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: calc(100% - 40px);
+        padding: 20px 110px 20px 20px;
+    }
+
+
+    .sample_example .message img
+    {
+        right: -10px;
+
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .sample_example .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 360px;
+        margin-top: 25px;
+    }
+
+
+    .sample_example .next
+    {
+        margin-top: 30px;
+    }
+
+
+    .sample_example .next .label
+    {
+        font-size: 15px;
+    }
+
+
+
+    .sample_example .image
+    {
+        top: 0;
+        left: 50px;
+
+        margin-left: 0;
+    }
+
+
+    .sample_example .image img
+    {
+        width: 380px;
+        height: auto;
+    }
+
+
+    .sample_example .mean_to_you
+    {
+        margin-top: 60px;
+        margin-bottom: -40px;
+        padding: 30px;
+    }
+
+
+    .sample_example .mean_to_you .title
+    {
+        font-size: 38px;
+
+        width: 280px;
+    }
+
+
+    .sample_example .mean_to_you .features
+    {
+        margin-top: 10px;
+    }
+
+
+    .sample_example .mean_to_you .features > *
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 15px;
+    }
+
+
+    .sample_example .mean_to_you .features .letter
+    {
+        margin-bottom: 5px;
+    }
+
+
+    .sample_example .mean_to_you .desc
+    {
+        width: 280px;
+        margin-top: 10px;
+    }
+
+
+    .sample_example .mean_to_you .desc .mark
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+    /*---------------------
+        Another example
+    ---------------------*/
+    .another_example
+    {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+
+    .another_example .data
+    {
+        width: 480px;
+    }
+
+
+    .another_example .block_title
+    {
+        font-size: 50px;
+        line-height: 100%;
+
+        margin-bottom: 30px;
+    }
+
+
+    .another_example .message
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 100%;
+        padding: 15px 100px 15px 20px;
+    }
+
+
+    .another_example .message img
+    {
+        right: 20px;
+
+        width: 80px;
+        height: auto;
+    }
+
+
+    .another_example .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 380px;
+    }
+
+
+    .another_example .desc ol li + li
+    {
+        margin-top: 7px;
+    }
+
+
+
+    .another_example .items > *
+    {
+        line-height: 20px;
+
+        width: 215px;
+        padding: 10px;
+    }
+
+
+    .another_example .items > *:nth-child(2)
+    {
+        width: calc(100% - 235px);
+        padding-right: 10px;
+    }
+
+
+
+    .another_example .again
+    {
+        font-size: 22px;
+
+        width: calc(100% + 35px);
+        margin-top: 30px;
+        margin-left: -35px;
+        padding: 24px 35px;
+    }
+
+
+    .another_example .bg
+    {
+        right: -100px;
+
+        width: 1233px;
+        height: 738px;
+        margin-right: 0;
+    }
+
+
+
+    /*-------------------
+        A lot nuances
+    -------------------*/
+    .a_lot_nuances:before,
+    .a_lot_nuances:after
+    {
+        display: none;
+    }
+
+
+    .a_lot_nuances .data
+    {
+        padding: 40px;
+    }
+
+
+    .a_lot_nuances .data:before
+    {
+        width: 60px;
+        height: 20px;
+
+        border-right-width: 30px;
+        border-bottom-width: 20px;
+        border-left-width: 30px;
+    }
+
+
+    .a_lot_nuances .data:after
+    {
+        right: 80px;
+        bottom: 20px;
+
+        transform: scale(.7);
+    }
+
+
+    .a_lot_nuances .info
+    {
+        width: 450px;
+    }
+
+
+    .a_lot_nuances .info .title
+    {
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+
+    .a_lot_nuances .info .label
+    {
+        font-size: 15px;
+    }
+
+
+    .a_lot_nuances .info ol
+    {
+        width: 280px;
+        margin-top: 20px;
+    }
+
+
+    .a_lot_nuances .img
+    {
+        right: -35px;
+
+        width: 620px;
+        height: auto;
+    }
+
+
+
+    /*----------------
+        What to do
+    ----------------*/
+    .what_to_do,
+    .what_to_do.pad2
+    {
+        padding: 80px 0;
+    }
+
+
+    .what_to_do .title,
+    .what_to_do .title.small
+    {
+        font-size: 38px;
+        line-height: calc(100% + 6px);
+
+        width: 600px;
+    }
+
+
+    .what_to_do .label
+    {
+        font-size: 18px;
+
+        margin-top: 30px;
+    }
+
+
+    .what_to_do .desc
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin-top: 24px;
+    }
+
+
+    .what_to_do .exp
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 16px;
+    }
+
+
+    .what_to_do .message
+    {
+        width: 404px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+
+
+    /*------------------
+        Before start
+    ------------------*/
+    .before_start
+    {
+        padding-top: 80px;
+    }
+
+
+    .before_start:before
+    {
+        display: none;
+    }
+
+
+    .before_start .img
+    {
+        left: 35px;
+
+        width: 500px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    .before_start .data
+    {
+        width: 400px;
+    }
+
+
+    .before_start .pre_title
+    {
+        font-size: 20px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .before_start .title
+    {
+        font-size: 38px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .before_start .specialists
+    {
+        margin-top: 25px;
+    }
+
+
+    .before_start .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        width: 100%;
+        margin-top: 25px;
+    }
+
+
+
+    .before_start .total
+    {
+        margin-top: 60px;
+        margin-left: 0;
+        padding: 40px 50px;
+    }
+
+
+    .before_start .total:before,
+    .before_start .total:after
+    {
+        display: none;
+    }
+
+
+    .before_start .total .blur
+    {
+        right: 40px;
+        bottom: 40px;
+
+        transform: scale(.7);
+    }
+
+
+    .before_start .total .title
+    {
+        font-size: 30px;
+        line-height: 36px;
+
+        width: 330px;
+    }
+
+
+    .before_start .total .desc
+    {
+        width: 300px;
+        margin-left: 50px;
+    }
+
+
+    .before_start .total img
+    {
+        right: 30px;
+
+        width: 190px;
+        height: auto;
+    }
+
+
+
+    /*------------------
+        We undertake
+    ------------------*/
+    .we_undertake
+    {
+        padding: 80px 0;
+    }
+
+
+    .we_undertake:before
+    {
+        right: 130px;
+        bottom: 50px;
+
+        margin-right: 0;
+
+        transform: scale(.7);
+    }
+
+
+    .we_undertake .block_title
+    {
+        font-size: 38px;
+        line-height: 44px;
+
+        top: 20px;
+
+        width: 370px;
+    }
+
+
+    .we_undertake .block_title mark
+    {
+        font-size: 16px;
+
+        margin-left: 0;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+
+    .we_undertake .block_title mark:after
+    {
+        width: 10px;
+        height: 34px;
+
+        border-top-width: 17px;
+        border-bottom-width: 17px;
+        border-left-width: 10px;
+    }
+
+
+    .we_undertake .grid
+    {
+        height: 670px;
+    }
+
+
+    .we_undertake .item
+    {
+        right: 250px;
+
+        width: 290px;
+        height: 250px;
+        padding: 80px 20px 20px;
+    }
+
+
+    .we_undertake .item:before
+    {
+        line-height: 60px;
+
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .we_undertake .item .name
+    {
+        font-size: 17px;
+    }
+
+
+    .we_undertake .item:nth-child(2)
+    {
+        width: 250px;
+        padding: 80px 20px 20px;
+    }
+
+
+    .we_undertake .item:nth-child(2) .desc .mark,
+    .we_undertake .item:nth-child(2) .desc .mark2
+    {
+        padding: 10px;
+    }
+
+
+    .we_undertake .item:nth-child(2) .image
+    {
+        margin-top: 25px;
+    }
+
+
+    .we_undertake .item:nth-child(2) .image .caption
+    {
+        line-height: 17px;
+
+        padding: 10px;
+    }
+
+
+    .we_undertake .item:nth-child(3)
+    {
+        top: 250px;
+
+        width: 280px;
+        height: 240px;
+        padding: 20px 20px 20px 80px;
+    }
+
+
+    .we_undertake .item:nth-child(4)
+    {
+        top: 250px;
+        left: 280px;
+
+        width: calc(100% - 530px);
+        height: 240px;
+        padding: 20px 40px 20px 80px;
+    }
+
+
+    .we_undertake .item:nth-child(4) .image
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .we_undertake .item:nth-child(4) .image + *
+    {
+        width: calc(100% - 120px);
+        padding-top: 0;
+    }
+
+
+    .we_undertake .item:nth-child(5)
+    {
+        width: 360px;
+        height: 180px;
+        padding: 20px 80px 20px;
+    }
+
+
+    .we_undertake .item:nth-child(6)
+    {
+        left: 360px;
+
+        width: calc(100% - 610px);
+        height: 180px;
+        padding: 20px 50px 20px 80px;
+    }
+
+
+
+    /*---------------------
+        Waiting for you
+    ---------------------*/
+    .waiting_for_you
+    {
+        padding-top: 80px;
+    }
+
+
+    .waiting_for_you .head
+    {
+        margin-bottom: 80px;
+        padding-left: 35px;
+    }
+
+
+    .waiting_for_you .block_title
+    {
+        font-size: 50px;
+    }
+
+
+    .waiting_for_you .block_desc
+    {
+        font-size: 18px;
+
+        margin-top: 20px;
+    }
+
+
+    .waiting_for_you .item,
+    .waiting_for_you .item:nth-child(2),
+    .waiting_for_you .item:nth-child(3)
+    {
+        padding: 35px 35px 50px;
+    }
+
+
+    .waiting_for_you .item .name
+    {
+        font-size: 18px;
+
+        padding: 8px 12px;
+    }
+
+
+    .waiting_for_you .item .desc
+    {
+        margin-top: 25px;
+    }
+
+
+    .waiting_for_you .image
+    {
+        top: 0;
+        right: 70px;
+
+        margin-right: 0;
+    }
+
+
+    .waiting_for_you .image:before
+    {
+        right: 0;
+        bottom: 0;
+
+        transform: scale(.7);
+    }
+
+
+    .waiting_for_you .image img
+    {
+        width: auto;
+        height: 245px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects
+    {
+        padding: 80px 0;
+    }
+
+
+    .projects .head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .projects .block_title
+    {
+        font-size: 38px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .projects .block_desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 15px;
+    }
+
+
+    .projects .swiper-slide
+    {
+        width: 440px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 80px 0 100px;
+    }
+
+
+    .reviews .head
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .reviews .block_title
+    {
+        font-size: 38px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .reviews .block_sub_title
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        margin-top: 15px;
+    }
+
+
+    .reviews .block_desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 15px;
+    }
+
+    .reviews .block_sub_title + .block_desc
+    {
+        margin-top: 10px;
+    }
+
+
+    .reviews .swiper-slide
+    {
+        width: 440px;
+    }
+
+
+    .reviews .item .icon
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .reviews .item .icon svg
+    {
+        width: 16px;
+        height: 20px;
+    }
+
+
+
+    /*---------------------
+        Real apartments
+    ---------------------*/
+    .real_apartments,
+    .real_apartments.pad2
+    {
+        padding: 80px 0;
+    }
+
+
+    .real_apartments:before
+    {
+        bottom: 60px;
+        left: 70px;
+
+        margin-left: 0;
+
+        transform: scale(.7);
+    }
+
+
+    .real_apartments .img
+    {
+        left: -100px;
+
+        width: 900px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    .real_apartments .lines
+    {
+        display: none;
+    }
+
+
+    .real_apartments .data
+    {
+        width: 450px;
+    }
+
+
+    .real_apartments .title
+    {
+        font-size: 38px;
+        line-height: calc(100% + 7px);
+    }
+
+
+    .real_apartments .desc
+    {
+        line-height: 23px;
+
+        width: 380px;
+        margin-top: 25px;
+    }
+
+
+    .real_apartments .message
+    {
+        width: 400px;
+        padding: 10px 20px;
+    }
+
+
+
+    /*------------------
+        Main Problem
+    ------------------*/
+    .main_problem
+    {
+        padding: 80px 0;
+    }
+
+
+    .main_problem:after
+    {
+        display: none;
+    }
+
+
+    .main_problem .pre_title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 12px;
+        margin-left: 132px;
+    }
+
+
+    .main_problem .block_title
+    {
+        font-size: 40px;
+        line-height: 48px;
+
+        width: 456px;
+        margin-left: 132px;
+    }
+
+
+    .main_problem .answer
+    {
+        font-size: 15px;
+
+        right: 100px;
+        bottom: 12px;
+
+        width: 208px;
+        margin-right: 0;
+        padding: 12px 20px;
+    }
+
+
+    .main_problem .answer:after
+    {
+        transform: scale(.8);
+    }
+
+
+
+    /*-------------------
+        First problem
+    -------------------*/
+    .first_problem
+    {
+        padding-top: 40px;
+    }
+
+
+    .first_problem .image
+    {
+        top: 40px;
+        left: 30px;
+
+        margin-left: 0;
+    }
+
+
+    .first_problem .image img
+    {
+        width: 360px;
+        height: auto;
+    }
+
+
+    .first_problem .data
+    {
+        width: 580px;
+        margin-right: -35px;
+        padding: 40px 35px 40px 40px;
+    }
+
+
+    .first_problem .title
+    {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+
+    .first_problem .message
+    {
+        margin-top: 16px;
+        margin-left: -12px;
+        padding: 8px 12px;
+    }
+
+
+    .first_problem .desc
+    {
+        line-height: 24px;
+
+        width: 464px;
+        margin-top: 24px;
+    }
+
+
+    .first_problem .text
+    {
+        line-height: 24px;
+
+        margin-top: 28px;
+        padding: 16px 152px 16px 20px;
+    }
+
+
+    .first_problem .text:before
+    {
+        transform: scale(.8);
+    }
+
+
+    .first_problem .text img
+    {
+        width: 120px;
+    }
+
+
+
+    /*--------------------
+        Second problem
+    --------------------*/
+    .second_problem .data
+    {
+        width: 560px;
+        margin-left: -35px;
+        padding: 40px 184px 40px 35px;
+    }
+
+
+    .second_problem .title
+    {
+        font-size: 40px;
+        line-height: 46px;
+
+        padding-left: 0;
+    }
+
+
+    .second_problem .title mark
+    {
+        margin-top: 4px;
+        margin-left: -10px;
+        padding: 0 10px;
+        padding-bottom: 4px;
+    }
+
+
+    .second_problem .desc
+    {
+        width: 332px;
+        margin-top: 24px;
+    }
+
+
+    .second_problem .message
+    {
+        width: 340px;
+        margin-top: 16px;
+        padding: 8px 12px;
+    }
+
+
+    .second_problem .messages
+    {
+        width: calc(100% - 490px);
+        margin-right: -35px;
+        margin-left: auto;
+        padding: 40px 35px 40px 140px;
+    }
+
+
+    .second_problem .messages:after
+    {
+        display: none;
+    }
+
+
+    .second_problem .messages .section + .section
+    {
+        margin-top: 24px;
+    }
+
+
+    .second_problem .messages .label
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .second_problem .messages .item
+    {
+        padding: 8px 16px;
+    }
+
+
+    .second_problem .image
+    {
+        margin-left: -124px;
+    }
+
+
+    .second_problem .image img
+    {
+        width: 320px;
+        height: auto;
+    }
+
+
+
+    /*-------------------
+        Third problem
+    -------------------*/
+    .third_problem
+    {
+        padding: 80px 0;
+    }
+
+
+    .third_problem:before
+    {
+        display: none;
+    }
+
+
+    .third_problem .image
+    {
+        top: 72px;
+        left: 35px;
+
+        margin-left: 0;
+    }
+
+
+    .third_problem .image img
+    {
+        width: 500px;
+        height: auto;
+    }
+
+
+    .third_problem .data
+    {
+        width: 400px;
+    }
+
+
+    .third_problem .title
+    {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+
+    .third_problem .message
+    {
+        width: 368px;
+        padding: 8px 12px;
+    }
+
+
+    .third_problem .message:before
+    {
+        display: none;
+    }
+
+
+    .third_problem .desc
+    {
+        width: 368px;
+    }
+
+
+
+    /*----------------------
+        Steps - Step one
+    ----------------------*/
+    .steps .step_one
+    {
+        padding: 80px 0;
+    }
+
+
+    .steps .step_one:before
+    {
+        display: none;
+    }
+
+
+    .steps .step_one:after
+    {
+        right: 0;
+
+        width: 80px;
+        margin-right: 0;
+    }
+
+
+    .steps .step_one .pre_title
+    {
+        line-height: 24px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .steps .step_one .title
+    {
+        line-height: calc(100% + 7px);
+
+        width: 440px;
+    }
+
+    .steps .step_one .title:before
+    {
+        display: none;
+    }
+
+
+    .steps .step_one .desc
+    {
+        line-height: 24px;
+
+        width: 404px;
+        margin-top: 24px;
+    }
+
+
+    .steps .step_one .message
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 352px;
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .steps .step_one .items
+    {
+        margin-right: 124px;
+        padding-top: 8px;
+    }
+
+
+    .steps .step_one .number
+    {
+        top: 0;
+
+        width: 70px;
+        height: auto;
+        margin-left: 72px;
+    }
+
+
+    .steps .step_one .img
+    {
+        right: -100px;
+
+        width: 433px;
+        height: 552px;
+        margin-right: 0;
+    }
+
+
+
+    /*----------------------
+        Steps - Step two
+    ----------------------*/
+    .steps .step_two
+    {
+        padding: 80px 0;
+    }
+
+
+    .steps .step_two:before,
+    .steps .step_two:after
+    {
+        display: none;
+    }
+
+
+    .steps .step_two .blur
+    {
+        top: 80px;
+        left: 40px;
+
+        margin-left: 0;
+
+        transform: scale(.8);
+    }
+
+
+    .steps .step_two .data
+    {
+        width: 500px;
+    }
+
+
+    .steps .step_two .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .steps .step_two .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 24px;
+    }
+
+
+    .steps .step_two .items > *
+    {
+        line-height: 21px;
+
+        padding: 48px 24px 24px 24px;
+    }
+
+
+    .steps .step_two .items > *:before
+    {
+        left: 24px;
+    }
+
+
+    .steps .step_two .img
+    {
+        top: 80px;
+        left: 50px;
+
+        width: 400px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------------
+        Steps - Step three
+    ------------------------*/
+    .steps .step_three
+    {
+        padding: 80px 0 120px;
+    }
+
+
+    .steps .step_three:before,
+    .steps .step_three:after
+    {
+        display: none;
+    }
+
+
+    .steps .step_three .data
+    {
+        width: 520px;
+    }
+
+
+    .steps .step_three .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .steps .step_three .message
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .steps .step_three .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 404px;
+        margin-top: 24px;
+    }
+
+
+    .steps .step_three .line
+    {
+        right: 0;
+
+        width: 80px;
+        margin-right: 0;
+    }
+
+
+    .steps .step_three .blur
+    {
+        transform: scale(.8);
+    }
+
+
+    .steps .step_three .img
+    {
+        right: 35px;
+
+        margin-right: 0;
+    }
+
+
+
+    /*-----------------------
+        Steps - Step four
+    -----------------------*/
+    .steps .step_four
+    {
+        padding: 80px 0;
+    }
+
+
+    .steps .step_four:before,
+    .steps .step_four:after
+    {
+        display: none;
+    }
+
+
+    .steps .step_four .data
+    {
+        width: 440px;
+        margin-right: 0;
+    }
+
+
+    .steps .step_four .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .steps .step_four .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 24px;
+    }
+
+
+    .steps .step_four .message
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 316px;
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .steps .step_four .image
+    {
+        left: 35px;
+
+        width: 400px;
+        margin-left: 0;
+    }
+
+
+    .steps .step_four .image .bg
+    {
+        right: 20px;
+
+        height: 100%;
+    }
+
+
+    .steps .step_four .image .vr
+    {
+        font-size: 60px;
+
+        top: 60px;
+        right: -40px;
+
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .steps .step_four .image .blur
+    {
+        transform: scale(.7);
+    }
+
+
+
+    /*-----------------------
+        Steps - Step five
+    -----------------------*/
+    .steps .step_five
+    {
+        padding: 80px 0;
+    }
+
+
+    .steps .step_five:before,
+    .steps .step_five:after
+    {
+        display: none;
+    }
+
+
+    .steps .step_five .line
+    {
+        right: 0;
+
+        width: 80px;
+        margin-right: 0;
+    }
+
+
+    .steps .step_five .blur
+    {
+        transform: scale(.7);
+    }
+
+
+    .steps .step_five .data
+    {
+        width: 432px;
+    }
+
+
+    .steps .step_five .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .steps .step_five .title:before
+    {
+        display: none;
+    }
+
+
+    .steps .step_five .sub_title
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-top: 24px;
+        padding: 12px 40px 12px 16px;
+    }
+
+
+    .steps .step_five .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 420px;
+        margin-top: 24px;
+    }
+
+
+    .steps .step_five .message
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 320px;
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .steps .step_five .img
+    {
+        top: 0;
+        right: 35px;
+
+        width: 460px;
+        height: auto;
+        margin-right: 0;
+    }
+
+
+
+    /*----------------------
+        Steps - Step six
+    ----------------------*/
+    .steps .step_six
+    {
+        padding: 80px 0;
+    }
+
+
+    .steps .step_six:before,
+    .steps .step_six:after
+    {
+        display: none;
+    }
+
+
+    .steps .step_six .blur
+    {
+        top: 120px;
+        left: 80px;
+
+        margin-left: 0;
+
+        transform: scale(.8);
+    }
+
+
+    .steps .step_six .data
+    {
+        width: 480px;
+        margin-right: 0;
+    }
+
+
+    .steps .step_six .title
+    {
+        line-height: calc(100% + 7px);
+    }
+
+
+    .steps .step_six .label
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .steps .step_six .label:before
+    {
+        height: 40px;
+
+        border-top-width: 20px;
+        border-bottom-width: 20px;
+    }
+
+
+    .steps .step_six .desc
+    {
+        line-height: 24px;
+
+        width: 440px;
+        margin-top: 24px;
+    }
+
+
+    .steps .step_six .message
+    {
+        line-height: 24px;
+
+        width: 360px;
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .steps .step_six .img
+    {
+        left: 0;
+
+        height: 560px;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        What else
+    ---------------*/
+    .what_else
+    {
+        padding-top: 80px;
+    }
+
+
+    .what_else .block_title
+    {
+        font-size: 48px;
+    }
+
+
+    .what_else .head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .what_else .item
+    {
+        padding: 40px 40px 60px;
+    }
+
+    .what_else .item:nth-child(2)
+    {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .what_else .item:nth-child(3)
+    {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+
+    .what_else .item .name
+    {
+        font-size: 18px;
+
+        padding: 8px 12px;
+    }
+
+
+    .what_else .item .desc
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*---------------------
+        Can draw design
+    ---------------------*/
+    .can_draw_design
+    {
+        padding: 80px 0;
+    }
+
+
+    .can_draw_design:before,
+    .can_draw_design:after
+    {
+        display: none;
+    }
+
+
+    .can_draw_design .data
+    {
+        padding-left: 0;
+    }
+
+
+    .can_draw_design .block_title
+    {
+        line-height: calc(100% + 6px);
+
+        width: 480px;
+    }
+
+
+    .can_draw_design .block_title small
+    {
+        line-height: 36px;
+
+        height: 36px;
+    }
+
+
+    .can_draw_design .block_title small:before
+    {
+        height: 36px;
+
+        border-top-width: 18px;
+        border-bottom-width: 18px;
+    }
+
+
+    .can_draw_design .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 352px;
+        margin-top: 20px;
+    }
+
+
+    .can_draw_design ol
+    {
+        width: 320px;
+        margin-top: 24px;
+    }
+
+
+    .can_draw_design ol li
+    {
+        padding-left: 28px;
+    }
+
+
+    .can_draw_design ol li + li
+    {
+        margin-top: 16px;
+    }
+
+
+    .can_draw_design .message
+    {
+        font-size: var(--font_size);
+
+        width: 276px;
+        margin-top: 24px;
+        padding: 12px 24px 16px;
+    }
+
+
+    .can_draw_design .image
+    {
+        right: 35px;
+
+        margin-right: 0;
+        padding-right: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .can_draw_design .image img:nth-child(1)
+    {
+        width: 280px;
+        height: auto;
+    }
+
+
+    .can_draw_design .image img:nth-child(2)
+    {
+        top: 0;
+        right: -70px;
+
+        width: 700px;
+        height: auto;
+    }
+
+
+
+    /*-------------------
+        How implement
+    -------------------*/
+    .how_implement:before
+    {
+        display: none;
+    }
+
+
+    .how_implement .bg
+    {
+        top: 53px;
+        left: 0;
+
+        width: 50%;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    .how_implement .block_title
+    {
+        line-height: calc(100% + 6px);
+
+        width: 344px;
+        margin-top: 80px;
+    }
+
+
+    .how_implement .data
+    {
+        width: 50%;
+        min-height: 540px;
+        margin-top: 0;
+        padding-top: 88px;
+        padding-bottom: 88px;
+        padding-left: 120px;
+    }
+
+
+    .how_implement .data:before
+    {
+        top: 80px;
+
+        width: 28px;
+        height: 56px;
+
+        border-top-width: 28px;
+        border-bottom-width: 28px;
+        border-left-width: 28px;
+    }
+
+
+    .how_implement .label
+    {
+        font-size: 16px;
+    }
+
+
+    .how_implement .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 280px;
+        margin-top: 24px;
+    }
+
+
+    .how_implement .difficulties
+    {
+        bottom: -24px;
+        left: -260px;
+    }
+
+
+    .how_implement .difficulties .avatar
+    {
+        width: 52px;
+        min-width: 52px;
+        height: 52px;
+        margin-right: 20px;
+    }
+
+
+    .how_implement .difficulties .avatar + div
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 396px;
+        max-width: calc(100% - 70px);
+        padding: 12px 20px;
+    }
+
+
+
+    /*------------------
+        Can you lose
+    ------------------*/
+    .can_you_lose
+    {
+        padding: 104px 0 80px;
+    }
+
+
+    .can_you_lose:before,
+    .can_you_lose:after
+    {
+        display: none;
+    }
+
+
+    .can_you_lose .img
+    {
+        bottom: -40px;
+        left: -240px;
+
+        width: 820px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    .can_you_lose .data
+    {
+        width: 560px;
+        padding-right: 0;
+    }
+
+
+    .can_you_lose .block_title
+    {
+        font-size: 36px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .can_you_lose .message
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: calc(100% - 200px);
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .can_you_lose .message:after
+    {
+        right: -235px;
+
+        width: 100vw;
+    }
+
+
+    .can_you_lose .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 24px;
+    }
+
+
+    .can_you_lose .label
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-top: 28px;
+        padding: 8px 12px;
+    }
+
+
+    .can_you_lose .label:before
+    {
+        height: 40px;
+
+        border-top-width: 20px;
+        border-bottom-width: 20px;
+    }
+
+
+
+    /*-----------------------------
+        Materials not avialable
+    -----------------------------*/
+    .materials_not_avialable
+    {
+        padding: 80px 0 0;
+    }
+
+
+    .materials_not_avialable:before
+    {
+        display: none;
+    }
+
+
+    .materials_not_avialable .title
+    {
+        font-size: 36px;
+        line-height: calc(100% + 6px);
+
+        width: 440px;
+    }
+
+
+    .materials_not_avialable .title mark
+    {
+        font-size: 30px;
+
+        padding: 0 8px;
+    }
+
+
+    .materials_not_avialable .data > .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 20px;
+    }
+
+
+    .materials_not_avialable .what_do
+    {
+        width: 480px;
+    }
+
+
+    .materials_not_avialable .what_do .label
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-bottom: 20px;
+        padding: 8px 12px;
+    }
+
+
+    .materials_not_avialable .what_do .item .name
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .materials_not_avialable .what_do .item .desc
+    {
+        font-size: 13px;
+    }
+
+
+    .materials_not_avialable .bottom
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        position: relative;
+        bottom: 0;
+
+        width: 100%;
+        margin-top: 40px;
+        padding: 20px 35px;
+    }
+
+
+    .materials_not_avialable .bottom div
+    {
+        width: 356px;
+    }
+
+
+    .materials_not_avialable .bottom small
+    {
+        font-size: 13px;
+        line-height: 20px;
+
+        margin-top: 12px;
+    }
+
+
+    .materials_not_avialable .image
+    {
+        top: 80px;
+        right: 35px;
+
+        width: 400px;
+        height: calc(100% - 80px);
+        margin-right: 0;
+    }
+
+
+    .materials_not_avialable .image:before
+    {
+        top: -20px;
+        left: -20px;
+
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .materials_not_avialable .image:after
+    {
+        top: -20px;
+        right: -20px;
+
+        width: 200px;
+        height: 440px;
+    }
+
+
+    .materials_not_avialable .image img
+    {
+        top: auto;
+        right: -24px;
+        bottom: 40px;
+
+        width: 560px;
+        height: auto;
+        margin: 0;
+    }
+
+
+
+    /*-------------------------
+        Starting renovation
+    -------------------------*/
+    .starting_renovation
+    {
+        padding: 80px 0 0;
+    }
+
+
+    .starting_renovation:before,
+    .starting_renovation:after
+    {
+        display: none;
+    }
+
+
+    .starting_renovation .data
+    {
+        width: 480px;
+    }
+
+
+    .starting_renovation .data:after
+    {
+        right: -68px;
+        bottom: -72px;
+
+        transform: scale(.7);
+    }
+
+
+    .starting_renovation .pre_title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .starting_renovation .title
+    {
+        font-size: 36px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .starting_renovation .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .starting_renovation .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .starting_renovation .messages
+    {
+        margin-top: 0;
+        margin-right: 148px;
+        margin-left: auto;
+    }
+
+
+    .starting_renovation .messages > * > *
+    {
+        font-size: var(--font_size);
+
+        padding: 8px 12px;
+    }
+
+
+    .starting_renovation .img
+    {
+        right: -35px;
+
+        width: 380px;
+        height: auto;
+        margin-right: 0;
+    }
+
+
+
+    .starting_renovation .and_more
+    {
+        width: calc(100% - 120px);
+        margin-top: 80px;
+        padding: 40px 68px;
+    }
+
+
+    .starting_renovation .and_more > *:first-child
+    {
+        width: 420px;
+    }
+
+
+    .starting_renovation .and_more .pre_title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .starting_renovation .and_more .title
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+    .starting_renovation .and_more .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 8px;
+    }
+
+
+    .starting_renovation .and_more .message
+    {
+        width: 220px;
+        margin-bottom: 4px;
+        padding: 8px 12px;
+    }
+
+
+    .starting_renovation .and_more .message .time
+    {
+        right: 8px;
+        bottom: 4px;
+    }
+
+
+    .starting_renovation .and_more img
+    {
+        left: -120px;
+
+        width: 148px;
+        height: auto;
+    }
+
+
+
+    /*---------------------------
+        Looking for solutions
+    ---------------------------*/
+    .looking_for_solutions
+    {
+        padding: 80px 0;
+    }
+
+
+    .looking_for_solutions .data
+    {
+        width: 480px;
+    }
+
+
+    .looking_for_solutions .block_title
+    {
+        font-size: 36px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .looking_for_solutions .message
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 24px;
+        padding: 12px 16px;
+    }
+
+
+    .looking_for_solutions .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+
+    .looking_for_solutions .img
+    {
+        top: 40px;
+        bottom: 0;
+        left: 108px;
+
+        height: 380px;
+        margin: auto 0;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------------
+        Furniture makers
+    ----------------------*/
+    .furniture_makers
+    {
+        padding-top: 80px;
+    }
+
+
+    .furniture_makers .grid
+    {
+        height: 544px;
+        margin-bottom: -80px;
+    }
+
+
+    .furniture_makers .data
+    {
+        top: 12px;
+
+        width: 350px;
+    }
+
+
+    .furniture_makers .data .title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .furniture_makers .data .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .furniture_makers .item
+    {
+        padding: 24px;
+    }
+
+
+    .furniture_makers .item1
+    {
+        right: 320px;
+
+        width: 260px;
+        height: 344px;
+    }
+
+    .furniture_makers .item2
+    {
+        width: 320px;
+        height: 220px;
+    }
+
+    .furniture_makers .item3
+    {
+        top: 220px;
+
+        width: 320px;
+        height: 124px;
+    }
+
+
+    .furniture_makers .item4
+    {
+        width: 280px;
+        height: 200px;
+    }
+
+
+    .furniture_makers .item5
+    {
+        left: 280px;
+
+        width: 320px;
+        height: 200px;
+    }
+
+
+    .furniture_makers .item6
+    {
+        width: calc(100% - 600px);
+        height: 200px;
+    }
+
+
+    .furniture_makers .item .name
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        padding: 8px 12px;
+    }
+
+
+    .furniture_makers .item3 .name
+    {
+        line-height: 22px;
+
+        width: 180px;
+        padding: 0;
+    }
+
+
+    .furniture_makers .item .desc
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .furniture_makers .item4 .desc
+    {
+        margin-top: 12px;
+    }
+
+    .furniture_makers .item5 .desc
+    {
+        width: 200px;
+        margin-top: 12px;
+    }
+
+
+    .furniture_makers .item img
+    {
+        right: 0;
+        left: 0;
+
+        width: 180px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .furniture_makers .item2 img
+    {
+        bottom: -40px;
+        left: auto;
+
+        width: 168px;
+        height: 183px;
+    }
+
+    .furniture_makers .item3 img
+    {
+        right: 24px;
+        left: auto;
+
+        width: 72px;
+        height: 73px;
+        margin: auto 0;
+    }
+
+    .furniture_makers .item4 img
+    {
+        width: 100%;
+    }
+
+    .furniture_makers .item5 img
+    {
+        left: auto;
+
+        width: 148px;
+        height: auto;
+    }
+
+    .furniture_makers .item6 img
+    {
+        top: 10px;
+        left: auto;
+
+        width: 124px;
+        height: auto;
+        margin: auto 0;
+    }
+
+
+
+    /*-----------
+        Jambs
+    -----------*/
+    .jambs
+    {
+        min-height: 600px;
+        padding: 160px 0 80px;
+    }
+
+
+    .jambs .data
+    {
+        width: 532px;
+    }
+
+
+    .jambs .pre_title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        width: 360px;
+    }
+
+
+    .jambs .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+    }
+
+
+    .jambs .title
+    {
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-top: 24px;
+    }
+
+
+    .jambs .message
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 520px;
+        margin-top: 32px;
+        padding: 12px 16px 16px;
+    }
+
+
+    .jambs .message > *:first-child
+    {
+        width: calc(100% - 124px);
+    }
+
+
+    .jambs .message .image
+    {
+        width: 108px;
+        height: 80px;
+    }
+
+
+    .jambs .message .label
+    {
+        bottom: -16px;
+        left: 24px;
+
+        padding: 4px 12px;
+    }
+
+
+    .jambs .bg
+    {
+        right: -233px;
+
+        width: calc(100% + 235px);
+        height: auto;
+        margin-right: 0;
+    }
+
+
+
+    /*--------------------
+        What to do big
+    --------------------*/
+    .what_to_do_big
+    {
+        padding: 80px 0;
+    }
+
+
+    .what_to_do_big .block_title
+    {
+        font-size: 80px;
+        line-height: 100%;
+
+        width: 400px;
+        margin-left: 70px;
+    }
+
+
+    .what_to_do_big .items
+    {
+        margin-right: 70px;
+    }
+
+
+    .what_to_do_big .items .item
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        padding: 8px 12px;
+    }
+
+    .what_to_do_big .items > * + * .item
+    {
+        padding-right: 40px;
+    }
+
+
+    .what_to_do_big .items .item .date
+    {
+        right: 8px;
+        bottom: 4px;
+    }
+
+
+    .what_to_do_big .items .exp
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+
+    /*--------------------
+        Again problems
+    --------------------*/
+    .again_problems .data
+    {
+        width: 620px;
+        padding: 48px 0 48px 80px;
+    }
+
+
+    .again_problems .title
+    {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
+    .again_problems .message
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 24px;
+    }
+
+
+    .again_problems .message .icon
+    {
+        height: 48px;
+    }
+
+
+    .again_problems .message .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .again_problems .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+
+    .again_problems .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .again_problems .img
+    {
+        bottom: -24px;
+        left: -70px;
+
+        width: 480px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+
+    /*------------
+        Stole
+    ------------*/
+    .stole
+    {
+        padding: 80px 0;
+    }
+
+
+    .stole .data
+    {
+        top: 0;
+        left: 0;
+
+        width: 500px;
+        height: 100%;
+        margin-left: 0;
+        padding: 40px 40px 40px 35px;
+    }
+
+
+    .stole .data:after
+    {
+        width: 20px;
+        height: 52px;
+
+        border-top-width: 26px;
+        border-bottom-width: 26px;
+        border-left-width: 20px;
+    }
+
+
+    .stole .data .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .stole .data .title
+    {
+        font-size: 28px;
+        line-height: 38px;
+
+        margin: 8px 0;
+    }
+
+
+    .stole .data .title mark
+    {
+        font-size: 26px;
+    }
+
+
+    .stole .info
+    {
+        width: 416px;
+    }
+
+
+    .stole .info .title
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+    .stole .info .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 16px;
+    }
+
+
+
+    /*---------------
+        Your flat
+    ---------------*/
+    .your_flat
+    {
+        padding: 80px 0;
+    }
+
+
+    .your_flat:before
+    {
+        display: none;
+    }
+
+
+    .your_flat .data
+    {
+        width: 480px;
+        margin-right: 0;
+    }
+
+
+    .your_flat .data:after
+    {
+        display: none;
+    }
+
+
+    .your_flat .title
+    {
+        font-size: 28px;
+        line-height: 34px;
+
+        padding: 12px 20px;
+    }
+
+
+    .your_flat .title:before
+    {
+        width: 24px;
+        height: 92px;
+
+        border-top-width: 46px;
+        border-right-width: 24px;
+        border-bottom-width: 46px;
+    }
+
+
+    .your_flat .price
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        padding: 4px 12px;
+    }
+
+
+    .your_flat .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-top: 24px;
+    }
+
+
+    .your_flat .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .your_flat .message
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin-top: 24px;
+        padding: 16px 20px;
+    }
+
+
+    .your_flat .img
+    {
+        top: 0;
+        left: 35px;
+
+        width: auto;
+        height: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------------
+        All real situations
+    -------------------------*/
+    .all_real_situations
+    {
+        margin-bottom: 0;
+        padding-top: 80px;
+    }
+
+
+    .all_real_situations:before,
+    .all_real_situations:after
+    {
+        display: none;
+    }
+
+
+    .all_real_situations .data
+    {
+        width: 560px;
+    }
+
+
+    .all_real_situations .data .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .all_real_situations .data .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .all_real_situations .data .title
+    {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
+    .all_real_situations .reasons
+    {
+        margin-top: 40px;
+    }
+
+
+    .all_real_situations .reasons .label
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .all_real_situations .item
+    {
+        padding: 100px 24px 24px;
+    }
+
+
+    .all_real_situations .item .name
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .all_real_situations .item .desc
+    {
+        line-height: 20px;
+
+        margin-top: 12px;
+    }
+
+
+    .all_real_situations .img
+    {
+        top: 40px;
+        right: 35px;
+
+        width: 400px;
+        height: auto;
+        margin-right: 0;
+    }
+
+
+
+    /*------------------
+        About author
+    ------------------*/
+    .about_author
+    {
+        padding: 80px 0;
+    }
+
+
+    .about_author:before,
+    .about_author:after
+    {
+        display: none;
+    }
+
+
+    .about_author .bg
+    {
+        left: 0;
+
+        width: 400px;
+        margin-left: 0;
+    }
+
+
+    .about_author .img
+    {
+        left: 35px;
+
+        width: 400px;
+        margin-left: 0;
+    }
+
+
+    .about_author .data
+    {
+        width: calc(100% - 440px);
+    }
+
+
+    .about_author .data:before
+    {
+        top: 0;
+
+        margin-right: 20px;
+
+        transform: scale(.8);
+    }
+
+
+    .about_author .title
+    {
+        line-height: calc(100% + 6px);
+
+        width: 100%;
+    }
+
+
+    .about_author .sub_title
+    {
+        font-size: 22px;
+        line-height: 30px;
+
+        margin-top: 16px;
+    }
+
+
+    .about_author .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 20px;
+    }
+
+
+    .about_author mark
+    {
+        padding-right: 4px;
+    }
+
+
+    .about_author mark:before
+    {
+        width: 4px;
+        height: 24px;
+
+        border-top-width: 12px;
+        border-right-width: 4px;
+        border-bottom-width: 12px;
+    }
+
+
+    .about_author ol
+    {
+        margin-top: 24px;
+    }
+
+
+    .about_author ol li
+    {
+        min-height: 52px;
+        padding: 8px 24px 8px 70px;
+    }
+
+    .about_author ol li + li
+    {
+        margin-top: 12px;
+    }
+
+
+    .about_author ol li:before
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-----------------
+        My projects
+    -----------------*/
+    .my_projects
+    {
+        padding: 60px 0;
+    }
+
+
+    .my_projects .data
+    {
+        width: 440px;
+    }
+
+
+    .my_projects .data:after
+    {
+        top: 112px;
+        right: -88px;
+
+        transform: scale(.6);
+    }
+
+
+    .my_projects .pre_title
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+    .my_projects .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .my_projects .exp
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        width: 440px;
+        margin-top: 100px;
+    }
+
+
+    .my_projects .swiper
+    {
+        width: calc(100% - 580px);
+        margin-top: 0;
+        margin-right: 70px;
+    }
+
+
+    .my_projects .swiper-button-next
+    {
+        right: -80px;
+    }
+
+
+
+    /*--------------------
+        What look like
+    --------------------*/
+    .what_look_like
+    {
+        padding: 80px 0 120px;
+    }
+
+
+    .what_look_like:before
+    {
+        display: none;
+    }
+
+
+    .what_look_like .data
+    {
+        width: 560px;
+    }
+
+
+    .what_look_like .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .what_look_like .pre_title:before
+    {
+        display: none;
+    }
+
+
+    .what_look_like .title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .what_look_like .title mark
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        padding: 8px 12px;
+    }
+
+    .what_look_like .title mark:before
+    {
+        height: 42px;
+
+        border-top-width: 21px;
+        border-bottom-width: 21px;
+    }
+
+
+    .what_look_like .message
+    {
+        width: 440px;
+        margin-top: 24px;
+    }
+
+
+    .what_look_like .message .avatar
+    {
+        width: 52px;
+        min-width: 52px;
+        height: 52px;
+        margin-right: 20px;
+    }
+
+
+    .what_look_like .message .avatar + div
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+
+        width: calc(100% - 72px);
+        padding: 12px 16px;
+    }
+
+
+    .what_look_like .message .date
+    {
+        right: 12px;
+        bottom: 8px;
+    }
+
+
+    .what_look_like .desc
+    {
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 32px;
+    }
+
+
+    .what_look_like .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .what_look_like .bg
+    {
+        right: 0;
+
+        margin-right: 0;
+    }
+
+
+
+    /*-------------------------
+        Our work looks like
+    -------------------------*/
+    .our_work_looks_like
+    {
+        margin-top: -60px;
+    }
+
+
+    .our_work_looks_like .data
+    {
+        padding: 32px 40px;
+    }
+
+
+    .our_work_looks_like .data:before
+    {
+        left: 140px;
+
+        width: 60px;
+        height: 20px;
+
+        border-right-width: 30px;
+        border-bottom-width: 20px;
+        border-left-width: 30px;
+    }
+
+
+    .our_work_looks_like .data:after
+    {
+        left: 520px;
+
+        transform: scale(.8);
+    }
+
+
+    .our_work_looks_like .title
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        width: 480px;
+    }
+
+
+    .our_work_looks_like .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 16px;
+    }
+
+
+
+    /*----------------
+        First step
+    ----------------*/
+    .first_step
+    {
+        padding: 80px 0;
+    }
+
+
+    .first_step:after
+    {
+        display: none;
+    }
+
+
+    .first_step .data
+    {
+        width: 480px;
+    }
+
+
+    .first_step .block_title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .first_step .block_desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+    .first_step .message
+    {
+        width: 100%;
+        margin-top: 40px;
+        padding: 24px;
+
+        background-size: 88px auto;
+    }
+
+
+    .first_step .message .title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .first_step .message .desc
+    {
+        line-height: 20px;
+
+        width: 380px;
+        margin-top: 12px;
+    }
+
+
+    .first_step .items
+    {
+        margin-right: 128px;
+        padding-top: 20px;
+    }
+
+
+    .first_step .items > * > *
+    {
+        line-height: 19px;
+    }
+
+
+    .first_step .number
+    {
+        bottom: 80px;
+
+        width: 70px;
+        height: auto;
+        margin-left: 48px;
+    }
+
+
+    .first_step .img
+    {
+        right: -100px;
+
+        width: 420px;
+        height: auto;
+        margin-right: 0;
+    }
+
+
+
+    /*-----------------
+        Second step
+    -----------------*/
+    .second_step
+    {
+        padding: 60px 0;
+    }
+
+
+    .second_step:before,
+    .second_step:after
+    {
+        display: none;
+    }
+
+
+    .second_step .blur
+    {
+        left: 70px;
+
+        margin-left: 0;
+
+        transform: scale(.8);
+    }
+
+
+    .second_step .data
+    {
+        width: 520px;
+    }
+
+
+    .second_step .title
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .second_step .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 20px;
+    }
+
+
+    .second_step .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .second_step .img
+    {
+        top: 0;
+        bottom: 0;
+        left: 70px;
+
+        width: 300px;
+        margin: auto 0;
+    }
+
+
+    .second_step .bg
+    {
+        left: 0;
+
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------
+        We work as team
+    ---------------------*/
+    .we_work_as_team
+    {
+        padding: 80px 0;
+    }
+
+
+    .we_work_as_team:before,
+    .we_work_as_team:after
+    {
+        display: none;
+    }
+
+
+    .we_work_as_team .lines
+    {
+        right: 0;
+
+        width: 100vw;
+        margin-right: 0;
+
+        border-width: 80px;
+    }
+
+
+    .we_work_as_team .number
+    {
+        top: 40px;
+        left: 115px;
+
+        width: 124px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    .we_work_as_team .blur
+    {
+        bottom: 100px;
+        left: 0;
+
+        margin-left: 0;
+
+        transform: rotate(13.617deg) scale(.8);
+    }
+
+
+    .we_work_as_team .data
+    {
+        width: 620px;
+    }
+
+
+    .we_work_as_team .block_title
+    {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
+    .we_work_as_team .desc
+    {
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 16px;
+    }
+
+
+    .we_work_as_team .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .we_work_as_team .row
+    {
+        width: calc(100% + 24px);
+        margin-top: 24px;
+        margin-left: -24px;
+    }
+
+
+    .we_work_as_team .col
+    {
+        width: 320px;
+        min-height: 440px;
+        padding: 24px;
+    }
+
+
+    .we_work_as_team .col:after
+    {
+        top: 8px;
+        right: 8px;
+
+        transform: scale(.8);
+    }
+
+
+    .we_work_as_team .col + .col
+    {
+        width: calc(100% - 320px);
+        padding: 24px;
+    }
+
+
+    .we_work_as_team .col .title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .we_work_as_team .col .desc
+    {
+        line-height: 22px;
+    }
+
+
+    .we_work_as_team .col  ol li
+    {
+        line-height: 18px;
+    }
+
+
+    .we_work_as_team .col  ol li + li
+    {
+        margin-top: 16px;
+    }
+
+
+    .we_work_as_team .col  ol li:before
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    .we_work_as_team .col .exp
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .we_work_as_team .img
+    {
+        bottom: 80px;
+        left: 0;
+
+        width: 600px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------
+        Several stages
+    --------------------*/
+    .several_stages
+    {
+        padding: 80px 0;
+    }
+
+
+    .several_stages:before,
+    .several_stages:after
+    {
+        display: none;
+    }
+
+
+    .several_stages .data
+    {
+        width: 440px;
+        margin-left: 0;
+    }
+
+
+    .several_stages .title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .several_stages .title:before
+    {
+        display: none;
+    }
+
+
+    .several_stages .desc
+    {
+        line-height: 23px;
+
+        margin-top: 20px;
+    }
+
+
+    .several_stages .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .several_stages .message
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        width: 312px;
+        margin-top: 24px;
+        padding: 8px 12px;
+    }
+
+
+    .several_stages .message + .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .several_stages .image
+    {
+        right: 35px;
+
+        width: 400px;
+        height: 100%;
+        margin-right: 0;
+    }
+
+    .several_stages .image .bg
+    {
+        right: 0;
+
+        height: 100%;
+    }
+
+
+    .several_stages .image .vr
+    {
+        font-size: 60px;
+
+        top: 60px;
+        right: -40px;
+
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .several_stages .image .blur
+    {
+        transform: scale(.7);
+    }
+
+
+
+    /*--------------------
+        Show materials
+    --------------------*/
+    .show_materials
+    {
+        padding: 60px 0;
+    }
+
+
+    .show_materials:before,
+    .show_materials:after
+    {
+        display: none;
+    }
+
+
+    .show_materials .image
+    {
+        width: 340px;
+        height: 536px;
+    }
+
+
+    .show_materials .data
+    {
+        width: calc(100% - 380px);
+        margin-right: 0;
+        padding: 0;
+    }
+
+
+    .show_materials .block_title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 6px);
+
+        width: 100%;
+    }
+
+
+    .show_materials .desc
+    {
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 24px;
+    }
+
+
+    .show_materials .why_necessary
+    {
+        width: 100%;
+        margin-top: 24px;
+        padding: 16px 200px 24px 24px;
+    }
+
+
+    .show_materials .why_necessary .label
+    {
+        line-height: 22px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .show_materials .why_necessary .title
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .show_materials .why_necessary .desc
+    {
+        margin-top: 12px;
+    }
+
+
+    .show_materials .why_necessary:after
+    {
+        right: 0;
+        bottom: 0;
+
+        transform: scale(.8);
+    }
+
+
+    .show_materials .why_necessary img
+    {
+        width: 192px;
+        height: 133px;
+    }
+
+
+
+    /*----------------
+        Third step
+    ----------------*/
+    .third_step
+    {
+        padding: 80px 0;
+    }
+
+
+    .third_step:before
+    {
+        display: none;
+    }
+
+
+    .third_step .data
+    {
+        width: calc(100% - 468px);
+        padding-top: 24px;
+    }
+
+
+    .third_step .block_title
+    {
+        font-size: 60px;
+        line-height: 100%;
+    }
+
+
+    .third_step .message
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 24px;
+        padding: 16px 24px;
+    }
+
+
+    .third_step .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 40px;
+    }
+
+
+    .third_step .desc > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .third_step .blur
+    {
+        top: 80px;
+        left: 35px;
+
+        margin-left: 0;
+
+        transform: scale(.7);
+    }
+
+
+    .third_step .number
+    {
+        bottom: 0;
+        left: 35px;
+
+        width: 124px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    .third_step .img
+    {
+        top: 24px;
+        bottom: 0;
+        left: 70px;
+
+        width: 440px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------------
+        Third step next
+    ---------------------*/
+    .third_step_next
+    {
+        padding-top: 80px;
+    }
+
+
+    .third_step_next:before,
+    .third_step_next:after
+    {
+        display: none;
+    }
+
+
+    .third_step_next .data
+    {
+        width: 452px;
+    }
+
+
+    .third_step_next .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .third_step_next .block_title
+    {
+        font-size: 32px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .third_step_next .items
+    {
+        margin-top: 40px;
+    }
+
+
+    .third_step_next .items > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .third_step_next .items .name
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .third_step_next .bottom
+    {
+        margin-top: 50px;
+    }
+
+
+    .third_step_next .bottom .item
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        padding: 24px;
+    }
+
+
+    .third_step_next .bottom .item:nth-child(1)
+    {
+        width: 340px;
+    }
+
+
+    .third_step_next .bottom .item:nth-child(2)
+    {
+        width: 340px;
+    }
+
+
+    .third_step_next .bottom .item:nth-child(3)
+    {
+        width: calc(100% - 680px);
+    }
+
+
+    .third_step_next .bottom .item .icon
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .third_step_next .bottom .item .mark
+    {
+        font-size: var(--font_size);
+        line-height: 21px;
+
+        margin-top: 16px;
+        padding: 8px 12px;
+    }
+
+
+    .third_step_next .img
+    {
+        top: 0;
+        right: 35px;
+
+        width: 480px;
+        height: auto;
+        margin-right: 0;
+    }
+
+
+
+    /*-----------------
+        Fourth step
+    -----------------*/
+    .fourth_step
+    {
+        padding: 80px 0;
+    }
+
+
+    .fourth_step:after
+    {
+        display: none;
+    }
+
+
+    .fourth_step .data
+    {
+        width: 480px;
+    }
+
+
+    .fourth_step .block_title
+    {
+        font-size: 48px;
+        line-height: 56px;
+
+        width: 480px;
+    }
+
+
+    .fourth_step .block_title mark
+    {
+        padding: 8px;
+    }
+
+    .fourth_step .block_title mark:before
+    {
+        height: 44px;
+
+        border-top-width: 22px;
+        border-bottom-width: 22px;
+    }
+
+
+    .fourth_step .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .fourth_step .desc.big
+    {
+        margin-top: 24px;
+    }
+
+
+    .fourth_step .items
+    {
+        margin-top: 20px;
+    }
+
+
+    .fourth_step .items > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .fourth_step .items > * > *
+    {
+        line-height: 23px;
+
+        padding: 4px 8px;
+    }
+
+
+    .fourth_step .number
+    {
+        left: 0;
+
+        width: 160px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    .fourth_step .img
+    {
+        top: 100px;
+        left: 100px;
+
+        width: 360px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Another point
+    -------------------*/
+    .another_point
+    {
+        padding: 80px 0;
+    }
+
+
+    .another_point:before,
+    .another_point:after
+    {
+        display: none;
+    }
+
+
+    .another_point .data
+    {
+        width: 480px;
+    }
+
+
+    .another_point .message
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 32px;
+        padding: 16px 24px;
+    }
+
+
+    .another_point .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+    }
+
+
+    .another_point .exp
+    {
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .another_point .img
+    {
+        right: 70px;
+
+        width: 340px;
+        height: auto;
+        margin-right: 0;
+    }
+
+
+
+    /*----------------
+        Fifth step
+    ----------------*/
+    .fifth_step
+    {
+        padding: 80px 0;
+    }
+
+
+    .fifth_step .pre_title
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .fifth_step .block_title
+    {
+        font-size: 52px;
+        line-height: 100%;
+    }
+
+
+    .fifth_step .sub_title
+    {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-top: 24px;
+    }
+
+
+    .fifth_step .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+    }
+
+
+    .fifth_step .items
+    {
+        line-height: 20px;
+
+        width: 520px;
+        margin-top: 24px;
+    }
+
+
+    .fifth_step .items > *:not(.sep)
+    {
+        padding-top: 24px;
+    }
+
+
+    .fifth_step .items > *:not(.sep):before
+    {
+        line-height: 20px;
+    }
+
+
+    .fifth_step .img
+    {
+        right: 0;
+        bottom: -80px;
+
+        width: auto;
+        height: 100%;
+        margin-right: 0;
+    }
+
+
+
+    /*------------------------
+        What do you choose
+    ------------------------*/
+    .what_do_you_choose
+    {
+        padding: 80px 0 12px;
+    }
+
+
+    .what_do_you_choose .pre_title
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .what_do_you_choose .block_title
+    {
+        font-size: 60px;
+        line-height: 100%;
+
+        margin-bottom: 40px;
+    }
+
+
+    .what_do_you_choose .one .data,
+    .what_do_you_choose .two .data
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: calc(100% - 124px);
+        padding: 40px;
+    }
+
+
+    .what_do_you_choose .one img,
+    .what_do_you_choose .two img
+    {
+        width: 104px;
+    }
+
+
+    .what_do_you_choose .or
+    {
+        font-size: 24px;
+
+        margin-top: 24px;
+    }
+
+
+    .what_do_you_choose .two
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*-------------------------
+        Already have design
+    -------------------------*/
+    .already_have_design
+    {
+        padding: 80px 0;
+    }
+
+
+    .already_have_design:before
+    {
+        display: none;
+    }
+
+
+    .already_have_design:after
+    {
+        right: 0;
+
+        width: 200px;
+        margin-right: 0;
+    }
+
+
+    .already_have_design .data
+    {
+        width: 520px;
+    }
+
+
+    .already_have_design .block_title
+    {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+
+    .already_have_design .block_title:before
+    {
+        display: none;
+    }
+
+
+    .already_have_design .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 24px;
+    }
+
+
+    .already_have_design .link
+    {
+        margin-top: 60px;
+    }
+
+
+    .already_have_design .link .btn
+    {
+        height: 56px;
+        margin-left: 32px;
+        padding-left: 24px;
+    }
+
+
+    .already_have_design .link .btn .icon
+    {
+        width: 56px;
+        height: 55px;
+        margin-left: 24px;
+    }
+
+
+    .already_have_design .img
+    {
+        top: 0;
+        right: 35px;
+        bottom: 0;
+
+        width: 400px;
+        height: auto;
+        margin: auto 0;
+    }
+
+
+
+    /*-------------------------
+        Only design project
+    -------------------------*/
+    .only_design_project .data
+    {
+        padding: 80px 0 80px 80px;
+    }
+
+
+    .only_design_project:before,
+    .only_design_project:after
+    {
+        display: none;
+    }
+
+
+    .only_design_project .title
+    {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+
+    .only_design_project .desc
+    {
+        font-size: var(--font_size);
+        line-height: 23px;
+
+        width: 480px;
+        margin-top: 24px;
+    }
+
+
+    .only_design_project .link
+    {
+        margin-top: 60px;
+    }
+
+
+    .only_design_project .link .arrow
+    {
+        margin-left: 28px;
+    }
+
+
+    .only_design_project .link .btn
+    {
+        height: 56px;
+        margin-left: 28px;
+        padding-left: 24px;
+    }
+
+
+    .only_design_project .link .btn .icon
+    {
+        width: 56px;
+        height: 55px;
+        margin-left: 24px;
+    }
+
+
+    .only_design_project .img
+    {
+        left: -70px;
+
+        width: 520px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 40px 0 20px;
+    }
+
+
+
+    footer .phone .val,
+    footer .location .val
+    {
+        font-size: 16px;
+    }
+
+
+
+    footer .line
+    {
+        margin-top: 30px;
+    }
+
+
+
+    footer .creator + .creator
+    {
+        margin-left: 40px;
+    }
+}
