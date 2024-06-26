@@ -127,6 +127,11 @@
         width: 100%;
     }
 
+    .lets_meet .desc br
+    {
+        display: none;
+    }
+
 
     .lets_meet .row > *:nth-child(1),
     .lets_meet .row > *:nth-child(2),
@@ -139,7 +144,7 @@
 
     .lets_meet .free
     {
-        padding: 25px 25px 180px;
+        padding: 20px 20px 144px;
     }
 
 
@@ -150,11 +155,26 @@
     }
 
 
-    .lets_meet .free img
+    .lets_meet .free .desc
     {
-        right: -13px;
+        font-size: 13px;
+        line-height: 19px;
 
         width: 250px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .lets_meet .free img
+    {
+        display: none;
+    }
+
+    .lets_meet .free img.mob
+    {
+        display: block;
     }
 
 
@@ -590,6 +610,15 @@
     }
 
 
+    .sample_example .mean_to_you .title
+    {
+        width: 220px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
     .sample_example .mean_to_you .features > *
     {
         padding: 13px;
@@ -635,7 +664,7 @@
 
     .before_start .title
     {
-        font-size: 30px;
+        font-size: 27px;
     }
 
 
@@ -671,6 +700,46 @@
     .we_undertake
     {
         padding: 50px 0 15px;
+    }
+
+
+    .we_undertake .block_title
+    {
+        font-size: 26px;
+        line-height: 37px;
+    }
+
+
+    .we_undertake .block_title mark
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+
+    .we_undertake .block_title mark:after
+    {
+        top: 100%;
+        right: 0;
+        bottom: auto;
+        left: 0;
+
+        width: 24px;
+        height: 8px;
+        margin: 0 auto;
+
+        border: none;
+        border-top: 8px solid #fff;
+        border-right: 12px solid transparent;
+        border-left: 12px solid transparent;
+    }
+
+
+    .we_undertake .item:nth-child(2) .desc .mark,
+    .we_undertake .item:nth-child(2) .desc .mark2
+    {
+        width: 245px;
+        max-width: 100%;
     }
 
 
@@ -906,6 +975,12 @@
     {
         font-size: 28px;
         line-height: 36px;
+    }
+
+    .what_to_do .title.small2
+    {
+        font-size: 24px;
+        line-height: 33px;
     }
 
 
@@ -1172,6 +1247,10 @@
     .steps .step_five .sub_title
     {
         line-height: 20px;
+
+        width: 234px;
+        max-width: 100%;
+        padding: 12px;
     }
 
 
@@ -1593,7 +1672,6 @@
 
     .starting_renovation .img
     {
-        top: 485px;
         right: 12px;
 
         width: 124px;
@@ -1957,13 +2035,13 @@
     ------------*/
     .stole
     {
-        padding-bottom: 50px;
+        padding-bottom: 25px;
     }
 
 
     .stole .data
     {
-        margin-bottom: 30px;
+        margin-bottom: 37px;
         padding: 45px 35px;
     }
 

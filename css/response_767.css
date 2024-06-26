@@ -318,6 +318,14 @@
     }
 
 
+    .lets_meet:before
+    {
+        width: 100%;
+
+        background: linear-gradient(180deg, rgba(40, 34, 31, .5) 0%, #28221f 100%);
+    }
+
+
     .lets_meet .title
     {
         line-height: calc(100% + 7px);
@@ -403,6 +411,12 @@
         width: 100%;
         max-width: 100%;
         margin-left: 0;
+    }
+
+
+    .lets_meet.small_part_of_nuances .item
+    {
+        background: rgba(0, 0, 0, .40);
     }
 
 
@@ -1171,6 +1185,13 @@
     /*----------------
         What to do
     ----------------*/
+    .what_to_do,
+    .what_to_do.pad2
+    {
+        padding: 120px 0;
+    }
+
+
     .what_to_do .title,
     .what_to_do .title.small
     {
@@ -1200,6 +1221,17 @@
     {
         font-size: 14px;
         line-height: 20px;
+    }
+
+
+    .what_to_do .bg
+    {
+        display: none;
+    }
+
+    .what_to_do .mob_bg
+    {
+        display: block;
     }
 
 
@@ -2598,12 +2630,41 @@
     }
 
 
+    .starting_renovation .messages .mob_img
+    {
+        display: block;
+    }
+
+
+    .starting_renovation .messages > *:nth-child(1)
+    {
+        width: 292px;
+        max-width: 100%;
+    }
+
+    .starting_renovation .messages > *:nth-child(2)
+    {
+        width: 250px;
+        max-width: 100%;
+    }
+
+    .starting_renovation .messages > *:nth-child(3)
+    {
+        width: 225px;
+        max-width: 100%;
+    }
+
+
+    .starting_renovation .messages > * > * br,
+    .starting_renovation .messages > *:first-child > *:before
+    {
+        display: none;
+    }
+
+
     .starting_renovation .img
     {
-        top: 422px;
-        right: 35px;
-
-        width: 176px;
+        display: none;
     }
 
 
@@ -2887,6 +2948,11 @@
         line-height: 39px;
 
         margin: 4px 0;
+    }
+
+    .stole .data .title mark
+    {
+        font-size: 30px;
     }
 
 

@@ -3323,6 +3323,22 @@ header .socials .icon
 }
 
 
+.lets_meet .free img.mob
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    display: none;
+
+    width: 236px;
+    height: auto;
+    margin: 0 auto;
+
+    pointer-events: none;
+}
+
+
 .lets_meet .bg
 {
     position: absolute;
@@ -6034,6 +6050,8 @@ header .socials .icon
 
 .starting_renovation .messages
 {
+    position: relative;
+
     display: flex;
     flex-direction: column;
 
@@ -6088,6 +6106,19 @@ header .socials .icon
     pointer-events: none;
 
     background: url(../images/bg_starting_renovation_message.svg) 0 0 no-repeat;
+}
+
+
+.starting_renovation .messages .mob_img
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+
+    width: 54px;
+    margin: 0;
 }
 
 
@@ -8239,7 +8270,8 @@ header .socials .icon
 }
 
 
-.what_to_do .bg
+.what_to_do .bg,
+.what_to_do .mob_bg
 {
     position: absolute;
     z-index: 1;
@@ -8250,6 +8282,13 @@ header .socials .icon
     height: 100%;
 
     object-fit: cover;
+}
+
+.what_to_do .mob_bg
+{
+    display: none;
+
+    object-position: 0 50%;
 }
 
 
