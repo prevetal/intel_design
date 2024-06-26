@@ -407,6 +407,12 @@
     }
 
 
+    .advantages .grid .item:nth-child(1) mark
+    {
+        margin-left: 0;
+    }
+
+
     .advantages .grid .item:nth-child(5) img
     {
         right: -112px;

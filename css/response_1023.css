@@ -120,7 +120,7 @@
 
     .first_section .items > *:last-child:after
     {
-        width: 350px;
+        width: 100vw;
     }
 
 
@@ -693,9 +693,10 @@
     }
 
 
-    .service_head .items > *:last-child:after
+    .service_head .items > *:last-child:after,
+    .service_head .items > *.big_line:last-child:after
     {
-        width: 350px;
+        width: 100vw;
     }
 
 
@@ -3316,9 +3317,6 @@
 
     .third_step_next .bottom
     {
-        position: relative;
-        z-index: 5;
-
         margin-top: 0;
     }
 

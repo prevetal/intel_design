@@ -32,6 +32,8 @@
 .swiper-button-next
 {
     right: 10px;
+
+    color: #4f362a;
 }
 
 
@@ -55,6 +57,14 @@
     background: #342b27;
 }
 
+.swiper-button-next:after
+{
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+
+    background: #ed9468;
+}
+
 
 .swiper-button-next .icon,
 .swiper-button-prev .icon
@@ -74,20 +84,10 @@
 }
 
 
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled
 {
-    color: #4f362a;
-}
-
-.swiper-button-next:hover:after,
-.swiper-button-prev:hover:after
-{
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-
-    background: #ed9468;
+    opacity: 1;
 }
 
 

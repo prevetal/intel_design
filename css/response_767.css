@@ -756,6 +756,14 @@
         grid-row: auto;
     }
 
+    .advantages .grid .item:nth-child(1) mark
+    {
+        line-height: 26px;
+
+        margin-left: -6px;
+        padding: 0 6px;
+    }
+
 
     .advantages .grid .item:nth-child(2),
     .advantages .grid .item:nth-child(3),
@@ -835,6 +843,12 @@
 
         margin-top: 52px;
         padding-left: 0;
+    }
+
+
+    .advantages .grid2 .data .author .mob_image
+    {
+        display: block;
     }
 
 

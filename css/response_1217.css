@@ -184,7 +184,7 @@
 
     .first_section .items > *:last-child:after
     {
-        width: 150px;
+        width: 138px;
     }
 
 
@@ -875,6 +875,11 @@
         width: 150px;
     }
 
+    .service_head .items > *.big_line:last-child:after
+    {
+        width: 151px;
+    }
+
 
     .service_head .economy
     {
@@ -968,6 +973,14 @@
     {
         font-size: 28px;
         line-height: 34px;
+    }
+
+    .advantages .grid .item:nth-child(1) mark
+    {
+        line-height: 30px;
+
+        margin-left: -8px;
+        padding: 0 8px;
     }
 
 
@@ -4760,7 +4773,7 @@
         margin-top: 40px;
         padding: 24px;
 
-        background-size: 88px auto;
+        background-size: 72px auto;
     }
 
 

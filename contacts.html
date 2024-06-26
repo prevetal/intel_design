@@ -159,7 +159,7 @@
 									</a>
 
 									<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+										<img src="images/ic_instagram.png" alt="" class="icon">
 										<sup>*</sup>
 									</a>
 
@@ -222,7 +222,7 @@
 										</a>
 
 										<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+											<img src="images/ic_instagram2.png" alt="" class="icon">
 											<sup>*</sup>
 										</a>
 
@@ -257,9 +257,7 @@
 						</div>
 					</div>
 
-					<div class="map">
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3ApjZiWYrj-pc1Im2a1IBGuXz8bheFLLf5&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-					</div>
+					<div class="map" id="map"></div>
 				</section>
 			</div>
 
@@ -285,7 +283,7 @@
 							</a>
 
 							<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
-								<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+								<img src="images/ic_instagram.png" alt="" class="icon">
 								<sup>*</sup>
 							</a>
 
@@ -347,5 +345,12 @@
 		<script src="js/fancybox.js"></script>
 		<script src="js/imask.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<!-- Яндекс карты -->
+		<script src="https://api-maps.yandex.ru/v3/?apikey=6a3bf4e1-a7e8-43b8-be51-d397a28285de&lang=ru_RU"></script>
+		<script>
+			// Map
+			initMap()
+		</script>
 	</body>
 </html>

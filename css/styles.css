@@ -1645,7 +1645,7 @@ header .socials .icon
 
 .first_section .items > *:last-child:after
 {
-    width: 325px;
+    width: 179px;
 }
 
 
@@ -2073,9 +2073,6 @@ header .socials .icon
     height: 100%;
 
     background: #231e1b;
-
-            filter: grayscale(1);
-    -webkit-filter: grayscale(1);
 }
 
 
@@ -3762,7 +3759,12 @@ header .socials .icon
 
 .service_head .items > *:last-child:after
 {
-    width: 325px;
+    width: 256px;
+}
+
+.service_head .items > *.big_line:last-child:after
+{
+    width: 292px;
 }
 
 
@@ -3882,6 +3884,12 @@ header .socials .icon
     z-index: 5;
 
     margin-top: -29px;
+}
+
+
+.advantages.no_m
+{
+    margin-top: 0;
 }
 
 
@@ -4124,11 +4132,12 @@ header .socials .icon
 
 .advantages .grid .item:nth-child(1) mark
 {
-    line-height: 26px;
+    line-height: 35px;
 
     display: inline-block;
 
-    padding: 0 4px;
+    margin-left: -10px;
+    padding: 0 10px;
 
     vertical-align: middle;
     white-space: nowrap;
@@ -4295,7 +4304,7 @@ header .socials .icon
 
     display: block;
 
-    height: 205px;
+    height: 100%;
 
     pointer-events: none;
 }
@@ -4681,6 +4690,8 @@ header .socials .icon
 .advantages .grid2 .data .author .mob_image
 {
     position: relative;
+
+    display: none;
 
     width: 124px;
     max-width: 100%;
@@ -8985,6 +8996,7 @@ header .socials .icon
     width: 70px;
     height: 70px;
     margin: auto;
+    padding-left: 4px;
 
     color: #aa6441;
     border-radius: 50%;
@@ -13543,7 +13555,7 @@ header .socials .icon
     margin-top: 45px;
     padding: 21px 40px 31px 25px;
 
-    background: url(../images/bg_first_step_message.svg) 100% 100% no-repeat #322a27;
+    background: url(../images/bg_first_step_message.png) 100% 100%/110px auto no-repeat #322a27;
 }
 
 
@@ -13834,8 +13846,6 @@ header .socials .icon
 {
     position: relative;
     z-index: 11;
-
-    overflow: hidden;
 
     padding: 67px 0 71px;
 
@@ -14971,6 +14981,9 @@ header .socials .icon
 
 .third_step_next .bottom
 {
+    position: relative;
+    z-index: 3;
+
     display: flex;
     align-content: stretch;
     align-items: stretch;
