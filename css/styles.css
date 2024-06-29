@@ -1730,6 +1730,15 @@ header .socials .icon
 }
 
 
+.first_section .image .img.mob
+{
+    display: none;
+
+    width: 100%;
+    height: auto;
+}
+
+
 
 /*-------------------
     Contacts info
@@ -2230,6 +2239,16 @@ header .socials .icon
     margin-right: -740px;
 
     pointer-events: none;
+}
+
+
+.portfolio_head .img.mob
+{
+    display: none;
+
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 
@@ -3887,6 +3906,15 @@ header .socials .icon
 
     min-width: 200px;
     height: 100%;
+}
+
+
+.service_head .image .img.mob
+{
+    display: none;
+
+    width: 100%;
+    height: auto;
 }
 
 

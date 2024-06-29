@@ -140,15 +140,22 @@
         position: relative;
         right: 0;
 
-        margin-top: 0;
+        margin-top: 10px;
     }
 
 
     .first_section .image .img
     {
-        width: 125%;
+        /* width: 125%;
         height: auto;
-        margin-left: -25%;
+        margin-left: -25%; */
+        display: none;
+    }
+
+
+    .first_section .image .img.mob
+    {
+        display: block;
     }
 
 
@@ -203,7 +210,8 @@
     }
 
 
-    .portfolio_head:before
+    .portfolio_head:before,
+    .portfolio_head:after
     {
         display: none;
     }
@@ -252,10 +260,16 @@
     {
         position: relative;
         right: 0;
-
-        width: 185%;
+        /* width: 185%;
         height: auto;
-        margin-left: -85%;
+        margin-left: -85%; */
+
+        display: none;
+    }
+
+    .portfolio_head .img.mob
+    {
+        display: block;
     }
 
 
@@ -665,6 +679,12 @@
     }
 
 
+    .service_head:before
+    {
+        display: none;
+    }
+
+
     .service_head .data
     {
         width: 100%;
@@ -715,6 +735,7 @@
     {
         position: relative;
 
+        height: auto;
         margin-top: 60px;
     }
 
@@ -724,10 +745,23 @@
     }
 
 
+    .service_head .image:after
+    {
+        display: none;
+    }
+
+
     .service_head .image .img
     {
-        width: 100%;
-        height: auto;
+        display: none;
+
+        /* width: 100%;
+        height: auto; */
+    }
+
+    .service_head .image .img.mob
+    {
+        display: block;
     }
 
 
@@ -735,6 +769,12 @@
     /*----------------
         Advantages
     ----------------*/
+    .advantages
+    {
+        margin-top: 0;
+    }
+
+
     .advantages .grid,
     .advantages .grid2
     {

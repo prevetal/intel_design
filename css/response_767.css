@@ -120,14 +120,6 @@
 
 
 
-    .first_section .image
-    {
-        width: 130%;
-        margin-left: -30%;
-    }
-
-
-
     /*-------------------
         Contacts info
     -------------------*/
@@ -267,17 +259,6 @@
         border-top-width: 10px;
         border-right-width: 9px;
         border-bottom-width: 10px;
-    }
-
-
-    .portfolio_head .img
-    {
-        position: relative;
-        right: 0;
-
-        width: 185%;
-        height: auto;
-        margin-left: -85%;
     }
 
 
@@ -707,13 +688,6 @@
     .service_head .image
     {
         margin-top: 50px;
-    }
-
-
-    .service_head .image2 .img
-    {
-        width: 125%;
-        margin-left: -25%;
     }
 
 
