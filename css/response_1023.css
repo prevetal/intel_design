@@ -260,7 +260,8 @@
     {
         position: relative;
         right: 0;
-        /* width: 185%;
+
+/* width: 185%;
         height: auto;
         margin-left: -85%; */
 
@@ -627,7 +628,7 @@
 
     .project_plan .image
     {
-        width: 100%;
+        margin: 0 auto;
     }
 
 

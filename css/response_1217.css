@@ -52,6 +52,16 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 35px;
+    }
+
+
+
     /*----------------
         Pagination
     ----------------*/
@@ -5952,5 +5962,15 @@
     footer .creator + .creator
     {
         margin-left: 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal_title
+    {
+        font-size: 32px;
     }
 }

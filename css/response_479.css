@@ -23,6 +23,19 @@
 
 
     /*------------------
+        Form elements
+    ------------------*/
+    .form .agree
+    {
+        font-size: 10px;
+        line-height: 15px;
+
+        margin-top: 16px;
+    }
+
+
+
+    /*------------------
         First section
     ------------------*/
     .first_section .title
@@ -798,7 +811,7 @@
     .real_apartments,
     .real_apartments.pad2
     {
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
 
 
@@ -1494,6 +1507,7 @@
     .can_you_lose .img
     {
         width: 140%;
+        min-height: 100px;
         margin: 0 -20% -30px;
     }
 
@@ -3252,5 +3266,65 @@
     footer .creator + .creator
     {
         margin-left: 20px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 290px;
+        padding: 40px 25px 38px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+
+    .modal_desc
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 20px;
+    }
+
+
+    .modal .form .input
+    {
+        height: 50px;
+
+        text-align: left;
+    }
+
+
+    .modal .form .submit_btn
+    {
+        height: 50px;
+        padding-left: 21px;
+    }
+
+
+    .modal .form .submit_btn .icon
+    {
+        width: 50px;
+        height: 50px;
+        margin-left: 21px;
+    }
+
+
+    .modal .form .submit_btn span
+    {
+        margin: 0;
     }
 }

@@ -4,6 +4,27 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+
+	$(".pagination button").click(function(e) {
+        e.preventDefault();
+        //$(".object_items .object_item").removeClass("hide");
+
+        $(this).parent().parent().find(".item.hide").each(function(i,elem) {
+            if(i==10)
+            {
+                return false;
+            }
+            $(elem).removeClass("hide");
+        });
+
+        if($(this).parent().parent().find(".item.hide").length==0)
+        {
+            $(this).parent().hide();
+        }
+    });
+
+
 	// My projects slider
 	const myProjectsSliders = [],
 		myProjects = document.querySelectorAll('.my_projects .swiper')
@@ -302,6 +323,19 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	}
+
+
+	// Project plan
+	$('.project_plan .rooms > *').mouseenter(function() {
+		let room = $(this).data('room')
+
+		$('.project_plan .image svg #' + room).addClass('active')
+	})
+
+
+	$('.project_plan .rooms > *').mouseleave(function() {
+		$('.project_plan .image svg *').removeClass('active')
+	})
 })
 
 
