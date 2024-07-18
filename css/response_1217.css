@@ -783,8 +783,6 @@
     {
         font-size: 50px;
         line-height: calc(100% + 8px);
-
-        margin-bottom: 40px;
     }
 
 
@@ -794,30 +792,54 @@
     }
 
 
-    .project_plan .rooms > * + *
+    .project_plan .floors > .tabs
     {
-        margin-top: 15px;
+        margin-bottom: 28px;
     }
 
 
-
-    /*---------------------
-        Project gallery
-    ---------------------*/
-    .project_gallery
+    .project_plan .floors > .tabs .btn
     {
-        padding-bottom: 80px;
+        font-size: 18px;
+        line-height: 22px;
+
+        width: 140px;
+        height: 40px;
     }
 
 
-    .project_gallery .block_title
+    .project_plan .image
     {
-        font-size: 32px;
-        line-height: 100%;
+        margin-bottom: 48px;
+    }
 
-        width: calc(100% + 70px);
-        margin: 0 -35px 30px;
-        padding: 50px 35px 0;
+
+    .project_plan .rooms:before
+    {
+        display: none;
+    }
+
+
+    .project_plan .rooms .tabs
+    {
+        margin-bottom: 48px;
+        padding: 0 48px;
+    }
+
+
+    .project_plan .rooms .swiper-button-next,
+    .project_plan .rooms .swiper-button-prev
+    {
+        width: 48px;
+    }
+
+
+    .project_plan .rooms .tabs .btn
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        padding: 12px 28px 12px;
     }
 
 

@@ -2906,14 +2906,6 @@ header .socials .icon
     position: relative;
 
     margin-bottom: 28px;
-}
-
-
-.project_plan .mob_block_title
-{
-    display: none;
-
-    width: 100%;
 
     text-align: center;
 }
@@ -2939,48 +2931,7 @@ header .socials .icon
 }
 
 
-.project_plan .rooms
-{
-    width: 270px;
-    max-width: 100%;
-}
-
-
-.project_plan .rooms > *
-{
-    line-height: 100%;
-
-    display: flex;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    cursor: pointer;
-    transition: .2s linear;
-
-    color: #beaba0;
-    background: #332c28;
-}
-
-
-.project_plan .rooms > * + *
-{
-    margin-top: 20px;
-}
-
-
-.project_plan .rooms span
-{
-    display: block;
-    align-self: center;
-
-    width: calc(100% - 50px);
-    padding: 12px 25px;
-}
-
-
-.project_plan .rooms .icon
+.project_plan .floors > .tabs
 {
     display: flex;
     align-content: center;
@@ -2988,36 +2939,33 @@ header .socials .icon
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 50px;
-    height: 50px;
+    margin-bottom: 34px;
+}
+
+
+.project_plan .floors > .tabs .btn
+{
+    font-size: 20px;
+    line-height: 30px;
+
+    display: block;
+
+    width: 145px;
+    max-width: 100%;
+    height: 45px;
 
     transition: .2s linear;
 
-    color: #a48d81;
-    background: #423934;
+    color: #817069;
+    background: #201b19;
 }
 
 
-.project_plan .rooms .icon svg
+.project_plan .floors > .tabs .btn:hover,
+.project_plan .floors > .tabs .btn.active
 {
-    display: block;
-
-    width: 18px;
-    height: 11px;
-}
-
-
-.project_plan .rooms > *:hover
-{
-    color: #302019;
-    background: #ed9468;
-}
-
-
-.project_plan .rooms > *:hover .icon
-{
-    color: #302019;
-    background: #f4a077;
+    color: #e7d3c9;
+    background: #635148;
 }
 
 
@@ -3026,11 +2974,9 @@ header .socials .icon
 {
     position: relative;
 
-    align-self: center;
-
     width: 570px;
     max-width: 100%;
-    margin-left: auto;
+    margin: 0 auto 60px;
 }
 
 
@@ -3048,7 +2994,7 @@ header .socials .icon
 .project_plan .image img.text
 {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     top: 0;
     left: 0;
 
@@ -3066,6 +3012,8 @@ header .socials .icon
 
     width: 100%;
     height: 100%;
+
+    pointer-events: all;
 }
 
 
@@ -3074,67 +3022,129 @@ header .socials .icon
     fill: #ed9468;
 }
 
-
-
-/*---------------------
-    Project gallery
----------------------*/
-.project_gallery
+.project_plan .image svg > *:hover
 {
-    position: relative;
-    z-index: 11;
+    cursor: pointer;
 
-    padding: 0 0 100px;
-
-    background: var(--bg);
+    fill: #ed9468;
 }
 
 
-.project_gallery .block_title
+
+.project_plan .rooms
 {
-    font-size: 35px;
-    line-height: 74px;
-
     position: relative;
-
-    margin-bottom: 20px;
-    padding-top: 30px;
-
-    text-align: center;
-
-    color: #957d71;
-    border-top: 1px solid #635148;
 }
 
 
-.project_gallery .block_title:before
+.project_plan .rooms:before
 {
     position: absolute;
     top: 0;
     right: 0;
-    left: 0;
 
     display: block;
 
-    width: 1px;
-    height: 31px;
-    margin: 0 auto;
+    width: calc(100% + 99px);
+    height: 1px;
 
     content: '';
-    pointer-events: none;
 
     background: #635148;
 }
 
 
-.project_gallery .row
+.project_plan .rooms .tabs
+{
+    margin-bottom: 59px;
+    padding: 0 55px;
+}
+
+
+.project_plan .rooms .swiper-slide
+{
+    width: auto;
+}
+
+
+.project_plan .rooms .swiper-button-next,
+.project_plan .rooms .swiper-button-prev
+{
+    top: 0;
+    bottom: 0;
+
+    width: 55px;
+    height: 100%;
+    margin: 0;
+
+    color: #fff;
+    background: #635148;
+}
+
+
+.project_plan .rooms .swiper-button-next:after,
+.project_plan .rooms .swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.project_plan .rooms .swiper-button-next.swiper-button-disabled,
+.project_plan .rooms .swiper-button-prev.swiper-button-disabled
+{
+    display: none;
+}
+
+
+.project_plan .rooms .swiper-button-prev
+{
+    right: auto;
+    left: 0;
+}
+
+.project_plan .rooms .swiper-button-next
+{
+    right: 0;
+
+    color: currentColor;
+}
+
+
+.project_plan .rooms .tabs .btn
+{
+    font-size: 25px;
+    line-height: 30px;
+
+    display: block;
+
+    padding: 10px 34px 14px;
+
+    transition: .2s linear;
+
+    color: #957d71;
+    border: 1px solid #635148;
+    border-bottom: none;
+}
+
+
+.project_plan .rooms .tabs .btn:hover,
+.project_plan .rooms .tabs .btn.active
+{
+    color: #fff;
+    border-color: #635148;
+    background: #635148;
+}
+
+
+
+.project_plan .gallery .row
 {
     margin-bottom: -30px;
     margin-left: -30px;
 }
 
 
-.project_gallery .row > *
+.project_plan .gallery .row > *
 {
     width: calc(50% - 30px);
     margin-bottom: 30px;
@@ -3142,13 +3152,7 @@ header .socials .icon
 }
 
 
-.project_gallery .row.small > *
-{
-    width: calc(33.333% - 30px);
-}
-
-
-.project_gallery .item
+.project_plan .gallery .item
 {
     position: relative;
 
@@ -3163,13 +3167,8 @@ header .socials .icon
     background: #231e1b;
 }
 
-.project_gallery .row.small .item
-{
-    padding-bottom: 94.324%;
-}
 
-
-.project_gallery .item img
+.project_plan .gallery .item img
 {
     position: absolute;
     z-index: 1;
@@ -16339,10 +16338,12 @@ footer .creator + .creator
 
 .wpcf7-response-output
 {
-    /*display: none !important;*/
+    display: none !important;
 }
 
 .desc.text_block *
 {
     margin-top: 15px;
 }
+
+
